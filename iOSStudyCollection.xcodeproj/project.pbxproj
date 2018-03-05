@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DDF0B65DAF95846241EF0E9 /* Pods_iOSStudyCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1B06C0D4D68935F79B404B /* Pods_iOSStudyCollection.framework */; };
 		867B185C204D186D00D9DDAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B185B204D186D00D9DDAC /* AppDelegate.m */; };
 		867B185F204D186D00D9DDAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B185E204D186D00D9DDAC /* ViewController.m */; };
 		867B1862204D186D00D9DDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867B1860204D186D00D9DDAC /* Main.storyboard */; };
 		867B1864204D186D00D9DDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867B1863204D186D00D9DDAC /* Assets.xcassets */; };
 		867B1867204D186D00D9DDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867B1865204D186D00D9DDAC /* LaunchScreen.storyboard */; };
 		867B186A204D186D00D9DDAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B1869204D186D00D9DDAC /* main.m */; };
+		867B18A1204D18D600D9DDAC /* ZHRacNormalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 867B1897204D18D600D9DDAC /* ZHRacNormalController.xib */; };
+		867B18A2204D18D600D9DDAC /* ZHRacNormalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B1899204D18D600D9DDAC /* ZHRacNormalController.m */; };
+		867B18A3204D18D600D9DDAC /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 867B189A204D18D600D9DDAC /* SecondViewController.xib */; };
+		867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B189B204D18D600D9DDAC /* SecondViewController.m */; };
+		867B18A5204D18D600D9DDAC /* NSObject+Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B189F204D18D600D9DDAC /* NSObject+Calculate.m */; };
+		867B18A6204D18D600D9DDAC /* CalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A0204D18D600D9DDAC /* CalculateManager.m */; };
+		867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A8204D226E00D9DDAC /* ZHCaluVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DC4DF35CC53DC8D9755C51A /* Pods-iOSStudyCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudyCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection.release.xcconfig"; sourceTree = "<group>"; };
+		6F1B06C0D4D68935F79B404B /* Pods_iOSStudyCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSStudyCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		867B1857204D186D00D9DDAC /* iOSStudyCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStudyCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		867B185A204D186D00D9DDAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		867B185B204D186D00D9DDAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +36,19 @@
 		867B1866204D186D00D9DDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		867B1868204D186D00D9DDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		867B1869204D186D00D9DDAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		867B1896204D18D600D9DDAC /* ZHRacNormalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHRacNormalController.h; sourceTree = "<group>"; };
+		867B1897204D18D600D9DDAC /* ZHRacNormalController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHRacNormalController.xib; sourceTree = "<group>"; };
+		867B1898204D18D600D9DDAC /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		867B1899204D18D600D9DDAC /* ZHRacNormalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHRacNormalController.m; sourceTree = "<group>"; };
+		867B189A204D18D600D9DDAC /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		867B189B204D18D600D9DDAC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		867B189D204D18D600D9DDAC /* NSObject+Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Calculate.h"; sourceTree = "<group>"; };
+		867B189E204D18D600D9DDAC /* CalculateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateManager.h; sourceTree = "<group>"; };
+		867B189F204D18D600D9DDAC /* NSObject+Calculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Calculate.m"; sourceTree = "<group>"; };
+		867B18A0204D18D600D9DDAC /* CalculateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateManager.m; sourceTree = "<group>"; };
+		867B18A7204D226E00D9DDAC /* ZHCaluVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCaluVC.h; sourceTree = "<group>"; };
+		867B18A8204D226E00D9DDAC /* ZHCaluVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCaluVC.m; sourceTree = "<group>"; };
+		E439CE1E7DAB8D25A8BEB3F3 /* Pods-iOSStudyCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudyCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDF0B65DAF95846241EF0E9 /* Pods_iOSStudyCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +68,8 @@
 			children = (
 				867B1859204D186D00D9DDAC /* iOSStudyCollection */,
 				867B1858204D186D00D9DDAC /* Products */,
+				F900B500811E7C840A111749 /* Pods */,
+				966B40A0AB5591970BBAAE9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +84,7 @@
 		867B1859204D186D00D9DDAC /* iOSStudyCollection */ = {
 			isa = PBXGroup;
 			children = (
+				867B1882204D18CF00D9DDAC /* Study */,
 				867B185A204D186D00D9DDAC /* AppDelegate.h */,
 				867B185B204D186D00D9DDAC /* AppDelegate.m */,
 				867B185D204D186D00D9DDAC /* ViewController.h */,
@@ -71,6 +98,58 @@
 			path = iOSStudyCollection;
 			sourceTree = "<group>";
 		};
+		867B1882204D18CF00D9DDAC /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				867B189C204D18D600D9DDAC /* 01链式计算器 */,
+				867B1895204D18D600D9DDAC /* 02RAC通常用法 */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		867B1895204D18D600D9DDAC /* 02RAC通常用法 */ = {
+			isa = PBXGroup;
+			children = (
+				867B1896204D18D600D9DDAC /* ZHRacNormalController.h */,
+				867B1899204D18D600D9DDAC /* ZHRacNormalController.m */,
+				867B1897204D18D600D9DDAC /* ZHRacNormalController.xib */,
+				867B1898204D18D600D9DDAC /* SecondViewController.h */,
+				867B189B204D18D600D9DDAC /* SecondViewController.m */,
+				867B189A204D18D600D9DDAC /* SecondViewController.xib */,
+			);
+			path = "02RAC通常用法";
+			sourceTree = "<group>";
+		};
+		867B189C204D18D600D9DDAC /* 01链式计算器 */ = {
+			isa = PBXGroup;
+			children = (
+				867B189D204D18D600D9DDAC /* NSObject+Calculate.h */,
+				867B189F204D18D600D9DDAC /* NSObject+Calculate.m */,
+				867B189E204D18D600D9DDAC /* CalculateManager.h */,
+				867B18A0204D18D600D9DDAC /* CalculateManager.m */,
+				867B18A7204D226E00D9DDAC /* ZHCaluVC.h */,
+				867B18A8204D226E00D9DDAC /* ZHCaluVC.m */,
+			);
+			path = "01链式计算器";
+			sourceTree = "<group>";
+		};
+		966B40A0AB5591970BBAAE9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F1B06C0D4D68935F79B404B /* Pods_iOSStudyCollection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F900B500811E7C840A111749 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E439CE1E7DAB8D25A8BEB3F3 /* Pods-iOSStudyCollection.debug.xcconfig */,
+				1DC4DF35CC53DC8D9755C51A /* Pods-iOSStudyCollection.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 867B186D204D186D00D9DDAC /* Build configuration list for PBXNativeTarget "iOSStudyCollection" */;
 			buildPhases = (
+				C0AB4DEA8BD478A969372C7D /* [CP] Check Pods Manifest.lock */,
 				867B1853204D186D00D9DDAC /* Sources */,
 				867B1854204D186D00D9DDAC /* Frameworks */,
 				867B1855204D186D00D9DDAC /* Resources */,
+				0364BC212F6C9EBFBFD79AF0 /* [CP] Embed Pods Frameworks */,
+				B492A6A80142C27567BEBAAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +212,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				867B1867204D186D00D9DDAC /* LaunchScreen.storyboard in Resources */,
+				867B18A3204D18D600D9DDAC /* SecondViewController.xib in Resources */,
+				867B18A1204D18D600D9DDAC /* ZHRacNormalController.xib in Resources */,
 				867B1864204D186D00D9DDAC /* Assets.xcassets in Resources */,
 				867B1862204D186D00D9DDAC /* Main.storyboard in Resources */,
 			);
@@ -137,14 +221,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0364BC212F6C9EBFBFD79AF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B492A6A80142C27567BEBAAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0AB4DEA8BD478A969372C7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSStudyCollection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		867B1853204D186D00D9DDAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */,
+				867B18A6204D18D600D9DDAC /* CalculateManager.m in Sources */,
+				867B18A5204D18D600D9DDAC /* NSObject+Calculate.m in Sources */,
 				867B185F204D186D00D9DDAC /* ViewController.m in Sources */,
 				867B186A204D186D00D9DDAC /* main.m in Sources */,
+				867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */,
 				867B185C204D186D00D9DDAC /* AppDelegate.m in Sources */,
+				867B18A2204D18D600D9DDAC /* ZHRacNormalController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +419,11 @@
 		};
 		867B186E204D186D00D9DDAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E439CE1E7DAB8D25A8BEB3F3 /* Pods-iOSStudyCollection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9ZY4654BA;
 				INFOPLIST_FILE = iOSStudyCollection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohe.iOSStudyCollection;
@@ -289,9 +434,11 @@
 		};
 		867B186F204D186D00D9DDAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DC4DF35CC53DC8D9755C51A /* Pods-iOSStudyCollection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9ZY4654BA;
 				INFOPLIST_FILE = iOSStudyCollection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohe.iOSStudyCollection;
