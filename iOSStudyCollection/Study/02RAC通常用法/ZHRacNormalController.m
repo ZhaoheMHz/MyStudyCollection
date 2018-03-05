@@ -60,9 +60,19 @@
 
 // RACSignal
 - (IBAction)btnTouch2:(UIButton *)sender {
-    //    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-    //
-    //    }];
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        NSLog(@"执行了");
+//        [subscriber sendNext:@"啦啦啦啦"];
+        
+        return nil;
+    }];
+    
+    [signal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"订阅了 %@", x);
+    }];
+//    [[signal skip:1] subscribeNext:^(id  _Nullable x) {
+//        NSLog(@"订阅了 %@", x);
+//    }];
     
     
     
@@ -73,6 +83,8 @@
     //        @strongify(self);
     //        NSLog(@"点击了RACSignal按钮");
     //    }];
+
+    
     
     
     
@@ -122,11 +134,11 @@
     
     
     /************* 用于输入框监听 ************/
-    //    @weakify(self);
-    //    [self.tf1.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
-    //        @strongify(self);
-    //        NSLog(@"tf1输入框内容：%@", self.tf1.text);
-    //    }];
+//        @weakify(self);
+//        [self.tf1.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
+//            @strongify(self);
+//            NSLog(@"tf1输入框内容：%@", self.tf1.text);
+//        }];
     
     
     
@@ -165,21 +177,21 @@
     
     
     /************* 两个任务同时 ************/
-    RACSignal *signal1 = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            NSLog(@"方法一执行完了");
-            [subscriber sendNext:nil];
-        });
-        return nil;
-    }];
-    RACSignal *signal2 = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            NSLog(@"方法二执行完了");
-            [subscriber sendNext:nil];
-        });
-        return nil;
-    }];
-    [self rac_liftSelector:@selector(updateUIS1:S2:) withSignals:signal1, signal2, nil];
+//    RACSignal *signal1 = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            NSLog(@"方法一执行完了");
+//            [subscriber sendNext:nil];
+//        });
+//        return nil;
+//    }];
+//    RACSignal *signal2 = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            NSLog(@"方法二执行完了");
+//            [subscriber sendNext:nil];
+//        });
+//        return nil;
+//    }];
+//    [self rac_liftSelector:@selector(updateUIS1:S2:) withSignals:signal1, signal2, nil];
 }
 
 // 点击事件1
