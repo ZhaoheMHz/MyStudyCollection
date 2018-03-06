@@ -60,19 +60,43 @@
 
 // RACSignal
 - (IBAction)btnTouch2:(UIButton *)sender {
+    /************* signal用法 ************/
+    // 1.创建信号
+    // block调用时刻：每当有订阅者订阅信号，就会调用block。
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        NSLog(@"执行了");
-//        [subscriber sendNext:@"啦啦啦啦"];
+        NSLog(@"执行了didSubscribe");
         
-        return nil;
+//        [subscriber sendNext:@"sendNext"];
+//        [subscriber sendCompleted];
+        
+        return [RACDisposable disposableWithBlock:^{
+            // block调用时刻：当信号发送完成或者发送错误，就会自动执行这个block,取消订阅信号。
+            // 执行完Block后，当前信号就不在被订阅了。
+            NSLog(@"信号被销毁");
+        }];
     }];
     
+    // 这里subscribeNext后会直接执行上面createSignal后面的block，顺便订阅者会保存NextBlock，当sendNext的时候，下面的NextBlock就会执行
     [signal subscribeNext:^(id  _Nullable x) {
         NSLog(@"订阅了 %@", x);
     }];
-//    [[signal skip:1] subscribeNext:^(id  _Nullable x) {
-//        NSLog(@"订阅了 %@", x);
-//    }];
+    [signal subscribeError:^(NSError * _Nullable error) {
+        
+    }];
+    [signal subscribeCompleted:^{
+        
+    }];
+    
+    /**
+     这里我的理解，可以理解为，一个信号的创建和订阅是多个block的组合。
+     1、创建信号会创建一个didSubscribe的block，不会执行，也就是冷信号
+     2、当subscribeNext后，则信号被订阅，同时subscribeNext的nextblock被订阅者（signal内部管理）保存
+     3、信号被订阅，就会执行didSubscribe这个block，信号就变成了热信号
+     4、同时如果didSubscribe内部执行了sendNext，说明了发送了Next信号，因为之前订阅了Next信号，则subscribeNext的nextblock会执行
+     5、同理我们还可以subscribeError、subscribeCompleted，当sendError、sendCompleted的时候，执行block
+     */
+    
+    
     
     
     
