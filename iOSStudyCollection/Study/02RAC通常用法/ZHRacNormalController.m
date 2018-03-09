@@ -848,7 +848,111 @@
     
     
     /********************************* timeOut *********************************/
+//    // 超时，可以让一个信号在一定的时间后，自动报错。
+//    RACSignal *signal = [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//
+//        NSLog(@"didSub");
+//        [subscriber sendNext:@"next了"];
+////        [subscriber sendCompleted];         // 这里如果不sendCompleted，则在1s后会因为timeout而自动sendError
+//
+//        return nil;
+//    }] timeout:1 onScheduler:[RACScheduler mainThreadScheduler]];
+//    
+//    [signal subscribeNext:^(id  _Nullable x) {
+//        NSLog(@"%@", x);
+//    } error:^(NSError * _Nullable error) {
+//        NSLog(@"%@", error);
+//    } completed:^{
+//    }];
     
+    
+    
+    
+    
+    /********************************* interval *********************************/
+//    [[RACSignal interval:1 onScheduler:[RACScheduler currentScheduler]] subscribeNext:^(id x) {
+//        // x为当前系统时间
+//        NSLog(@"%@",x);
+//    }];
+    
+    
+    
+    
+    
+    
+    
+    /********************************* delay *********************************/
+    // 延迟发送next。
+//    RACSignal *signal = [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//        NSLog(@"didSub");     // 这里会在订阅时立刻执行
+//
+//        [subscriber sendNext:@"next"];    // next会在1s后才能被send出去
+//
+//        return nil;
+//    }] delay:1];
+//
+//    [signal subscribeNext:^(id  _Nullable x) {
+//        NSLog(@"%@", x);
+//    }];
+    
+    
+    
+    
+    
+    /********************************* retry *********************************/
+//    __block int i = 0;
+//    RACSignal *signal = [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//        NSLog(@"didSub");     // 这里会在订阅时立刻执行
+//
+//        if (i==10) {
+//            [subscriber sendNext:@"next"];
+//        } else {
+//            [subscriber sendError:nil];     // 只要sendError了，就会重新执行didSubscribeBlock
+//        }
+//        i++;
+//
+//        return nil;
+//    }] retry];
+//    [signal subscribeNext:^(id  _Nullable x) {
+//        NSLog(@"%@", x);
+//    }];
+    
+    
+    
+    
+    
+    /********************************* replay *********************************/
+    // 重放：当一个信号被多次订阅,反复播放内容
+    RACSignal *signal = [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [subscriber sendNext:@1];
+        [subscriber sendNext:@2];
+        
+        return nil;
+    }] replay];
+    
+    [signal subscribeNext:^(id x) {
+        NSLog(@"第一个订阅者%@",x);
+    }];
+    
+    [signal subscribeNext:^(id x) {
+        NSLog(@"第二个订阅者%@",x);
+    }];
+    
+    
+    
+    
+    
+    // 学不动了！！！
+    // throttle节流:当某个信号发送比较频繁时，可以使用节流，在某一段时间不发送信号内容，过了一段时间获取信号的最新内容发出。
+//    RACSubject *signal = [RACSubject subject];
+//
+//    _signal = signal;
+//
+//    // 节流，在一定时间（1秒）内，不接收任何信号内容，过了这个时间（1秒）获取最后发送的信号内容发出。
+//    [[signal throttle:1] subscribeNext:^(id x) {
+//
+//        NSLog(@"%@",x);
+//    }];
 }
 
 
