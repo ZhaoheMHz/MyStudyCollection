@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4DDF0B65DAF95846241EF0E9 /* Pods_iOSStudyCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1B06C0D4D68935F79B404B /* Pods_iOSStudyCollection.framework */; };
-		867B185C204D186D00D9DDAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B185B204D186D00D9DDAC /* AppDelegate.m */; };
-		867B185F204D186D00D9DDAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B185E204D186D00D9DDAC /* ViewController.m */; };
 		867B1862204D186D00D9DDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867B1860204D186D00D9DDAC /* Main.storyboard */; };
 		867B1864204D186D00D9DDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867B1863204D186D00D9DDAC /* Assets.xcassets */; };
 		867B1867204D186D00D9DDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867B1865204D186D00D9DDAC /* LaunchScreen.storyboard */; };
@@ -21,16 +19,15 @@
 		867B18A5204D18D600D9DDAC /* NSObject+Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B189F204D18D600D9DDAC /* NSObject+Calculate.m */; };
 		867B18A6204D18D600D9DDAC /* CalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A0204D18D600D9DDAC /* CalculateManager.m */; };
 		867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A8204D226E00D9DDAC /* ZHCaluVC.m */; };
+		86EF46CE205278C300382251 /* zhaoheswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46CD205278C300382251 /* zhaoheswift.swift */; };
+		86EF46D52052858B00382251 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46D22052858A00382251 /* ViewController.m */; };
+		86EF46D62052858B00382251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46D32052858A00382251 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DC4DF35CC53DC8D9755C51A /* Pods-iOSStudyCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudyCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection.release.xcconfig"; sourceTree = "<group>"; };
 		6F1B06C0D4D68935F79B404B /* Pods_iOSStudyCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSStudyCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		867B1857204D186D00D9DDAC /* iOSStudyCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStudyCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		867B185A204D186D00D9DDAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		867B185B204D186D00D9DDAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		867B185D204D186D00D9DDAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		867B185E204D186D00D9DDAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		867B1861204D186D00D9DDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		867B1863204D186D00D9DDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		867B1866204D186D00D9DDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +45,13 @@
 		867B18A0204D18D600D9DDAC /* CalculateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateManager.m; sourceTree = "<group>"; };
 		867B18A7204D226E00D9DDAC /* ZHCaluVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCaluVC.h; sourceTree = "<group>"; };
 		867B18A8204D226E00D9DDAC /* ZHCaluVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCaluVC.m; sourceTree = "<group>"; };
+		86EF46CC205278C300382251 /* iOSStudyCollection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSStudyCollection-Bridging-Header.h"; sourceTree = "<group>"; };
+		86EF46CD205278C300382251 /* zhaoheswift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zhaoheswift.swift; sourceTree = "<group>"; };
+		86EF46D12052858A00382251 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		86EF46D22052858A00382251 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		86EF46D32052858A00382251 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		86EF46D42052858A00382251 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		86EF46D7205285D800382251 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E439CE1E7DAB8D25A8BEB3F3 /* Pods-iOSStudyCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudyCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,16 +88,9 @@
 		867B1859204D186D00D9DDAC /* iOSStudyCollection */ = {
 			isa = PBXGroup;
 			children = (
+				86EF46D02052858A00382251 /* OCSupport */,
+				86EF46CB20523F6800382251 /* SwiftSupport */,
 				867B1882204D18CF00D9DDAC /* Study */,
-				867B185A204D186D00D9DDAC /* AppDelegate.h */,
-				867B185B204D186D00D9DDAC /* AppDelegate.m */,
-				867B185D204D186D00D9DDAC /* ViewController.h */,
-				867B185E204D186D00D9DDAC /* ViewController.m */,
-				867B1860204D186D00D9DDAC /* Main.storyboard */,
-				867B1863204D186D00D9DDAC /* Assets.xcassets */,
-				867B1865204D186D00D9DDAC /* LaunchScreen.storyboard */,
-				867B1868204D186D00D9DDAC /* Info.plist */,
-				867B1869204D186D00D9DDAC /* main.m */,
 			);
 			path = iOSStudyCollection;
 			sourceTree = "<group>";
@@ -131,6 +128,32 @@
 				867B18A8204D226E00D9DDAC /* ZHCaluVC.m */,
 			);
 			path = "01链式计算器";
+			sourceTree = "<group>";
+		};
+		86EF46CB20523F6800382251 /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				86EF46CD205278C300382251 /* zhaoheswift.swift */,
+				86EF46CC205278C300382251 /* iOSStudyCollection-Bridging-Header.h */,
+			);
+			path = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		86EF46D02052858A00382251 /* OCSupport */ = {
+			isa = PBXGroup;
+			children = (
+				86EF46D12052858A00382251 /* AppDelegate.h */,
+				86EF46D32052858A00382251 /* AppDelegate.m */,
+				86EF46D42052858A00382251 /* ViewController.h */,
+				86EF46D22052858A00382251 /* ViewController.m */,
+				867B1860204D186D00D9DDAC /* Main.storyboard */,
+				867B1865204D186D00D9DDAC /* LaunchScreen.storyboard */,
+				86EF46D7205285D800382251 /* PrefixHeader.pch */,
+				867B1863204D186D00D9DDAC /* Assets.xcassets */,
+				867B1868204D186D00D9DDAC /* Info.plist */,
+				867B1869204D186D00D9DDAC /* main.m */,
+			);
+			path = OCSupport;
 			sourceTree = "<group>";
 		};
 		966B40A0AB5591970BBAAE9C /* Frameworks */ = {
@@ -184,6 +207,7 @@
 				TargetAttributes = {
 					867B1856204D186D00D9DDAC = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -280,13 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EF46D62052858B00382251 /* AppDelegate.m in Sources */,
 				867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */,
+				86EF46CE205278C300382251 /* zhaoheswift.swift in Sources */,
 				867B18A6204D18D600D9DDAC /* CalculateManager.m in Sources */,
 				867B18A5204D18D600D9DDAC /* NSObject+Calculate.m in Sources */,
-				867B185F204D186D00D9DDAC /* ViewController.m in Sources */,
+				86EF46D52052858B00382251 /* ViewController.m in Sources */,
 				867B186A204D186D00D9DDAC /* main.m in Sources */,
 				867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */,
-				867B185C204D186D00D9DDAC /* AppDelegate.m in Sources */,
 				867B18A2204D18D600D9DDAC /* ZHRacNormalController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,12 +447,19 @@
 			baseConfigurationReference = E439CE1E7DAB8D25A8BEB3F3 /* Pods-iOSStudyCollection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A9ZY4654BA;
-				INFOPLIST_FILE = iOSStudyCollection/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iOSStudyCollection/OCSupport/PrefixHeader.pch;
+				INFOPLIST_FILE = iOSStudyCollection/OCSupport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohe.iOSStudyCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSStudyCollection/SwiftSupport/iOSStudyCollection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -437,12 +469,18 @@
 			baseConfigurationReference = 1DC4DF35CC53DC8D9755C51A /* Pods-iOSStudyCollection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A9ZY4654BA;
-				INFOPLIST_FILE = iOSStudyCollection/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iOSStudyCollection/OCSupport/PrefixHeader.pch;
+				INFOPLIST_FILE = iOSStudyCollection/OCSupport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohe.iOSStudyCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSStudyCollection/SwiftSupport/iOSStudyCollection-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
