@@ -22,6 +22,13 @@
 		86EF46CE205278C300382251 /* zhaoheswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46CD205278C300382251 /* zhaoheswift.swift */; };
 		86EF46D52052858B00382251 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46D22052858A00382251 /* ViewController.m */; };
 		86EF46D62052858B00382251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46D32052858A00382251 /* AppDelegate.m */; };
+		86EF46DC20562A3800382251 /* ZHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46DA20562A3800382251 /* ZHLoginViewController.m */; };
+		86EF46DD20562A3800382251 /* ZHLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86EF46DB20562A3800382251 /* ZHLoginViewController.xib */; };
+		86EF46E020562D1E00382251 /* ZHLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46DF20562D1E00382251 /* ZHLoginViewModel.m */; };
+		86EF46E32056388F00382251 /* ZHAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46E22056388F00382251 /* ZHAccountModel.m */; };
+		86EF46E7205655AC00382251 /* ZHTableViewRACController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46E6205655AC00382251 /* ZHTableViewRACController.m */; };
+		86EF46EA2056568B00382251 /* ZHRequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46E92056568B00382251 /* ZHRequestViewModel.m */; };
+		86EF46ED2056727500382251 /* ZHBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46EC2056727500382251 /* ZHBookModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +59,19 @@
 		86EF46D32052858A00382251 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		86EF46D42052858A00382251 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		86EF46D7205285D800382251 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		86EF46D920562A3800382251 /* ZHLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLoginViewController.h; sourceTree = "<group>"; };
+		86EF46DA20562A3800382251 /* ZHLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLoginViewController.m; sourceTree = "<group>"; };
+		86EF46DB20562A3800382251 /* ZHLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHLoginViewController.xib; sourceTree = "<group>"; };
+		86EF46DE20562D1E00382251 /* ZHLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLoginViewModel.h; sourceTree = "<group>"; };
+		86EF46DF20562D1E00382251 /* ZHLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLoginViewModel.m; sourceTree = "<group>"; };
+		86EF46E12056388F00382251 /* ZHAccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHAccountModel.h; sourceTree = "<group>"; };
+		86EF46E22056388F00382251 /* ZHAccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAccountModel.m; sourceTree = "<group>"; };
+		86EF46E5205655AC00382251 /* ZHTableViewRACController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHTableViewRACController.h; sourceTree = "<group>"; };
+		86EF46E6205655AC00382251 /* ZHTableViewRACController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHTableViewRACController.m; sourceTree = "<group>"; };
+		86EF46E82056568B00382251 /* ZHRequestViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHRequestViewModel.h; sourceTree = "<group>"; };
+		86EF46E92056568B00382251 /* ZHRequestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHRequestViewModel.m; sourceTree = "<group>"; };
+		86EF46EB2056727500382251 /* ZHBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHBookModel.h; sourceTree = "<group>"; };
+		86EF46EC2056727500382251 /* ZHBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBookModel.m; sourceTree = "<group>"; };
 		E439CE1E7DAB8D25A8BEB3F3 /* Pods-iOSStudyCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudyCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +120,8 @@
 			children = (
 				867B189C204D18D600D9DDAC /* 01链式计算器 */,
 				867B1895204D18D600D9DDAC /* 02RAC通常用法 */,
+				86EF46D820562A0500382251 /* 03RAC登录Demo */,
+				86EF46E42056555500382251 /* 04TableView+网络请求（RAC+MVVM） */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -154,6 +176,33 @@
 				867B1869204D186D00D9DDAC /* main.m */,
 			);
 			path = OCSupport;
+			sourceTree = "<group>";
+		};
+		86EF46D820562A0500382251 /* 03RAC登录Demo */ = {
+			isa = PBXGroup;
+			children = (
+				86EF46D920562A3800382251 /* ZHLoginViewController.h */,
+				86EF46DA20562A3800382251 /* ZHLoginViewController.m */,
+				86EF46DB20562A3800382251 /* ZHLoginViewController.xib */,
+				86EF46DE20562D1E00382251 /* ZHLoginViewModel.h */,
+				86EF46DF20562D1E00382251 /* ZHLoginViewModel.m */,
+				86EF46E12056388F00382251 /* ZHAccountModel.h */,
+				86EF46E22056388F00382251 /* ZHAccountModel.m */,
+			);
+			path = "03RAC登录Demo";
+			sourceTree = "<group>";
+		};
+		86EF46E42056555500382251 /* 04TableView+网络请求（RAC+MVVM） */ = {
+			isa = PBXGroup;
+			children = (
+				86EF46E5205655AC00382251 /* ZHTableViewRACController.h */,
+				86EF46E6205655AC00382251 /* ZHTableViewRACController.m */,
+				86EF46E82056568B00382251 /* ZHRequestViewModel.h */,
+				86EF46E92056568B00382251 /* ZHRequestViewModel.m */,
+				86EF46EB2056727500382251 /* ZHBookModel.h */,
+				86EF46EC2056727500382251 /* ZHBookModel.m */,
+			);
+			path = "04TableView+网络请求（RAC+MVVM）";
 			sourceTree = "<group>";
 		};
 		966B40A0AB5591970BBAAE9C /* Frameworks */ = {
@@ -235,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EF46DD20562A3800382251 /* ZHLoginViewController.xib in Resources */,
 				867B1867204D186D00D9DDAC /* LaunchScreen.storyboard in Resources */,
 				867B18A3204D18D600D9DDAC /* SecondViewController.xib in Resources */,
 				867B18A1204D18D600D9DDAC /* ZHRacNormalController.xib in Resources */,
@@ -253,10 +303,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,15 +358,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EF46EA2056568B00382251 /* ZHRequestViewModel.m in Sources */,
 				86EF46D62052858B00382251 /* AppDelegate.m in Sources */,
 				867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */,
+				86EF46E7205655AC00382251 /* ZHTableViewRACController.m in Sources */,
+				86EF46E020562D1E00382251 /* ZHLoginViewModel.m in Sources */,
 				86EF46CE205278C300382251 /* zhaoheswift.swift in Sources */,
 				867B18A6204D18D600D9DDAC /* CalculateManager.m in Sources */,
 				867B18A5204D18D600D9DDAC /* NSObject+Calculate.m in Sources */,
 				86EF46D52052858B00382251 /* ViewController.m in Sources */,
+				86EF46ED2056727500382251 /* ZHBookModel.m in Sources */,
 				867B186A204D186D00D9DDAC /* main.m in Sources */,
 				867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */,
+				86EF46DC20562A3800382251 /* ZHLoginViewController.m in Sources */,
 				867B18A2204D18D600D9DDAC /* ZHRacNormalController.m in Sources */,
+				86EF46E32056388F00382251 /* ZHAccountModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,10 @@
 
 
 #import "iOSStudyCollection-Swift.h"
-
-
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <ReactiveObjC/NSObject+RACKVOWrapper.h>
+#import <ReactiveObjC/RACReturnSignal.h>
+#import <AFNetworking/AFNetworking.h>
 
 
 

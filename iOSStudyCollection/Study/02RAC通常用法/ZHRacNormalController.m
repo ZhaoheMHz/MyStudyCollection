@@ -9,9 +9,6 @@
 #import "ZHRacNormalController.h"
 #import "NSObject+Calculate.h"
 #import "SecondViewController.h"
-#import <ReactiveObjC/ReactiveObjC.h>
-#import <ReactiveObjC/NSObject+RACKVOWrapper.h>
-#import <ReactiveObjC/RACReturnSignal.h>
 
 @interface ZHRacNormalController ()
 
@@ -25,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @property (weak, nonatomic) IBOutlet UIButton *commandBtn;
+
 
 @end
 
@@ -922,37 +920,33 @@
     
     
     /********************************* replay *********************************/
-    // 重放：当一个信号被多次订阅,反复播放内容
-    RACSignal *signal = [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        [subscriber sendNext:@1];
-        [subscriber sendNext:@2];
-        
-        return nil;
-    }] replay];
-    
-    [signal subscribeNext:^(id x) {
-        NSLog(@"第一个订阅者%@",x);
-    }];
-    
-    [signal subscribeNext:^(id x) {
-        NSLog(@"第二个订阅者%@",x);
-    }];
-    
-    
-    
-    
-    
-    // 学不动了！！！
-    // throttle节流:当某个信号发送比较频繁时，可以使用节流，在某一段时间不发送信号内容，过了一段时间获取信号的最新内容发出。
-//    RACSubject *signal = [RACSubject subject];
+//    // 重放：当一个信号被多次订阅,反复播放内容
+//    RACSignal *signal = [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+//        [subscriber sendNext:@1];
+//        [subscriber sendNext:@2];
 //
-//    _signal = signal;
+//        return nil;
+//    }] replay];
 //
-//    // 节流，在一定时间（1秒）内，不接收任何信号内容，过了这个时间（1秒）获取最后发送的信号内容发出。
-//    [[signal throttle:1] subscribeNext:^(id x) {
-//
-//        NSLog(@"%@",x);
+//    [signal subscribeNext:^(id x) {
+//        NSLog(@"第一个订阅者%@",x);
 //    }];
+//
+//    [signal subscribeNext:^(id x) {
+//        NSLog(@"第二个订阅者%@",x);
+//    }];
+    
+    
+
+    
+    
+    
+    /********************************* throttle *********************************/
+    // throttle节流:当某个信号发送比较频繁时，可以使用节流，在某一段时间不发送信号内容，过了一段时间获取信号的最新内容发出。
+    // 节流，在一定时间（1秒）内，不接收任何信号内容，过了这个时间（1秒）获取最后发送的信号内容发出。
+    [[self.tf1.rac_textSignal throttle:1] subscribeNext:^(NSString * _Nullable x) {
+        NSLog(@"输入框内容：%@", x);
+    }];
 }
 
 

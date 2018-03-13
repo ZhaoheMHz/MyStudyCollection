@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "ZHRacNormalController.h"
 #import "ZHCaluVC.h"
+#import "ZHLoginViewController.h"
+#import "ZHTableViewRACController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -39,17 +41,26 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
     
     
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"RAC通常用法";
+        cell.textLabel.text = @"01 链式计算器";
     }
     
     else if (indexPath.row == 1) {
-        cell.textLabel.text = @"链式计算器";
+        cell.textLabel.text = @"02 RAC通常用法";
+    }
+    
+    else if (indexPath.row == 2) {
+        cell.textLabel.text = @"03 RAC登录Demo";
+    }
+    
+    else if (indexPath.row == 3) {
+        cell.textLabel.text = @"04 TableView+网络请求（RAC+MVVM）";
     }
     
     
@@ -69,12 +80,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-        ZHRacNormalController *vc = [[ZHRacNormalController alloc] init];
+        ZHCaluVC *vc = [[ZHCaluVC alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
     }
     
     if (indexPath.row == 1) {
-        ZHCaluVC *vc = [[ZHCaluVC alloc] init];
+        ZHRacNormalController *vc = [[ZHRacNormalController alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+    
+    if (indexPath.row == 2) {
+        ZHLoginViewController *vc = [[ZHLoginViewController alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+    
+    if (indexPath.row == 3) {
+        ZHTableViewRACController *vc = [[ZHTableViewRACController alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
     }
 }
