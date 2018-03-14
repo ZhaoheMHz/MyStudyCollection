@@ -28,6 +28,9 @@
         
         // 发送多个参数
 //        [self.subject sendNext:[RACTuple tupleWithObjects:<#(nonnull id), ...#>, nil]]
+        
+        // 一定要执行sendCompleted，避免内存泄露
+//        [self.subject sendCompleted];
     }
 }
 

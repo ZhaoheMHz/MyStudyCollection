@@ -2,16 +2,15 @@
 # platform :ios, '9.0'
 
 target 'iOSStudyCollection' do
-  use_frameworks!
+    use_frameworks!
 
 
-#OC
-  pod 'ReactiveObjC'
-  pod 'AFNetworking', '~> 3.2.0'
-  pod 'Masonry', '~> 1.1.0'
+    #OC
+    pod 'ReactiveObjC'
+    pod 'AFNetworking', '~> 3.2.0'
+    pod 'Masonry', '~> 1.1.0'
  
  
-#Swift
-
-
+    #Swift
+    pod 'ReactiveCocoa', '~> 7.1.0'
 end

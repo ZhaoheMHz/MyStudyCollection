@@ -16,8 +16,6 @@
 		867B18A2204D18D600D9DDAC /* ZHRacNormalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B1899204D18D600D9DDAC /* ZHRacNormalController.m */; };
 		867B18A3204D18D600D9DDAC /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 867B189A204D18D600D9DDAC /* SecondViewController.xib */; };
 		867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B189B204D18D600D9DDAC /* SecondViewController.m */; };
-		867B18A5204D18D600D9DDAC /* NSObject+Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B189F204D18D600D9DDAC /* NSObject+Calculate.m */; };
-		867B18A6204D18D600D9DDAC /* CalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A0204D18D600D9DDAC /* CalculateManager.m */; };
 		867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A8204D226E00D9DDAC /* ZHCaluVC.m */; };
 		86EF46CE205278C300382251 /* zhaoheswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46CD205278C300382251 /* zhaoheswift.swift */; };
 		86EF46D52052858B00382251 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46D22052858A00382251 /* ViewController.m */; };
@@ -29,6 +27,11 @@
 		86EF46E7205655AC00382251 /* ZHTableViewRACController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46E6205655AC00382251 /* ZHTableViewRACController.m */; };
 		86EF46EA2056568B00382251 /* ZHRequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46E92056568B00382251 /* ZHRequestViewModel.m */; };
 		86EF46ED2056727500382251 /* ZHBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46EC2056727500382251 /* ZHBookModel.m */; };
+		86EF46F320577B6D00382251 /* NSObject+Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46F120577B6D00382251 /* NSObject+Calculate.m */; };
+		86EF46F420577B6D00382251 /* CalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46F220577B6D00382251 /* CalculateManager.m */; };
+		86EF46F82057877500382251 /* ZHSQLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46F72057877500382251 /* ZHSQLTool.m */; };
+		86EF46FC2058CFA100382251 /* ZHReactiveSwiftDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46FA2058CFA100382251 /* ZHReactiveSwiftDemoController.swift */; };
+		86EF46FD2058CFA100382251 /* ZHReactiveSwiftDemoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86EF46FB2058CFA100382251 /* ZHReactiveSwiftDemoController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +49,6 @@
 		867B1899204D18D600D9DDAC /* ZHRacNormalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHRacNormalController.m; sourceTree = "<group>"; };
 		867B189A204D18D600D9DDAC /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		867B189B204D18D600D9DDAC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		867B189D204D18D600D9DDAC /* NSObject+Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Calculate.h"; sourceTree = "<group>"; };
-		867B189E204D18D600D9DDAC /* CalculateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateManager.h; sourceTree = "<group>"; };
-		867B189F204D18D600D9DDAC /* NSObject+Calculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Calculate.m"; sourceTree = "<group>"; };
-		867B18A0204D18D600D9DDAC /* CalculateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateManager.m; sourceTree = "<group>"; };
 		867B18A7204D226E00D9DDAC /* ZHCaluVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCaluVC.h; sourceTree = "<group>"; };
 		867B18A8204D226E00D9DDAC /* ZHCaluVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCaluVC.m; sourceTree = "<group>"; };
 		86EF46CC205278C300382251 /* iOSStudyCollection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSStudyCollection-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -72,6 +71,14 @@
 		86EF46E92056568B00382251 /* ZHRequestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHRequestViewModel.m; sourceTree = "<group>"; };
 		86EF46EB2056727500382251 /* ZHBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHBookModel.h; sourceTree = "<group>"; };
 		86EF46EC2056727500382251 /* ZHBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBookModel.m; sourceTree = "<group>"; };
+		86EF46EF20577B6D00382251 /* NSObject+Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Calculate.h"; sourceTree = "<group>"; };
+		86EF46F020577B6D00382251 /* CalculateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateManager.h; sourceTree = "<group>"; };
+		86EF46F120577B6D00382251 /* NSObject+Calculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Calculate.m"; sourceTree = "<group>"; };
+		86EF46F220577B6D00382251 /* CalculateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateManager.m; sourceTree = "<group>"; };
+		86EF46F62057877500382251 /* ZHSQLTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSQLTool.h; sourceTree = "<group>"; };
+		86EF46F72057877500382251 /* ZHSQLTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHSQLTool.m; sourceTree = "<group>"; };
+		86EF46FA2058CFA100382251 /* ZHReactiveSwiftDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHReactiveSwiftDemoController.swift; sourceTree = "<group>"; };
+		86EF46FB2058CFA100382251 /* ZHReactiveSwiftDemoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHReactiveSwiftDemoController.xib; sourceTree = "<group>"; };
 		E439CE1E7DAB8D25A8BEB3F3 /* Pods-iOSStudyCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudyCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,10 +125,11 @@
 		867B1882204D18CF00D9DDAC /* Study */ = {
 			isa = PBXGroup;
 			children = (
-				867B189C204D18D600D9DDAC /* 01链式计算器 */,
+				867B189C204D18D600D9DDAC /* 01链式函数协议思想 */,
 				867B1895204D18D600D9DDAC /* 02RAC通常用法 */,
 				86EF46D820562A0500382251 /* 03RAC登录Demo */,
 				86EF46E42056555500382251 /* 04TableView+网络请求（RAC+MVVM） */,
+				86EF46F92058CF7E00382251 /* 05ReactiveSwift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -139,17 +147,15 @@
 			path = "02RAC通常用法";
 			sourceTree = "<group>";
 		};
-		867B189C204D18D600D9DDAC /* 01链式计算器 */ = {
+		867B189C204D18D600D9DDAC /* 01链式函数协议思想 */ = {
 			isa = PBXGroup;
 			children = (
-				867B189D204D18D600D9DDAC /* NSObject+Calculate.h */,
-				867B189F204D18D600D9DDAC /* NSObject+Calculate.m */,
-				867B189E204D18D600D9DDAC /* CalculateManager.h */,
-				867B18A0204D18D600D9DDAC /* CalculateManager.m */,
 				867B18A7204D226E00D9DDAC /* ZHCaluVC.h */,
 				867B18A8204D226E00D9DDAC /* ZHCaluVC.m */,
+				86EF46EE20577B6D00382251 /* 计算器(链式函数) */,
+				86EF46F520577B9400382251 /* sql语句(链式函数协议) */,
 			);
-			path = "01链式计算器";
+			path = "01链式函数协议思想";
 			sourceTree = "<group>";
 		};
 		86EF46CB20523F6800382251 /* SwiftSupport */ = {
@@ -203,6 +209,35 @@
 				86EF46EC2056727500382251 /* ZHBookModel.m */,
 			);
 			path = "04TableView+网络请求（RAC+MVVM）";
+			sourceTree = "<group>";
+		};
+		86EF46EE20577B6D00382251 /* 计算器(链式函数) */ = {
+			isa = PBXGroup;
+			children = (
+				86EF46EF20577B6D00382251 /* NSObject+Calculate.h */,
+				86EF46F120577B6D00382251 /* NSObject+Calculate.m */,
+				86EF46F020577B6D00382251 /* CalculateManager.h */,
+				86EF46F220577B6D00382251 /* CalculateManager.m */,
+			);
+			path = "计算器(链式函数)";
+			sourceTree = "<group>";
+		};
+		86EF46F520577B9400382251 /* sql语句(链式函数协议) */ = {
+			isa = PBXGroup;
+			children = (
+				86EF46F62057877500382251 /* ZHSQLTool.h */,
+				86EF46F72057877500382251 /* ZHSQLTool.m */,
+			);
+			path = "sql语句(链式函数协议)";
+			sourceTree = "<group>";
+		};
+		86EF46F92058CF7E00382251 /* 05ReactiveSwift */ = {
+			isa = PBXGroup;
+			children = (
+				86EF46FA2058CFA100382251 /* ZHReactiveSwiftDemoController.swift */,
+				86EF46FB2058CFA100382251 /* ZHReactiveSwiftDemoController.xib */,
+			);
+			path = 05ReactiveSwift;
 			sourceTree = "<group>";
 		};
 		966B40A0AB5591970BBAAE9C /* Frameworks */ = {
@@ -289,6 +324,7 @@
 				867B18A3204D18D600D9DDAC /* SecondViewController.xib in Resources */,
 				867B18A1204D18D600D9DDAC /* ZHRacNormalController.xib in Resources */,
 				867B1864204D186D00D9DDAC /* Assets.xcassets in Resources */,
+				86EF46FD2058CFA100382251 /* ZHReactiveSwiftDemoController.xib in Resources */,
 				867B1862204D186D00D9DDAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,13 +341,19 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -358,14 +400,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EF46F320577B6D00382251 /* NSObject+Calculate.m in Sources */,
 				86EF46EA2056568B00382251 /* ZHRequestViewModel.m in Sources */,
 				86EF46D62052858B00382251 /* AppDelegate.m in Sources */,
 				867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */,
 				86EF46E7205655AC00382251 /* ZHTableViewRACController.m in Sources */,
 				86EF46E020562D1E00382251 /* ZHLoginViewModel.m in Sources */,
+				86EF46F82057877500382251 /* ZHSQLTool.m in Sources */,
 				86EF46CE205278C300382251 /* zhaoheswift.swift in Sources */,
-				867B18A6204D18D600D9DDAC /* CalculateManager.m in Sources */,
-				867B18A5204D18D600D9DDAC /* NSObject+Calculate.m in Sources */,
+				86EF46F420577B6D00382251 /* CalculateManager.m in Sources */,
+				86EF46FC2058CFA100382251 /* ZHReactiveSwiftDemoController.swift in Sources */,
 				86EF46D52052858B00382251 /* ViewController.m in Sources */,
 				86EF46ED2056727500382251 /* ZHBookModel.m in Sources */,
 				867B186A204D186D00D9DDAC /* main.m in Sources */,

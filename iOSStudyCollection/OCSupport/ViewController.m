@@ -48,7 +48,7 @@
     
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"01 链式计算器";
+        cell.textLabel.text = @"01 链式函数协议思想";
     }
     
     else if (indexPath.row == 1) {
@@ -61,6 +61,10 @@
     
     else if (indexPath.row == 3) {
         cell.textLabel.text = @"04 TableView+网络请求（RAC+MVVM）";
+    }
+    
+    else if (indexPath.row == 4) {
+        cell.textLabel.text = @"05 ReactiveSwift";
     }
     
     
@@ -96,6 +100,11 @@
     
     if (indexPath.row == 3) {
         ZHTableViewRACController *vc = [[ZHTableViewRACController alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+    
+    if (indexPath.row == 4) {
+        ZHReactiveSwiftDemoController *vc = [[ZHReactiveSwiftDemoController alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
     }
 }
