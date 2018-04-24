@@ -19,6 +19,13 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)dealloc {
+    if (self.subject) {
+        // 记得结束订阅，避免内存泄露
+        [self.subject sendCompleted];
+    }
+}
+
 - (IBAction)btnTouch:(id)sender {
     if (self.subject) {
         // 发送一个block
@@ -28,9 +35,6 @@
         
         // 发送多个参数
 //        [self.subject sendNext:[RACTuple tupleWithObjects:<#(nonnull id), ...#>, nil]]
-        
-        // 一定要执行sendCompleted，避免内存泄露
-//        [self.subject sendCompleted];
     }
 }
 

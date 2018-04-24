@@ -17,7 +17,7 @@ PODS:
   - Masonry (1.1.0)
   - ReactiveCocoa (7.1.0):
     - ReactiveSwift (~> 3.1)
-  - ReactiveObjC (3.1.0)
+  - ReactiveObjC (3.0.0)
   - ReactiveSwift (3.1.0):
     - Result (~> 3.2)
   - Result (3.2.4)
@@ -32,10 +32,10 @@ SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveCocoa: 105ad96f6b8711f1ee7d165fc96587479298053b
-  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: 89cfec440096fdcba576587eaf78eab033c1387e
+PODFILE CHECKSUM: 1af2141854e9da3c1221a4423634c14d6b84d8fb
 
 COCOAPODS: 1.4.0

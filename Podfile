@@ -9,7 +9,7 @@ target 'iOSStudyCollection' do
     pod 'ReactiveObjC'
     pod 'AFNetworking', '~> 3.2.0'
     pod 'Masonry', '~> 1.1.0'
- 
+
  
     #Swift
     pod 'ReactiveCocoa', '~> 7.1.0'

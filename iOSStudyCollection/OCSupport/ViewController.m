@@ -67,6 +67,9 @@
         cell.textLabel.text = @"05 ReactiveSwift";
     }
     
+    else if (indexPath.row == 5) {
+        cell.textLabel.text = @"06 Swift基础";
+    }
     
     
     
@@ -105,6 +108,11 @@
     
     if (indexPath.row == 4) {
         ZHReactiveSwiftDemoController *vc = [[ZHReactiveSwiftDemoController alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+    
+    if (indexPath.row == 5) {
+        SwiftNormalIndexClass *vc = [[SwiftNormalIndexClass alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
     }
 }

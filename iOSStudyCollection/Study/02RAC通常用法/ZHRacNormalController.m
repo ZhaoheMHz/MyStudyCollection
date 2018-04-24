@@ -107,31 +107,31 @@
 #pragma mark - RACSignal
 - (IBAction)btnTouch2:(UIButton *)sender {
     /********************************* signal用法 *********************************/
-    // 1.创建信号
-    // block调用时刻：每当有订阅者订阅信号，就会调用block。
-    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        NSLog(@"执行了didSubscribe");
-        
-//        [subscriber sendNext:@"sendNext"];
-//        [subscriber sendCompleted];
-        
-        return [RACDisposable disposableWithBlock:^{
-            // block调用时刻：当信号发送完成或者发送错误，就会自动执行这个block,取消订阅信号。
-            // 执行完Block后，当前信号就不在被订阅了。
-            NSLog(@"信号被销毁");
-        }];
-    }];
-    
-    // 这里subscribeNext后会直接执行上面createSignal后面的block，顺便订阅者会保存NextBlock，当sendNext的时候，下面的NextBlock就会执行
-    RACDisposable *d = [signal subscribeNext:^(id  _Nullable x) {
-        NSLog(@"订阅了 %@", x);
-    }];
-    [signal subscribeError:^(NSError * _Nullable error) {
-        
-    }];
-    [signal subscribeCompleted:^{
-        
-    }];
+//    // 1.创建信号
+//    // block调用时刻：每当有订阅者订阅信号，就会调用block。
+//    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//        NSLog(@"执行了didSubscribe");
+//
+////        [subscriber sendNext:@"sendNext"];
+////        [subscriber sendCompleted];
+//
+//        return [RACDisposable disposableWithBlock:^{
+//            // block调用时刻：当信号发送完成或者发送错误，就会自动执行这个block,取消订阅信号。
+//            // 执行完Block后，当前信号就不在被订阅了。
+//            NSLog(@"信号被销毁");
+//        }];
+//    }];
+//
+//    // 这里subscribeNext后会直接执行上面createSignal后面的block，顺便订阅者会保存NextBlock，当sendNext的时候，下面的NextBlock就会执行
+//    RACDisposable *d = [signal subscribeNext:^(id  _Nullable x) {
+//        NSLog(@"订阅了 %@", x);
+//    }];
+//    [signal subscribeError:^(NSError * _Nullable error) {
+//
+//    }];
+//    [signal subscribeCompleted:^{
+//
+//    }];
     
     /**
      这里我的理解，可以理解为，一个信号的创建和订阅是多个block的组合。
