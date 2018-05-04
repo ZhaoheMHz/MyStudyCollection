@@ -102,7 +102,7 @@ class NormalClass: UIViewController {
         print(num404a)
         // 下表直接取
         print(aTuple.0)
-        // 也可以直接给元素明明
+        // 也可以直接给元素命名
         let bTuple = (aNum: 404, aStr: "Not Found")
         print(bTuple.aNum)
         

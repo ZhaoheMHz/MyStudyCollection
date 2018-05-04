@@ -67,8 +67,34 @@ class Normal03: UIViewController {
         
         /** 插入和删除 */
         var myNameName = "iOS"
-        print(myNameName.insert(contentsOf: "赵赫", at: myNameName.startIndex))
-        print(myNameName.removeLast())
+        print(myNameName)
+        myNameName.insert(contentsOf: "赵赫", at: myNameName.endIndex)
+        print(myNameName)
+        myNameName.removeLast()
+        print(myNameName)
+        
+        /** 子字符串 Substring */
+        let substring = myNameName.prefix(through: myNameName.index(of: "赵")!)
+        // 这里substring是Substring类型的
+        print(substring)
+        // Substring使用的内存是原String的内存，所以如果原String不存在了，则Substring也不存在了，所以如果需要长期使用Substring，需要转换为String类型
+        print("转换后：\(String(substring))")
+        
+        /** 字符串的比较 == != */
+        let str4 = "赵赫"
+        let str5 = "赵赫"
+        if str4 == str5 {
+            print("字符串相等")
+        }
+        
+        /** 判断前缀、后缀 */
+        let str6 = "123456"
+        print(str6.hasPrefix("1"), str6.hasSuffix("6"))
     }
+    
+    
+    
+    
+    
 
 }

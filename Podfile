@@ -13,4 +13,6 @@ target 'iOSStudyCollection' do
  
     #Swift
     pod 'ReactiveCocoa', '~> 7.1.0'
+    pod 'RxSwift'
+    pod 'RxCocoa'
 end

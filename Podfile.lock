@@ -21,12 +21,17 @@ PODS:
   - ReactiveSwift (3.1.0):
     - Result (~> 3.2)
   - Result (3.2.4)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.0)
   - Masonry (~> 1.1.0)
   - ReactiveCocoa (~> 7.1.0)
   - ReactiveObjC
+  - RxCocoa
+  - RxSwift
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
@@ -35,7 +40,9 @@ SPEC CHECKSUMS:
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
 
-PODFILE CHECKSUM: 1af2141854e9da3c1221a4423634c14d6b84d8fb
+PODFILE CHECKSUM: 445785646c47d0ec89bc5e4535e981f22e29fd47
 
 COCOAPODS: 1.4.0

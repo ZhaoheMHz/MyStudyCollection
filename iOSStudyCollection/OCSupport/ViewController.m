@@ -71,6 +71,10 @@
         cell.textLabel.text = @"06 Swift基础";
     }
     
+    else if (indexPath.row == 6) {
+        cell.textLabel.text = @"07 RxSwift";
+    }
+    
     
     
     
@@ -113,6 +117,11 @@
     
     if (indexPath.row == 5) {
         SwiftNormalIndexClass *vc = [[SwiftNormalIndexClass alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+    
+    if (indexPath.row == 6) {
+        ZHRxSwiftViewController *vc = [[ZHRxSwiftViewController alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
     }
 }

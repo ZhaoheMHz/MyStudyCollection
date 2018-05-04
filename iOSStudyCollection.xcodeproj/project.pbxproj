@@ -17,6 +17,17 @@
 		867B18A3204D18D600D9DDAC /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 867B189A204D18D600D9DDAC /* SecondViewController.xib */; };
 		867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B189B204D18D600D9DDAC /* SecondViewController.m */; };
 		867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A8204D226E00D9DDAC /* ZHCaluVC.m */; };
+		86A70DC22090504900FC6267 /* 04集合类型.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DC12090504900FC6267 /* 04集合类型.swift */; };
+		86A70DD22092C56800FC6267 /* 07闭包.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DD12092C56800FC6267 /* 07闭包.swift */; };
+		86A70DD72092CA8B00FC6267 /* ZHRxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DD52092CA8B00FC6267 /* ZHRxSwiftViewController.swift */; };
+		86A70DD82092CA8B00FC6267 /* ZHRxSwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86A70DD62092CA8B00FC6267 /* ZHRxSwiftViewController.xib */; };
+		86A70DE720942F0900FC6267 /* 08枚举.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DE620942F0900FC6267 /* 08枚举.swift */; };
+		86A70E17209AE8F700FC6267 /* 09类和结构体.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E16209AE8F700FC6267 /* 09类和结构体.swift */; };
+		86A70E19209AF09700FC6267 /* 10属性.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E18209AF09700FC6267 /* 10属性.swift */; };
+		86A70E1B209B152100FC6267 /* 11方法.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E1A209B152100FC6267 /* 11方法.swift */; };
+		86A70E1D209B1B9A00FC6267 /* 12下标.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E1C209B1B9A00FC6267 /* 12下标.swift */; };
+		86A70E1F209B1F1100FC6267 /* 13继承.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E1E209B1F1100FC6267 /* 13继承.swift */; };
+		86A70E21209C073D00FC6267 /* 14构造过程.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E20209C073D00FC6267 /* 14构造过程.swift */; };
 		86C93468208EE7C400A0954F /* SwiftNormalIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C93467208EE7C400A0954F /* SwiftNormalIndex.swift */; };
 		86C9346C208EE85700A0954F /* 01基础部分.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9346B208EE85700A0954F /* 01基础部分.swift */; };
 		86C9346E208EEAE100A0954F /* 02基本运算符.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9346D208EEAE100A0954F /* 02基本运算符.swift */; };
@@ -55,6 +66,19 @@
 		867B189B204D18D600D9DDAC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		867B18A7204D226E00D9DDAC /* ZHCaluVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCaluVC.h; sourceTree = "<group>"; };
 		867B18A8204D226E00D9DDAC /* ZHCaluVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCaluVC.m; sourceTree = "<group>"; };
+		86A70DC12090504900FC6267 /* 04集合类型.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "04集合类型.swift"; sourceTree = "<group>"; };
+		86A70DC32090822B00FC6267 /* 05控制流.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "05控制流.swift"; sourceTree = "<group>"; };
+		86A70DC520917A1F00FC6267 /* 06函数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "06函数.swift"; sourceTree = "<group>"; };
+		86A70DD12092C56800FC6267 /* 07闭包.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "07闭包.swift"; sourceTree = "<group>"; };
+		86A70DD52092CA8B00FC6267 /* ZHRxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHRxSwiftViewController.swift; sourceTree = "<group>"; };
+		86A70DD62092CA8B00FC6267 /* ZHRxSwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHRxSwiftViewController.xib; sourceTree = "<group>"; };
+		86A70DE620942F0900FC6267 /* 08枚举.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "08枚举.swift"; sourceTree = "<group>"; };
+		86A70E16209AE8F700FC6267 /* 09类和结构体.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "09类和结构体.swift"; sourceTree = "<group>"; };
+		86A70E18209AF09700FC6267 /* 10属性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "10属性.swift"; sourceTree = "<group>"; };
+		86A70E1A209B152100FC6267 /* 11方法.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11方法.swift"; sourceTree = "<group>"; };
+		86A70E1C209B1B9A00FC6267 /* 12下标.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "12下标.swift"; sourceTree = "<group>"; };
+		86A70E1E209B1F1100FC6267 /* 13继承.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "13继承.swift"; sourceTree = "<group>"; };
+		86A70E20209C073D00FC6267 /* 14构造过程.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "14构造过程.swift"; sourceTree = "<group>"; };
 		86C93467208EE7C400A0954F /* SwiftNormalIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNormalIndex.swift; sourceTree = "<group>"; };
 		86C9346B208EE85700A0954F /* 01基础部分.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01基础部分.swift"; sourceTree = "<group>"; };
 		86C9346D208EEAE100A0954F /* 02基本运算符.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "02基本运算符.swift"; sourceTree = "<group>"; };
@@ -139,6 +163,7 @@
 				86EF46E42056555500382251 /* 04TableView+网络请求（RAC+MVVM） */,
 				86EF46F92058CF7E00382251 /* 05ReactiveSwift */,
 				86EF472C20591E0600382251 /* 06Swift基础 */,
+				86A70DD42092C9F000FC6267 /* 07RxSwift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -165,6 +190,15 @@
 				86EF46F520577B9400382251 /* sql语句(链式函数协议) */,
 			);
 			path = "01链式函数协议思想";
+			sourceTree = "<group>";
+		};
+		86A70DD42092C9F000FC6267 /* 07RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				86A70DD52092CA8B00FC6267 /* ZHRxSwiftViewController.swift */,
+				86A70DD62092CA8B00FC6267 /* ZHRxSwiftViewController.xib */,
+			);
+			path = 07RxSwift;
 			sourceTree = "<group>";
 		};
 		86EF46CB20523F6800382251 /* SwiftSupport */ = {
@@ -256,6 +290,17 @@
 				86C9346B208EE85700A0954F /* 01基础部分.swift */,
 				86C9346D208EEAE100A0954F /* 02基本运算符.swift */,
 				86C9346F208EF91200A0954F /* 03字符串和字符.swift */,
+				86A70DC12090504900FC6267 /* 04集合类型.swift */,
+				86A70DC32090822B00FC6267 /* 05控制流.swift */,
+				86A70DC520917A1F00FC6267 /* 06函数.swift */,
+				86A70DD12092C56800FC6267 /* 07闭包.swift */,
+				86A70DE620942F0900FC6267 /* 08枚举.swift */,
+				86A70E16209AE8F700FC6267 /* 09类和结构体.swift */,
+				86A70E18209AF09700FC6267 /* 10属性.swift */,
+				86A70E1A209B152100FC6267 /* 11方法.swift */,
+				86A70E1C209B1B9A00FC6267 /* 12下标.swift */,
+				86A70E1E209B1F1100FC6267 /* 13继承.swift */,
+				86A70E20209C073D00FC6267 /* 14构造过程.swift */,
 			);
 			path = "06Swift基础";
 			sourceTree = "<group>";
@@ -343,6 +388,7 @@
 				867B1867204D186D00D9DDAC /* LaunchScreen.storyboard in Resources */,
 				867B18A3204D18D600D9DDAC /* SecondViewController.xib in Resources */,
 				867B18A1204D18D600D9DDAC /* ZHRacNormalController.xib in Resources */,
+				86A70DD82092CA8B00FC6267 /* ZHRxSwiftViewController.xib in Resources */,
 				867B1864204D186D00D9DDAC /* Assets.xcassets in Resources */,
 				86EF46FD2058CFA100382251 /* ZHReactiveSwiftDemoController.xib in Resources */,
 				867B1862204D186D00D9DDAC /* Main.storyboard in Resources */,
@@ -365,6 +411,8 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -374,6 +422,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -420,25 +470,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A70DC620917A1F00FC6267 /* 06函数.swift in Sources */,
+				86A70E1D209B1B9A00FC6267 /* 12下标.swift in Sources */,
 				86EF46F320577B6D00382251 /* NSObject+Calculate.m in Sources */,
 				86EF46EA2056568B00382251 /* ZHRequestViewModel.m in Sources */,
+				86A70E19209AF09700FC6267 /* 10属性.swift in Sources */,
+				86A70DE720942F0900FC6267 /* 08枚举.swift in Sources */,
 				86EF46D62052858B00382251 /* AppDelegate.m in Sources */,
 				867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */,
 				86C9346E208EEAE100A0954F /* 02基本运算符.swift in Sources */,
 				86EF46E7205655AC00382251 /* ZHTableViewRACController.m in Sources */,
+				86A70E1B209B152100FC6267 /* 11方法.swift in Sources */,
+				86A70E21209C073D00FC6267 /* 14构造过程.swift in Sources */,
 				86EF46FF2058DD4300382251 /* SwiftPch.swift in Sources */,
 				86EF46E020562D1E00382251 /* ZHLoginViewModel.m in Sources */,
+				86A70DC42090822B00FC6267 /* 05控制流.swift in Sources */,
 				86C93468208EE7C400A0954F /* SwiftNormalIndex.swift in Sources */,
+				86A70E1F209B1F1100FC6267 /* 13继承.swift in Sources */,
 				86EF46F82057877500382251 /* ZHSQLTool.m in Sources */,
 				86EF46F420577B6D00382251 /* CalculateManager.m in Sources */,
+				86A70E17209AE8F700FC6267 /* 09类和结构体.swift in Sources */,
 				86EF46FC2058CFA100382251 /* ZHReactiveSwiftDemoController.swift in Sources */,
 				86EF46D52052858B00382251 /* ViewController.m in Sources */,
+				86A70DC22090504900FC6267 /* 04集合类型.swift in Sources */,
 				86C93470208EF91200A0954F /* 03字符串和字符.swift in Sources */,
 				86EF46ED2056727500382251 /* ZHBookModel.m in Sources */,
 				867B186A204D186D00D9DDAC /* main.m in Sources */,
 				867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */,
+				86A70DD72092CA8B00FC6267 /* ZHRxSwiftViewController.swift in Sources */,
 				86EF46DC20562A3800382251 /* ZHLoginViewController.m in Sources */,
 				86C9346C208EE85700A0954F /* 01基础部分.swift in Sources */,
+				86A70DD22092C56800FC6267 /* 07闭包.swift in Sources */,
 				867B18A2204D18D600D9DDAC /* ZHRacNormalController.m in Sources */,
 				86EF46E32056388F00382251 /* ZHAccountModel.m in Sources */,
 			);
