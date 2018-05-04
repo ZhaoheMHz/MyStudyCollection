@@ -43,8 +43,8 @@ class SwiftNormalIndexClass: UIViewController {
         
         
         /** 07闭包 */
-        let 闭包 = Normal07()
-        self.present(闭包, animated: true, completion: nil)
+//        let 闭包 = Normal07()
+//        self.present(闭包, animated: true, completion: nil)
         
         
         /** 08枚举 */
@@ -80,5 +80,20 @@ class SwiftNormalIndexClass: UIViewController {
         /** 14构造过程 */
 //        let 构造过程 = Normal14()
 //        self.present(构造过程, animated: true, completion: nil)
+        
+        
+        /** 15析构过程 */
+//        let 析构过程 = Normal15()
+//        self.present(析构过程, animated: true, completion: nil)
+        
+        
+        /** 16自动引用计数 */
+//        let 自动引用计数 = Normal16()
+//        self.present(自动引用计数, animated: true, completion: nil)
+        
+        
+        /** 17可选链 */
+        let 可选链 = Normal17()
+        self.present(可选链, animated: true, completion: nil)
     }
 }

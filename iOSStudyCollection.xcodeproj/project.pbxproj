@@ -18,6 +18,8 @@
 		867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B189B204D18D600D9DDAC /* SecondViewController.m */; };
 		867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A8204D226E00D9DDAC /* ZHCaluVC.m */; };
 		86A70DC22090504900FC6267 /* 04集合类型.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DC12090504900FC6267 /* 04集合类型.swift */; };
+		86A70DC42090822B00FC6267 /* 05控制流.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DC32090822B00FC6267 /* 05控制流.swift */; };
+		86A70DC620917A1F00FC6267 /* 06函数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DC520917A1F00FC6267 /* 06函数.swift */; };
 		86A70DD22092C56800FC6267 /* 07闭包.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DD12092C56800FC6267 /* 07闭包.swift */; };
 		86A70DD72092CA8B00FC6267 /* ZHRxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DD52092CA8B00FC6267 /* ZHRxSwiftViewController.swift */; };
 		86A70DD82092CA8B00FC6267 /* ZHRxSwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86A70DD62092CA8B00FC6267 /* ZHRxSwiftViewController.xib */; };
@@ -28,6 +30,9 @@
 		86A70E1D209B1B9A00FC6267 /* 12下标.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E1C209B1B9A00FC6267 /* 12下标.swift */; };
 		86A70E1F209B1F1100FC6267 /* 13继承.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E1E209B1F1100FC6267 /* 13继承.swift */; };
 		86A70E21209C073D00FC6267 /* 14构造过程.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E20209C073D00FC6267 /* 14构造过程.swift */; };
+		86A70E23209C50E700FC6267 /* 15析构过程.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E22209C50E700FC6267 /* 15析构过程.swift */; };
+		86A70E25209C58E700FC6267 /* 16自动引用计数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E24209C58E700FC6267 /* 16自动引用计数.swift */; };
+		86A70E27209C68FD00FC6267 /* 17可选链.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70E26209C68FD00FC6267 /* 17可选链.swift */; };
 		86C93468208EE7C400A0954F /* SwiftNormalIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C93467208EE7C400A0954F /* SwiftNormalIndex.swift */; };
 		86C9346C208EE85700A0954F /* 01基础部分.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9346B208EE85700A0954F /* 01基础部分.swift */; };
 		86C9346E208EEAE100A0954F /* 02基本运算符.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9346D208EEAE100A0954F /* 02基本运算符.swift */; };
@@ -79,6 +84,9 @@
 		86A70E1C209B1B9A00FC6267 /* 12下标.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "12下标.swift"; sourceTree = "<group>"; };
 		86A70E1E209B1F1100FC6267 /* 13继承.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "13继承.swift"; sourceTree = "<group>"; };
 		86A70E20209C073D00FC6267 /* 14构造过程.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "14构造过程.swift"; sourceTree = "<group>"; };
+		86A70E22209C50E700FC6267 /* 15析构过程.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15析构过程.swift"; sourceTree = "<group>"; };
+		86A70E24209C58E700FC6267 /* 16自动引用计数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16自动引用计数.swift"; sourceTree = "<group>"; };
+		86A70E26209C68FD00FC6267 /* 17可选链.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "17可选链.swift"; sourceTree = "<group>"; };
 		86C93467208EE7C400A0954F /* SwiftNormalIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNormalIndex.swift; sourceTree = "<group>"; };
 		86C9346B208EE85700A0954F /* 01基础部分.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01基础部分.swift"; sourceTree = "<group>"; };
 		86C9346D208EEAE100A0954F /* 02基本运算符.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "02基本运算符.swift"; sourceTree = "<group>"; };
@@ -301,6 +309,9 @@
 				86A70E1C209B1B9A00FC6267 /* 12下标.swift */,
 				86A70E1E209B1F1100FC6267 /* 13继承.swift */,
 				86A70E20209C073D00FC6267 /* 14构造过程.swift */,
+				86A70E22209C50E700FC6267 /* 15析构过程.swift */,
+				86A70E24209C58E700FC6267 /* 16自动引用计数.swift */,
+				86A70E26209C68FD00FC6267 /* 17可选链.swift */,
 			);
 			path = "06Swift基础";
 			sourceTree = "<group>";
@@ -471,7 +482,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A70DC620917A1F00FC6267 /* 06函数.swift in Sources */,
+				86A70E23209C50E700FC6267 /* 15析构过程.swift in Sources */,
 				86A70E1D209B1B9A00FC6267 /* 12下标.swift in Sources */,
+				86A70E25209C58E700FC6267 /* 16自动引用计数.swift in Sources */,
+				86A70E27209C68FD00FC6267 /* 17可选链.swift in Sources */,
 				86EF46F320577B6D00382251 /* NSObject+Calculate.m in Sources */,
 				86EF46EA2056568B00382251 /* ZHRequestViewModel.m in Sources */,
 				86A70E19209AF09700FC6267 /* 10属性.swift in Sources */,
