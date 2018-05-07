@@ -93,7 +93,37 @@ class SwiftNormalIndexClass: UIViewController {
         
         
         /** 17可选链 */
-        let 可选链 = Normal17()
-        self.present(可选链, animated: true, completion: nil)
+//        let 可选链 = Normal17()
+//        self.present(可选链, animated: true, completion: nil)
+        
+        
+        /** 18错误处理 */
+//        let 错误处理 = Normal18()
+//        self.present(错误处理, animated: true, completion: nil)
+        
+        
+        /** 19类型转换 */
+//        let 类型转换 = Normal19()
+//        self.present(类型转换, animated: true, completion: nil)
+        
+        
+        /** 20嵌套类型 */
+//        let 嵌套类型 = Normal20()
+//        self.present(嵌套类型, animated: true, completion: nil)
+        
+        
+        /** 21扩展 */
+//        let 扩展 = Normal21()
+//        self.present(扩展, animated: true, completion: nil)
+        
+        
+        /** 22协议 */
+//        let 协议 = Normal22()
+//        self.present(协议, animated: true, completion: nil)
+        
+        
+        /** 23泛型 */
+        let 泛型 = Normal23()
+        self.present(泛型, animated: true, completion: nil)
     }
 }
