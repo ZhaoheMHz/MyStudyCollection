@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF5F608C1C43462B00951C62 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5F608B1C43462B00951C62 /* Car.m */; };
+		E58DF7E41C4103C200B4A4A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E58DF7E31C4103C200B4A4A4 /* main.m */; };
+		E58DF7EC1C4103F400B4A4A4 /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58DF7EB1C4103F400B4A4A4 /* SettingView.m */; };
+		E58DF7EF1C4103FE00B4A4A4 /* BlueSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58DF7EE1C4103FE00B4A4A4 /* BlueSettingView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E58DF7DE1C4103C200B4A4A4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AF5F608A1C43462B00951C62 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		AF5F608B1C43462B00951C62 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		E58DF7E01C4103C200B4A4A4 /* Day7-04内存管理下的代理设计模式 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day7-04内存管理下的代理设计模式"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58DF7E31C4103C200B4A4A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E58DF7EA1C4103F400B4A4A4 /* SettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
+		E58DF7EB1C4103F400B4A4A4 /* SettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
+		E58DF7ED1C4103FE00B4A4A4 /* BlueSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueSettingView.h; sourceTree = "<group>"; };
+		E58DF7EE1C4103FE00B4A4A4 /* BlueSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSettingView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E58DF7DD1C4103C200B4A4A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E58DF7D71C4103C200B4A4A4 = {
+			isa = PBXGroup;
+			children = (
+				E58DF7E21C4103C200B4A4A4 /* Day7-04内存管理下的代理设计模式 */,
+				E58DF7E11C4103C200B4A4A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E58DF7E11C4103C200B4A4A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E58DF7E01C4103C200B4A4A4 /* Day7-04内存管理下的代理设计模式 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E58DF7E21C4103C200B4A4A4 /* Day7-04内存管理下的代理设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				E58DF7E31C4103C200B4A4A4 /* main.m */,
+				E58DF7EA1C4103F400B4A4A4 /* SettingView.h */,
+				E58DF7EB1C4103F400B4A4A4 /* SettingView.m */,
+				E58DF7ED1C4103FE00B4A4A4 /* BlueSettingView.h */,
+				E58DF7EE1C4103FE00B4A4A4 /* BlueSettingView.m */,
+				AF5F608A1C43462B00951C62 /* Car.h */,
+				AF5F608B1C43462B00951C62 /* Car.m */,
+			);
+			path = "Day7-04内存管理下的代理设计模式";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E58DF7DF1C4103C200B4A4A4 /* Day7-04内存管理下的代理设计模式 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E58DF7E71C4103C200B4A4A4 /* Build configuration list for PBXNativeTarget "Day7-04内存管理下的代理设计模式" */;
+			buildPhases = (
+				E58DF7DC1C4103C200B4A4A4 /* Sources */,
+				E58DF7DD1C4103C200B4A4A4 /* Frameworks */,
+				E58DF7DE1C4103C200B4A4A4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Day7-04内存管理下的代理设计模式";
+			productName = "Day7-04内存管理下的代理设计模式";
+			productReference = E58DF7E01C4103C200B4A4A4 /* Day7-04内存管理下的代理设计模式 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E58DF7D81C4103C200B4A4A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = 1000Phone;
+				TargetAttributes = {
+					E58DF7DF1C4103C200B4A4A4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = E58DF7DB1C4103C200B4A4A4 /* Build configuration list for PBXProject "Day7-04内存管理下的代理设计模式" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E58DF7D71C4103C200B4A4A4;
+			productRefGroup = E58DF7E11C4103C200B4A4A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E58DF7DF1C4103C200B4A4A4 /* Day7-04内存管理下的代理设计模式 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E58DF7DC1C4103C200B4A4A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58DF7E41C4103C200B4A4A4 /* main.m in Sources */,
+				E58DF7EC1C4103F400B4A4A4 /* SettingView.m in Sources */,
+				AF5F608C1C43462B00951C62 /* Car.m in Sources */,
+				E58DF7EF1C4103FE00B4A4A4 /* BlueSettingView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E58DF7E51C4103C200B4A4A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E58DF7E61C4103C200B4A4A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E58DF7E81C4103C200B4A4A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E58DF7E91C4103C200B4A4A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E58DF7DB1C4103C200B4A4A4 /* Build configuration list for PBXProject "Day7-04内存管理下的代理设计模式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58DF7E51C4103C200B4A4A4 /* Debug */,
+				E58DF7E61C4103C200B4A4A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E58DF7E71C4103C200B4A4A4 /* Build configuration list for PBXNativeTarget "Day7-04内存管理下的代理设计模式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58DF7E81C4103C200B4A4A4 /* Debug */,
+				E58DF7E91C4103C200B4A4A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E58DF7D81C4103C200B4A4A4 /* Project object */;
+}

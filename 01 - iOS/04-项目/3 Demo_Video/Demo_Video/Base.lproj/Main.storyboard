@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rij-63-gva">
+                                <rect key="frame" x="8" y="442" width="57" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="g4o-9O-sqt"/>
+                                    <constraint firstAttribute="width" constant="57" id="isv-BT-lhY"/>
+                                </constraints>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="takePhotoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Feh-bD-0ai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liG-8W-rQM">
+                                <rect key="frame" x="73" y="442" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mXF-8y-gNx"/>
+                                    <constraint firstAttribute="width" constant="46" id="uIJ-tI-d6M"/>
+                                </constraints>
+                                <state key="normal" title="闪光灯"/>
+                                <connections>
+                                    <action selector="torchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNY-ji-j8I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byz-TU-y0E">
+                                <rect key="frame" x="127" y="442" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PQz-2P-LLU"/>
+                                    <constraint firstAttribute="width" constant="46" id="oJi-wB-41K"/>
+                                </constraints>
+                                <state key="normal" title="录制"/>
+                                <connections>
+                                    <action selector="recordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xqX-7k-6i7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nn-aD-OTa">
+                                <rect key="frame" x="181" y="442" width="61" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="ce1-52-Vqv"/>
+                                    <constraint firstAttribute="height" constant="30" id="zhA-zx-QZe"/>
+                                </constraints>
+                                <state key="normal" title="切换镜头"/>
+                                <connections>
+                                    <action selector="switchCameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hU6-Cr-A9Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wy7-0f-aIA">
+                                <rect key="frame" x="258" y="442" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="VER-GR-lJz"/>
+                                    <constraint firstAttribute="height" constant="30" id="XzG-rB-vSX"/>
+                                </constraints>
+                                <state key="normal" title="完成"/>
+                                <connections>
+                                    <action selector="finishAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ThB-rR-7ld"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rij-63-gva" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="MfW-wj-xTL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="liG-8W-rQM" secondAttribute="bottom" constant="8" id="T96-vc-fSt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wy7-0f-aIA" secondAttribute="bottom" constant="8" id="TRE-ad-ztg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="byz-TU-y0E" secondAttribute="bottom" constant="8" id="TYW-Oc-0iM"/>
+                            <constraint firstItem="byz-TU-y0E" firstAttribute="leading" secondItem="liG-8W-rQM" secondAttribute="trailing" constant="8" id="Uv8-Ph-2yu"/>
+                            <constraint firstItem="wy7-0f-aIA" firstAttribute="leading" secondItem="2Nn-aD-OTa" secondAttribute="trailing" constant="16" id="VCv-p5-A5I"/>
+                            <constraint firstItem="liG-8W-rQM" firstAttribute="leading" secondItem="rij-63-gva" secondAttribute="trailing" constant="8" id="Vye-yn-Ygo"/>
+                            <constraint firstItem="2Nn-aD-OTa" firstAttribute="leading" secondItem="byz-TU-y0E" secondAttribute="trailing" constant="8" id="iZP-mn-Ffa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Nn-aD-OTa" secondAttribute="bottom" constant="8" id="lNn-IX-Ado"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rij-63-gva" secondAttribute="bottom" constant="8" id="rFh-aS-25M"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="256"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,311 @@
+{\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red92\green38\blue153;\red0\green116\blue0;\red170\green13\blue145;
+\red46\green13\blue110;\red63\green110\blue116;\red196\green26\blue22;\red38\green71\blue75;\red29\green133\blue25;
+\red32\green60\blue63;\red68\green137\blue147;\red180\green0\blue98;\red186\green0\blue17;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21640\viewh11620\viewkind0
+\deftab674
+\pard\tx674\pardeftab674\pardirnatural
+
+\f0\fs28 \cf2 \CocoaLigature0 \'ca\'fd\'be\'dd\'bf\'e2\'bb\'f9\'b4\'a1\'d3\'c3\'b7\'a8
+\f1 \
+\
+\
+//fmdb
+\f0 \'d0\'e8\'d2\'aa
+\f1 libsqlite3.dylib
+\f0 \'d2\'c0\'c0\'b5\'bf\'e2
+\f1 \
+\
+\pard\tx674\pardeftab674\pardirnatural
+\cf3 //
+\f0 \'d6\'d8\'d0\'b4
+\f1 init
+\f0 \'b7\'bd\'b7\'a8\'a3\'ac\'cd\'ea\'b3\'c9\'b1\'d8\'d2\'aa\'b5\'c4\'b3\'f5\'ca\'bc\'bb\'af\'b2\'d9\'d7\'f7
+\f1 \cf0 \
+- (\cf4 id\cf0 )init\
+\{\
+    \cf4 self\cf0  = [\cf4 super\cf0  \cf5 init\cf0 ];\
+    \cf4 if\cf0  (\cf4 self\cf0 ) \{\
+        \cf3 //
+\f0 \'d6\'b8\'b6\'a8\'ca\'fd\'be\'dd\'bf\'e2\'b5\'c4\'c2\'b7\'be\'b6
+\f1  user.db\cf0 \
+        \cf6 _lock\cf0  = [[\cf2 NSLock\cf0  \cf5 alloc\cf0 ] \cf5 init\cf0 ];\
+        \cf2 NSString\cf0  *dbPath = [\cf5 NSHomeDirectory\cf0 () \cf5 stringByAppendingFormat\cf0 :\cf7 @"/Documents/user.db"\cf0 ];\
+        \cf3 //
+\f0 \'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6
+\f1 FMDataBase
+\f0 \'a3\'a8\'b2\'d9\'d7\'f7
+\f1 sqlite3
+\f0 \'a3\'a9\'b5\'c4\'b6\'d4\'cf\'f3
+\f1 ,
+\f0 \'b2\'a2\'bd\'ab\'ca\'fd\'be\'dd\'bf\'e2\'b5\'c4\'c2\'b7\'be\'b6\'b4\'ab\'b5\'dd\'b8\'f8\'b6\'d4\'cf\'f3
+\f1 \cf0 \
+        \cf6 _dataBase\cf0  = [[\cf6 FMDatabase\cf0  \cf5 alloc\cf0 ] \cf8 initWithPath\cf0 :dbPath];\
+        \cf3 //open
+\f0 \'d3\'d0\'c1\'bd\'b2\'e3\'ba\'ac\'d2\'e5
+\f1 :
+\f0 \'c8\'e7\'b9\'fb\'d6\'b8\'b6\'a8\'c2\'b7\'be\'b6\'cf\'c2\'c3\'bb\'d3\'d0
+\f1 user.db
+\f0 \'d4\'f2\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6
+\f1 user.db
+\f0 \'ca\'fd\'be\'dd\'bf\'e2\'ce\'c4\'bc\'fe\'a3\'ac\'b2\'a2\'b4\'f2\'bf\'aa\'a3\'ac\'c8\'e7\'b9\'fb\'d2\'d1\'be\'ad\'b4\'e6\'d4\'da
+\f1 user.db
+\f0 \'d4\'f2\'d6\'b1\'bd\'d3\'b4\'f2\'bf\'aa
+\f1 ,
+\f0 \'b7\'b5\'bb\'d8\'d6\'b5\'b7\'b4\'d3\'b3\'b2\'d9\'d7\'f7\'ca\'c7\'b7\'f1\'b3\'c9\'b9\'a6
+\f1 \cf0 \
+        \cf4 BOOL\cf0  isOpen = [\cf6 _dataBase\cf0  \cf8 open\cf0 ];\
+        \cf4 if\cf0  (isOpen) \{\
+            \cf9 //create table if not exists
+\f0 \'b9\'cc\'b6\'a8\'d0\'b4\'b7\'a8
+\f1 \cf0 \
+\pard\tx1059\pardeftab1059\pardirnatural
+\cf0             \cf9 //userInfo
+\f0 \'b1\'ed\'c3\'fb\'a3\'ac
+\f1 ()
+\f0 \'c0\'ef\'c3\'e6\'ca\'c7\'b1\'ed\'b5\'a5\'b5\'c4\'d7\'d6\'b6\'ce
+\f1 \cf0 \
+            \cf9 //primary key
+\f0 \'d6\'f7\'bc\'fc\'a3\'ac
+\f1 autoincrement
+\f0 \'d6\'f7\'bc\'fc\'d7\'d4\'b6\'af\'d4\'f6\'b3\'a4
+\f1 \cf0 \
+            \cf9 //
+\f0 \'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'b1\'ed\'b5\'a5\'a3\'ac\'c8\'e7\'b9\'fb\'b1\'ed\'b5\'a5\'d2\'d1\'be\'ad\'b4\'e6\'d4\'da\'a3\'ac\'d5\'e2\'b8\'f6
+\f1 sql
+\f0 \'d3\'ef\'be\'e4\'be\'cd\'b2\'bb\'bb\'e1\'b2\'fa\'c9\'fa\'b7\'b4\'d3\'a6
+\f1 \cf0 \
+\pard\tx674\pardeftab674\pardirnatural
+\cf0             \cf2 NSString\cf0  *createSql = \cf7 @"create table if not exists userInfo(id integer primary key autoincrement,name varchar(256),age integer default 0,image blob)"\cf0 ;\
+            \cf3 //
+\f0 \'d0\'e8\'d2\'aa\'d6\'b4\'d0\'d0\'b4\'b4\'bd\'a8\'b1\'ed\'b5\'c4\'d3\'ef\'be\'e4
+\f1 \
+			//
+\f0 \'b4\'b4\'bd\'a8\'b1\'ed\'d2\'d4\'bc\'b0\'d4\'f6\'a1\'a2\'c9\'be\'a1\'a2\'b8\'c4\'b5\'c4
+\f1 sql
+\f0 \'d3\'ef\'be\'e4\'a3\'ac\'d6\'b4\'d0\'d0\'b5\'c4\'bb\'b0\'c8\'ab\'d3\'c3
+\f1 executeUpdate
+\f0 \'b7\'bd\'b7\'a8
+\f1 ,
+\f0 \'b7\'b5\'bb\'d8\'d6\'b5\'ce\'aa\'d6\'b4\'d0\'d0\'b5\'c4\'bd\'e1\'b9\'fb
+\f1 \cf0 \
+            \cf4 BOOL\cf0  isCreate =[\cf6 _dataBase\cf0  \cf8 executeUpdate\cf0 :createSql];\
+            \cf4 if\cf0  (!isCreate) \{\
+                \cf3 //
+\f0 \'d6\'b4\'d0\'d0\'d3\'ef\'be\'e4\'ca\'a7\'b0\'dc
+\f1 \cf0 \
+                \cf3 //lastErrorMessage 
+\f0 \'bb\'e1\'bb\'f1\'c8\'a1\'b5\'bd\'d6\'b4\'d0\'d0
+\f1 sql
+\f0 \'d3\'ef\'be\'e4\'ca\'a7\'b0\'dc\'b5\'c4\'d0\'c5\'cf\'a2
+\f1 \cf0 \
+                \cf5 NSLog\cf0 (\cf7 @"create error:%@"\cf0 ,\cf6 _dataBase\cf0 .\cf8 lastErrorMessage\cf0 );\
+            \}\
+        \}\
+    \}\
+    \cf4 return\cf0  \cf4 self\cf0 ;\
+\}\
+\
++(\cf6 DBManager\cf0  *)shareManager\
+\{\
+    \cf4 static\cf0  \cf6 DBManager\cf0  *manager = \cf4 nil\cf0 ;\
+    \cf3 //@synchronized 
+\f0 \'cd\'ac\'d2\'bb\'ca\'b1\'bf\'cc\'a3\'ac\'d6\'bb\'c4\'dc\'d3\'d0\'d2\'bb\'b8\'f6\'cf\'df\'b3\'cc\'c0\'b4\'d6\'b4\'d0\'d0
+\f1 \{\}
+\f0 \'d6\'d0\'b5\'c4\'b4\'fa\'c2\'eb
+\f1 \cf0 \
+    \cf3 //
+\f0 \'ce\'aa\'c1\'cb\'b7\'c0\'d6\'b9\'a3\'ac\'b6\'e0\'b8\'f6\'cf\'df\'b3\'cc\'cd\'ac\'ca\'b1\'c0\'b4\'b5\'f7\'d3\'c3
+\f1 shareManager
+\f0 \'b6\'f8\'d4\'ec\'b3\'c9\'ca\'b5\'c0\'fd\'bb\'af\'b6\'e0\'b8\'f6\'b6\'d4\'cf\'f3
+\f1 \cf0 \
+    \cf4 @synchronized\cf0 (\cf4 self\cf0 )\{\
+        \cf4 if\cf0  (manager == \cf4 nil\cf0 ) \{\
+            manager = [[\cf6 DBManager\cf0  \cf5 alloc\cf0 ] \cf5 init\cf0 ];\
+        \}\
+    \}\
+    \cf4 return\cf0  manager;\
+\}\
+\
+\cf3 //
+\f0 \'bd\'ab\'ca\'fd\'be\'dd\'c4\'a3\'d0\'cd\'d6\'d0\'b5\'c4\'ca\'fd\'be\'dd\'b2\'e5\'c8\'eb\'b5\'bd\'b1\'ed\'d6\'d0
+\f1 \cf0 \
+- (\cf4 void\cf0 )insertDataWithModel:(\cf6 UserModel\cf0  *)model\{\
+    [\cf6 _lock\cf0  \cf5 lock\cf0 ];\
+    \cf2 UIImage\cf0  *image = model.\cf6 headImage\cf0 ;\
+    \cf3 //
+\f0 \'bd\'ab
+\f1 image
+\f0 \'d7\'aa\'bb\'af\'ce\'aa
+\f1 NSData,UIImagePNGRepresentation
+\f0 \'bd\'ab
+\f1 png
+\f0 \'b8\'f1\'ca\'bd\'b5\'c4\'cd\'bc\'c6\'ac\'d7\'aa\'bb\'af\'b3\'c9
+\f1 NSData\cf0 \
+    \cf2 NSData\cf0  *imageData = \cf5 UIImagePNGRepresentation\cf0 (image);\
+    \cf3 //insert
+\f0 \'b5\'c4
+\f1 sql
+\f0 \'d3\'ef\'be\'e4
+\f1 ,sql
+\f0 \'d3\'ef\'be\'e4\'d6\'d0\'a3\'ac\'d3\'c3\'a3\'bf\'c0\'b4\'d7\'f7\'ce\'aa\'d5\'bc\'ce\'bb\'b7\'fb
+\f1 ,
+\f0 \'b2\'bb\'b9\'dc\'d7\'d6\'b6\'ce\'ca\'c7\'ba\'ce\'d6\'d6\'c0\'e0\'d0\'cd
+\f1 \cf0 \
+    \cf2 NSString\cf0  *insertSql = \cf7 @"insert into userInfo(name,age,image) values(?,?,?)"\cf0 ;\
+    \cf3 //executeUpdate:
+\f0 \'ba\'f3\'c3\'e6\'b8\'fa\'b5\'c4\'b2\'ce\'ca\'fd\'c0\'e0\'d0\'cd\'b1\'d8\'d0\'eb\'ca\'c7\'b6\'d4\'cf\'f3\'c0\'e0\'d0\'cd
+\f1 \cf0 \
+    \cf3 //FMDataBase
+\f0 \'b6\'d4\'cf\'f3\'bb\'e1\'bd\'ab\'b4\'ab\'b9\'fd\'c0\'b4\'b5\'c4\'b2\'ce\'ca\'fd\'a3\'ac\'d7\'aa\'bb\'af\'b3\'c9\'d3\'eb\'ca\'fd\'be\'dd\'bf\'e2\'d7\'d6\'b6\'ce\'cf\'e0\'c6\'a5\'c5\'e4\'b5\'c4\'c0\'e0\'d0\'cd\'a3\'ac\'d4\'d9\'bd\'f8\'d0\'d0\'ba\'f3\'d0\'f8\'b4\'a6\'c0\'ed
+\f1 \cf0 \
+    \cf4 BOOL\cf0  isInsert = [\cf6 _dataBase\cf0  \cf10 executeUpdate\cf0 :insertSql,mm.\cf11 nameStr\cf0 ,mm.\cf11 ageStr\cf0 ,imageDate];\
+\pard\tx1155\pardeftab1155\pardirnatural
+\cf0     \cf12 if\cf0  (!isInsert) \{\
+        \cf5 NSLog\cf0 (\cf13 @"insert error = %@"\cf0 ,\cf11 _fmdb\cf0 .\cf10 lastErrorMessage\cf0 );\
+    \}\
+    \
+    [\cf11 _lock\cf0  \cf5 unlock\cf0 ];\
+\pard\tx674\pardeftab674\pardirnatural
+\cf0 \}\
+\
+\cf3 //
+\f0 \'b8\'f9\'be\'dd\'d6\'f7\'bc\'fc
+\f1 id
+\f0 \'c9\'be\'b3\'fd\'c4\'b3\'cc\'f5\'ca\'fd\'be\'dd
+\f1 \cf0 \
+- (\cf4 void\cf0 )deleteDataWithUserId:(\cf2 NSInteger\cf0 )userId\
+\{\
+    [\cf6 _lock\cf0  \cf5 lock\cf0 ];\
+   \cf2 NSString\cf0  *deleteSql = \cf7 @"delete from userInfo where id =?"\cf0 ;\
+    \cf3 //
+\f0 \'b2\'ce\'ca\'fd\'b1\'d8\'d0\'eb\'ca\'c7\'b6\'d4\'cf\'f3\'c0\'e0\'d0\'cd\'a3\'ac\'d4\'d9\'d7\'f7\'ce\'aa
+\f1 executeUpdate:
+\f0 \'b7\'bd\'b7\'a8\'b5\'c4\'b2\'ce\'ca\'fd
+\f1 \cf0 \
+    \cf4 BOOL\cf0  isDelete = [\cf6 _dataBase\cf0  \cf8 executeUpdate\cf0 :deleteSql,[\cf2 NSNumber\cf0  \cf5 numberWithInteger\cf0 :userId]];\
+    \cf4 if\cf0  (isDelete == \cf4 NO\cf0 ) \{\
+        \cf5 NSLog\cf0 (\cf7 @"delete error:%@"\cf0 ,\cf6 _dataBase\cf0 .\cf8 lastErrorMessage\cf0 );\
+    \}\
+    [\cf6 _lock\cf0  \cf5 unlock\cf0 ];\
+\}\
+\
+\cf3 //
+\f0 \'b8\'f9\'be\'dd\'d6\'f7\'bc\'fc
+\f1 id
+\f0 \'c0\'b4\'b8\'fc\'b8\'c4\'c4\'b3\'cc\'f5\'ca\'fd\'be\'dd
+\f1 \cf0 \
+- (\cf4 void\cf0 )updateDataWithModel:(\cf6 UserModel\cf0  *)model userId:(\cf2 NSInteger\cf0 )userId\
+\{\
+    [\cf6 _lock\cf0  \cf5 lock\cf0 ];\
+    \cf2 NSData\cf0  *imageData = \cf5 UIImagePNGRepresentation\cf0 (model.\cf6 headImage\cf0 );\
+    \cf2 NSString\cf0  *updateSql = \cf7 @"update userInfo set name=?,age=?,image=? where id=?"\cf0 ;\
+    \cf4 BOOL\cf0  isUpdate  =[\cf6 _dataBase\cf0  \cf8 executeUpdate\cf0 :updateSql,model.\cf6 userName\cf0 ,model.\cf6 age\cf0 ,imageData,[\cf2 NSNumber\cf0  \cf5 numberWithInteger\cf0 :userId]];\
+    \cf4 if\cf0  (isUpdate == \cf4 NO\cf0 ) \{\
+        \cf5 NSLog\cf0 (\cf7 @"updateError:%@"\cf0 ,\cf6 _dataBase\cf0 .\cf8 lastErrorMessage\cf0 );\
+    \}\
+    [\cf6 _lock\cf0  \cf5 unlock\cf0 ];\
+\}\
+\
+\cf3 //
+\f0 \'bb\'f1\'c8\'a1\'cb\'f9\'d3\'d0\'b5\'c4\'ca\'fd\'be\'dd
+\f1 \cf0 \
+- (\cf2 NSArray\cf0  *)getAllStudentsae\
+\{\
+  \cf3 //
+\f0 \'c8\'a1\'b5\'bd
+\f1 userInfo
+\f0 \'b1\'ed\'d6\'d0\'cb\'f9\'d3\'d0\'b5\'c4\'ca\'fd\'be\'dd
+\f1 \cf0 \
+    [\cf6 _lock\cf0  \cf5 lock\cf0 ];\
+	\cf3 //
+\f0 \'d3\'c3\'c0\'b4\'b4\'e6\'b7\'c5
+\f1 UserModel\cf0 \
+    \cf2 NSMutableArray\cf0  *array = [\cf2 NSMutableArray\cf0  \cf5 array\cf0 ];\
+	\
+    \cf2 NSString\cf0  *selectSql = \cf7 @"select * from userInfo"\cf0 ;\
+\
+    \cf3 //FMResultSet 
+\f0 \'b2\'e9\'d1\'af\'bd\'e1\'b9\'fb
+\f1 \cf0 \
+    \cf6 FMResultSet\cf0  *set =[\cf6 _dataBase\cf0  \cf8 executeQuery\cf0 :selectSql];\
+    \cf3 //
+\f0 \'c0\'e0\'cb\'c6\'d3\'da\'ca\'fd\'d7\'e9\'b5\'c4\'bf\'ec\'cb\'d9\'b1\'e9\'c0\'fa\'a3\'acset\'bb\'e1\'d2\'c0\'b4\'ce\'b4\'fa\'b1\'ed\'cb\'f9\'d3\'d0\'b5\'c4\'b2\'e9\'d1\'af\'bd\'e1\'b9\'fb
+\f1 \cf0 \
+    \cf4 while\cf0  ([set \cf8 next\cf0 ]) \{\
+        \cf3 //
+\f0 \'c3\'bf\'b4\'ce\'c8\'a1\'b3\'f6\'d2\'bb\'d5\'fb\'cc\'f5\'ca\'fd\'be\'dd
+\f1 \cf0 \
+        \cf3 //
+\f0 \'b8\'f9\'be\'dd\'d7\'d6\'b6\'ce\'c3\'fb\'b3\'c6\'a3\'ac\'c8\'a1\'b3\'f6\'d7\'d6\'b6\'ce\'b5\'c4\'d6\'b5
+\f1 \cf0 \
+        \cf2 NSString\cf0  *name=[set \cf8 stringForColumn\cf0 :\cf7 @"name"\cf0 ];\
+        \cf2 NSString\cf0  *age = [set \cf8 stringForColumn\cf0 :\cf7 @"age"\cf0 ];\
+        \cf2 NSData\cf0  *imageData =[set \cf8 dataForColumn\cf0 :\cf7 @"image"\cf0 ];\
+        \cf6 UserModel\cf0  *model = [[\cf6 UserModel\cf0  \cf5 alloc\cf0 ] \cf5 init\cf0 ];\
+        model.\cf6 userName\cf0  = name;\
+        model.\cf6 age\cf0  = age;\
+        model.\cf6 headImage\cf0  = [\cf2 UIImage\cf0  \cf5 imageWithData\cf0 :imageData];\
+        [array \cf5 addObject\cf0 :model];\
+        [model \cf5 release\cf0 ];\
+    \}\
+    [\cf6 _lock\cf0  \cf5 unlock\cf0 ];\
+    \cf4 return\cf0  array;\
+\}\
+\pard\tx674\pardeftab674\pardirnatural
+\cf2 \
+\
+\
+\
+\
+\pard\tx674\pardeftab674\pardirnatural
+
+\f0\fs48 \cf2 \'a1\'be\'cd\'bc\'c6\'ac\'d1\'a1\'d4\'f1\'c6\'f7\'bd\'f8\'bd\'d7\'a1\'bf
+\fs28 \
+\pard\tx674\pardeftab674\pardirnatural
+
+\f1 \cf2 \
+	UIImagePickerController\cf0  *ipc = [[\cf2 UIImagePickerController\cf0  \cf5 alloc\cf0 ]\cf5 init\cf0 ];\cf3 //
+\f0 \'d5\'d5\'c6\'ac\'d1\'a1\'d4\'f1\'c6\'f7\
+\pard\tx674\pardeftab674\pardirnatural
+
+\f1 \cf3 	//
+\f0 \'b4\'f2\'bf\'aa\'b1\'e0\'bc\'ad\'c4\'a3\'ca\'bd\'a3\'a8\'ce\'aa\'c1\'cb\'b2\'c3\'bc\'f4\'cd\'bc\'c6\'ac\'a3\'a9
+\f1 \cf0 \
+    picker.\cf2 allowsEditing\cf0  = \cf4 YES\cf0 ;\
+    ipc.\cf2 delegate\cf0  = \cf4 self\cf0 ;\cf3 //<UIImagePickerControllerDelegate,UINavigationControllerDelegate>\cf0 \
+    [\cf4 self\cf0  \cf5 presentViewController\cf0 :ipc \cf5 animated\cf0 :\cf4 YES\cf0  \cf5 completion\cf0 :\cf4 nil\cf0 ];\
+\
+\
+- (\cf4 void\cf0 )imagePickerController:(\cf2 UIImagePickerController\cf0  *)picker didFinishPickingMediaWithInfo:(\cf2 NSDictionary\cf0  *)info\
+\{\
+    \cf2 NSString\cf0  *mediaType = [info \cf5 objectForKey\cf0 :\cf2 UIImagePickerControllerMediaType\cf0 ];\
+    \cf3 //
+\f0 \'c5\'d0\'b6\'cf\'b5\'e3\'bb\'f7\'b5\'c4\'ca\'c7\'b7\'f1\'ca\'c7\'cd\'bc\'c6\'ac\'d7\'ca\'d4\'b4\
+	
+\f1 //#import <MobileCoreServices/MobileCoreServices.h>
+\f0 \'b2\'c5\'c4\'dc\'d3\'c3
+\f1 \cf2 kUTTypeImage\cf0 \
+    \cf4 if\cf0  ([mediaType \cf5 isEqualToString\cf0 :(\cf2 NSString\cf0  *)\cf2 kUTTypeImage\cf0 ]) \{\
+\
+		\cf3 //
+\f0 \'b2\'c3\'bc\'f4\'ba\'f3\'b5\'c4\'cd\'bc\'c6\'ac,\'d6\'bb\'d3\'d0\'b4\'f2\'bf\'aa\'b1\'e0\'bc\'ad\'c4\'a3\'ca\'bdinfo\'c0\'ef\'b2\'c5\'d3\'d0\'d5\'e2\'b8\'f6\'bc\'fc\'d6\'b5\'b6\'d4
+\f1 \cf0 \
+        \cf2 UIImage\cf0  *image1 = [info \cf5 objectForKey\cf0 :\cf2 UIImagePickerControllerEditedImage\cf0 ];\
+\
+\cf3 		//
+\f0 \'d4\'ad\'cd\'bc
+\f1 \cf0 \
+    	\cf2 UIImage\cf0  *image2 = [info \cf5 objectForKey\cf0 :\cf2 UIImagePickerControllerOriginalImage\cf0 ];\
+\
+		\cf3 //
+\f0 \'bd\'ab\'cd\'bc\'c6\'ac\'d7\'aa\'bb\'af\'ce\'aa\'b6\'fe\'bd\'f8\'d6\'c6\'ca\'fd\'be\'dd
+\f1 \cf0 \
+    	\cf2 NSData\cf0 * headData = \cf5 UIImagePNGRepresentation\cf0 (image2);\
+    \}\
+    [picker \cf5 dismissViewControllerAnimated\cf0 :\cf4 YES\cf0  \cf5 completion\cf0 :\cf4 nil\cf0 ];\
+\}\
+\
+\
+}

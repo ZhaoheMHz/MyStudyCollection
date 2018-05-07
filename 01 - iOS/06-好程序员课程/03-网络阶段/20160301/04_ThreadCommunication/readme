@@ -1,0 +1,23 @@
+
+//通过NSThread
+    //假设是子线程执行该方法，如何回调主线程，修改UI
+    [self performSelectorOnMainThread:@selector(finished) withObject:nil waitUntilDone:NO];
+    //这个方法是NSObject的类别方法，所有对象都能调用。
+    //当前线程回调主线程完成工作，第三个参数是如果传YES，则当前线程等待主线程完成这一工作后，继续执行，否则阻塞。如果传NO，则当前线程不阻塞。
+
+
+//通过operationQueue
+    //线程队列
+    //通过这个方法找到主队列，将任务添加给主队列去完成，即可交付给主线程完成。
+    NSOperationQueue * mainQueue = [NSOperationQueue mainQueue];
+
+    [mainQueue addOperationWithBlock:^(void){
+    NSLog(@"判断执行当前block的是否是主线程 %d",[NSThread isMainThread]);
+    }];
+
+//通过GCD
+    dispatch_async(dispatch_get_main_queue(), ^(void){
+    NSLog(@"主线程执行这里的语句");
+    });
+
+

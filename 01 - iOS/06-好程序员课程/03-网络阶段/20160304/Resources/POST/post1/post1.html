@@ -1,0 +1,20 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>post上传</title>
+</head>
+<body>
+	<p>使用post请求 enctype=application/x-www-form-urlencoded</p>
+	<form method=post enctype=application/x-www-form-urlencoded action="/cgi-bin/post1.cgi">
+		<p>用户名:
+		<input name="username">
+		<br>密  码:
+		<input name="password" type=password>
+		<br>留言版:
+		<textarea name="message"></textarea>
+		</p>
+		<p>
+		<input type="submit" value="确定">
+		<input type="reset" value="取消">
+	</form>
+</body>
+</html>

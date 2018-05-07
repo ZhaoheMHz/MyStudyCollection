@@ -1,0 +1,198 @@
+一、断点续传
+
+
+①.数据要完整的下载到手机中,(大小问题),空间问题/一次性读取到内存中数据量过大问题
+②.要让用户看到下载进度
+③.如何暂停(我要保存那些数据)
+④.继续下载(需要上传哪些数据给服务器,才能够从暂停的位置继续下载)
+⑤.支持多个下载任务
+⑥.如何更好的封装起来,拿到其他项目中就能用起来
+
+
+所谓断点续传，也就是要从文件已经下载的地方开始继续下载。所以在客户端浏览器传给Web服务器的时候要多加一条信息--从哪里开始。
+
+NSURLConnection实现断点续传的关键是自定义http request的头部的range域属性。
+Range头域
+　　Range头域可以请求实体的一个或者多个子范围。例如，
+　　表示头500个字节：bytes=0-499
+　　表示第二个500字节：bytes=500-999
+　　表示最后500个字节：bytes=-500
+　　表示500字节以后的范围：bytes=500-
+　　第一个和最后一个字节：bytes=0-0,-1
+　　同时指定几个范围：bytes=500-600,601-999
+　　但是服务器可以忽略此请求头，如果无条件GET包含Range请求头，响应会以状态码206（PartialContent）返回而不是以200（OK）。
+
+
+
+
+
+
+
+
+
+
+二、NSFileHandle详细介绍
+
+NSFileHandle    此类主要是对文件内容进行读取和写入操作
+
+NSFileManager   此类主要是对文件进行的操作以及文件信息的获取
+
+常用处理方法
+
++ (id)fileHandleForReadingAtPath:(NSString *)path  打开一个文件准备读取
+
++ (id)fileHandleForWritingAtPath:(NSString *)path  打开一个文件准备写入
+
++ (id)fileHandleForUpdatingAtPath:(NSString *)path  打开一个文件准备更新
+
+-  (NSData *)availableData; 从设备或通道返回可用的数据
+
+-  (NSData *)readDataToEndOfFile; 从当前的节点读取到文件的末尾
+
+-  (NSData *)readDataOfLength:(NSUInteger)length; 从当前节点开始读取指定的长度数据
+
+-  (void)writeData:(NSData *)data; 写入数据
+
+-  (unsigned long long)offsetInFile;  获取当前文件的偏移量
+
+-  (void)seekToFileOffset:(unsigned long long)offset; 跳到指定文件的偏移量
+
+-  (unsigned long long)seekToEndOfFile; 跳到文件末尾
+
+-  (void)truncateFileAtOffset:(unsigned long long)offset; 将文件的长度设为offset字节
+
+-  (void)closeFile;  关闭文件
+
+向文件追加数据
+
+NSString *homePath  = NSHomeDirectory( );
+
+NSString *sourcePath = [homePath stringByAppendingPathConmpone:@"testfile.text"];
+
+NSFileHandle *fielHandle = [NSFileHandle fileHandleForUpdatingAtPath:sourcePath];
+
+[fileHandle seekToEndOfFile];  将节点跳到文件的末尾
+
+NSString *str = @"追加的数据"
+
+NSData* stringData  = [str dataUsingEncoding:NSUTF8StringEncoding];
+
+[fileHandle writeData:stringData]; 追加写入数据
+
+[fileHandle closeFile];
+
+定位数据
+
+NSFileManager *fm = [NSFileManager defaultManager];
+
+NSString *content = @"abcdef";
+
+[fm createFileAtPath:path contents:[content dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
+
+NSFileHandle *fileHandle = [NSFileHandle fileHandleForReadingAtPath:path];
+
+NSUInteger length = [fileHandle availabelData] length]; 获取数据长度
+
+[fileHandle seekToFileOffset;length/2]; 偏移量文件的一半
+
+NSData *data = [fileHandle readDataToEndOfFile];
+
+[fileHandle closeFile];
+
+复制文件
+
+NSFileHandle *infile, *outfile; 输入文件、输出文件
+
+NSData *buffer; 读取的缓冲数据
+
+NSFileManager *fileManager = [NSFileManager defaultManager];
+
+NSString *homePath = NSHomeDirectory( );
+
+NSString *sourcePath = [homePath stringByAppendingPathComponent:@"testfile.txt"];  源文件路径
+
+NSString *outPath = [homePath stringByAppendingPathComponent:@"outfile.txt"]; 输出文件路径
+
+BOOL sucess  = [fileManager createFileAtPath:outPath contents:nil attributes:nil];
+
+if (!success)
+
+{
+
+return N0;
+
+}
+
+infile = [NSFileHandle fileHandleForReadingAtPath:sourcePath]; 创建读取源路径文件
+
+if (infile == nil)
+
+{
+
+return NO;
+
+}
+
+outfile = [NSFileHandle fileHandleForReadingAtPath:outPath]; 创建病打开要输出的文件
+
+if (outfile == nil)
+
+{
+
+return NO;
+
+}
+
+[outfile truncateFileAtOffset:0]; 将输出文件的长度设为0
+
+buffer = [infile readDataToEndOfFile];  读取数据
+
+[outfile writeData:buffer];  写入输入
+
+[infile closeFile];        关闭写入、输入文件
+
+[outfile closeFile]；
+
+
+
+target performSelector
+
+1、performSelector是运行时系统负责去找方法的，在编译时候不做任何校验；如果直接调用编译是会自动校验。如果imageDownloader：didFinishWithImage:image：不存在，那么直接调用 在编译时候就能够发现（借助Xcode可以写完就发现），但是使用performSelector的话一定是在运行时候才能发现（此时程序崩溃）；Cocoa支持在运行时向某个类添加方法，即方法编译时不存在，但是运行时候存在，这时候必然需要使用performSelector去调用。所以有时候如果使用了performSelector，为了程序的健壮性，会使用检查方法
+- (BOOL)respondsToSelector:(SEL)aSelector;
+2、直接调用方法时候，一定要在头文件中声明该方法的使用，也要将头文件import进来。而使用performSelector时候， 可以不用import头文件包含方法的对象，直接用performSelector调用即可。
+在有多线程操作的环境中，这样performSelector的延时调用，其实是缺乏安全性的。我们可以用另一套方案来解决这个问题，就是使用GCD中的dispatch_after来实现单次的延时调用、
+
+目标－行为（Target-Action）模式(目的在于让代码解耦合,使代码与代码之间关联性降低,便于后期开发维护)
+
+
+Target-action----这个设计模式用按钮，等控件把用户的交互变成代码，让程序可以执行;
+Target-action :通俗易懂的说也就是
+一个对象包含一些生成一个消息表达式的元素，当一个确定事件出现时，把这些元素放到一起组成消息和发送这个消息。
+Target-Action传值
+实质就是：A页面要给B页面传值,A就提供接口出去,抓A到B内部来,A间接调用自己内部方法(相当于,A把自己内部需                     要操作的方法,传到B内来,到B内部进行赋值,这样就不存在访问不到各自的局部实例变量)
+      @property  ( nonatomic , assign ) id  traget;   @property  ( nonatomic , assign ) SEL action;
+       [ self . traget  performSelector : self . action  withObject :nil ];(是否需要传参数自己定,最多2个)
+
+A 想把 值 传给 B，但是 时间 和方法都不定 ，所以不好用代理
+那么，A就可以有个id变量target，有个方法变量 action
+B呢，只要是将自己设为  A的 target，然后定义一个方法 设为 A的 action
+然后 B自己调用自己声明的方法 就实现了 A传值给B
+相当于,A把自己内部需要操作的方法,传到B内来,到B内部进行赋值,这样就不存在访问不到各自的局部实例变量
+
+
+
+warning:performSelector may cause a leak because its selector
+http://blog.sina.com.cn/s/blog_7dc11a2e0101gsk0.html
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored "-Warc-performSelector-leaks"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+
+
+
+http://blog.csdn.net/luoweifu/article/details/38563161
+宏定义使用do{...}while(0)

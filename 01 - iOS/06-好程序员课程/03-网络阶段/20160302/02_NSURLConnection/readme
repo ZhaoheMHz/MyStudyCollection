@@ -1,0 +1,43 @@
+
+            NSURLConnection基本使用(*****)
+
+一、NSURLConnection的常用类
+
+（1）NSURL：请求地址
+
+（2）NSURLRequest：封装一个请求，保存发给服务器的全部数据，包括一个NSURL对象，请求方法、请求头、请求体....
+
+（3）NSMutableURLRequest：NSURLRequest的子类
+
+（4）NSURLConnection：负责发送请求，建立客户端和服务器的连接。发送NSURLRequest的数据给服务器，并收集来自服务器的响应数据
+
+
+
+二、NSURLConnection的使用
+1.简单说明
+使用NSURLConnection发送请求的步骤很简单
+
+（1）创建一个NSURL对象，设置请求路径（设置请求路径）
+
+（2）传入NSURL创建一个NSURLRequest对象，设置请求头和请求体（创建请求对象）
+
+（3）使用NSURLConnection发送NSURLRequest（发送请求）
+
+三、发送请求的三个步骤：
+
+1.设置请求路径
+2.创建请求对象
+3.发送请求
+    3.1发送同步请求（一直在等待服务器返回数据，这行代码会卡住，如果服务器，没有返回数据，那么在主线程UI会卡住不能继续执行操作）有返回值
+    3.2发送异步请求：没有返回值
+
+说明：任何NSURLRequest默认都是get请求。
+注意：GET请求中不存在请求体，因为所有的信息都写在URL里面。在IOS里面，请求行和请求头都不用写。
+
+
+
+
+
+
+
+

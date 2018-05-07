@@ -1,0 +1,57 @@
+GCD具有以下优点：
+
+GCD 能通过推迟昂贵计算任务并在后台运行它们来改善你的应用的响应性能。
+GCD 提供一个易于使用的并发模型而不仅仅只是锁和线程，以帮助我们避开并发陷阱。
+GCD 具有在常见模式（例如单例）上用更高性能的原语优化你的代码的潜在能力。
+
+
+单例模式是开发中最常用的写法之一，创建一个单例很多办法，iOS的单例模式有两种官方写法，如下：
+
+不使用GCD
+#import "ServiceManager.h"
+
+static ServiceManager *defaultManager;
+
+@implementation ServiceManager
+
++(ServiceManager *)defaultManager{
+    if(!defaultManager)
+    defaultManager=[[self allocWithZone:NULL] init];
+    return  defaultManager;
+}
+
+@end
+
+某些特殊情况下，if执行后面执行的慢了，然后另一个线程用了他，就会创建，if并不安全
+
+使用GCD
+#import "ServiceManager.h"
+
+@implementation ServiceManager
+
++(ServiceManager *)sharedManager{
+    static dispatch_once_t predicate;
+    static ServiceManager * sharedManager;
+    dispatch_once(&predicate, ^{
+    sharedManager=[[ServiceManager alloc] init];
+    });
+    return sharedManager;
+}
+
+@end
+
+dispatch_once这个函数，它可以保证整个应用程序生命周期中某段代码只被执行一次！
+
+1. 线程安全。
+2. 满足静态分析器的要求。
+3. 兼容了ARC
+
+我们看到，该方法的作用就是执行且在整个程序的声明周期中，仅执行一次某一个block对象。简直就是为单例而生的嘛。而且，有些我们需要在程序开头初始化的动作，如果为了保证其，仅执行一次，也可以放到这个dispatch_once来执行。
+总结：1.这个方法可以在创建单例或者某些初始化动作时使用，以保证其唯一性。2.该方法是线程安全的，所以请放心大胆的在子线程中使用。（前提是你的dispatch_once_t *predicate对象必须是全局或者静态对象。这一点很重要，如果不能保证这一点，也就不能保证该方法只会被执行一次。）
+
+
+//单例创建的写法
+http://blog.csdn.net/lovefqing/article/details/8516536
+//单例创建写法的原因
+http://blog.sina.com.cn/s/blog_4cd8dd130101mi37.html
+

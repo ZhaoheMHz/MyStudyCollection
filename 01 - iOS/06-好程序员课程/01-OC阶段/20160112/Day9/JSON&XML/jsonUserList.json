@@ -1,0 +1,42 @@
+{
+  "count" : 30,
+  "totalcount" : "51708",
+  "users" : [
+    {
+      "credit" : "432",
+      "experience" : "300",
+      "friendnum" : "13",
+      "groupid" : "6",
+      "headimage" : "/my/headimage.php?uid=51051",
+      "lastactivity" : "0",
+      "realname" : "落落",
+      "uid" : "51051",
+      "username" : "我是落落",
+      "viewnum" : "49"
+    },
+    {
+      "credit" : "755",
+      "experience" : "764",
+      "friendnum" : "9",
+      "groupid" : "6",
+      "headimage" : "/my/headimage.php?uid=50240",
+      "lastactivity" : "1402364590",
+      "realname" : "",
+      "uid" : "50240",
+      "username" : "wzscr",
+      "viewnum" : "44"
+    },
+    {
+      "credit" : "276",
+      "experience" : "269",
+      "friendnum" : "3",
+      "groupid" : "6",
+      "headimage" : "/my/headimage.php?uid=50294",
+      "lastactivity" : "0",
+      "realname" : "薛飞龙",
+      "uid" : "50294",
+      "username" : "Flonger",
+      "viewnum" : "20"
+    }
+  ]
+}

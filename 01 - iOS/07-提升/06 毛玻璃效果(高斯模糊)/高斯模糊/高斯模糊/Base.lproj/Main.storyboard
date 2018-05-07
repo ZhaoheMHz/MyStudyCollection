@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2BJ-je-AtN">
+                                <rect key="frame" x="-8" y="405" width="391" height="262"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="262" id="E1u-UV-uTe"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="baU-o7-ql3">
+                                <rect key="frame" x="-8" y="93" width="391" height="262"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="262" id="xze-m6-WzN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="baU-o7-ql3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="200-wn-y1A"/>
+                            <constraint firstItem="2BJ-je-AtN" firstAttribute="top" secondItem="baU-o7-ql3" secondAttribute="bottom" constant="50" id="JXk-Gw-A3j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2BJ-je-AtN" secondAttribute="trailing" constant="-24" id="bQV-c4-pZw"/>
+                            <constraint firstItem="baU-o7-ql3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="93" id="klH-As-4lT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="baU-o7-ql3" secondAttribute="trailing" constant="-24" id="q0e-Ys-xva"/>
+                            <constraint firstItem="2BJ-je-AtN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="vjw-m6-i4Q"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="2BJ-je-AtN" id="X3p-18-DzM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="1996" height="968"/>
+    </resources>
+</document>

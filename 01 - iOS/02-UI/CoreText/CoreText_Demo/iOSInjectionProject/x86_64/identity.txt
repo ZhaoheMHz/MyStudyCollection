@@ -1,0 +1,2 @@
+/Users/baoxu/Library/Developer/Xcode/DerivedData/CoreText_Demo-dzitrutnkilzhmcalvdjatpvpljh/Build/Products/Debug-iphonesimulator/CoreText_Demo.app
+

@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8806E1AB1D6DCD620075DFF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1AA1D6DCD620075DFF9 /* main.m */; };
+		8806E1AE1D6DCD620075DFF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1AD1D6DCD620075DFF9 /* AppDelegate.m */; };
+		8806E1B11D6DCD620075DFF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1B01D6DCD620075DFF9 /* ViewController.m */; };
+		8806E1B41D6DCD630075DFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8806E1B21D6DCD630075DFF9 /* Main.storyboard */; };
+		8806E1B61D6DCD630075DFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8806E1B51D6DCD630075DFF9 /* Assets.xcassets */; };
+		8806E1B91D6DCD630075DFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8806E1B71D6DCD630075DFF9 /* LaunchScreen.storyboard */; };
+		8806E1E11D6DCD6A0075DFF9 /* VKAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1C41D6DCD6A0075DFF9 /* VKAVPlayer.m */; };
+		8806E1E21D6DCD6A0075DFF9 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8806E1C61D6DCD6A0075DFF9 /* Shader.fsh */; };
+		8806E1E31D6DCD6A0075DFF9 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8806E1C71D6DCD6A0075DFF9 /* Shader.vsh */; };
+		8806E1E41D6DCD6A0075DFF9 /* VKGLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1C91D6DCD6A0075DFF9 /* VKGLMatrix.m */; };
+		8806E1E51D6DCD6A0075DFF9 /* VKGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1CB1D6DCD6A0075DFF9 /* VKGLProgram.m */; };
+		8806E1E61D6DCD6A0075DFF9 /* VKGLSensors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1CD1D6DCD6A0075DFF9 /* VKGLSensors.m */; };
+		8806E1E71D6DCD6A0075DFF9 /* VKGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1CF1D6DCD6A0075DFF9 /* VKGLTexture.m */; };
+		8806E1E81D6DCD6A0075DFF9 /* VKGLVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1D11D6DCD6A0075DFF9 /* VKGLVariable.m */; };
+		8806E1E91D6DCD6A0075DFF9 /* VKGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1D31D6DCD6A0075DFF9 /* VKGLView.m */; };
+		8806E1EA1D6DCD6A0075DFF9 /* VKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1D51D6DCD6A0075DFF9 /* VKView.m */; };
+		8806E1EB1D6DCD6A0075DFF9 /* VKNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1D71D6DCD6A0075DFF9 /* VKNotification.m */; };
+		8806E1EC1D6DCD6A0075DFF9 /* VKPlayer+Extsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1DA1D6DCD6A0075DFF9 /* VKPlayer+Extsion.m */; };
+		8806E1ED1D6DCD6A0075DFF9 /* VKPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1DC1D6DCD6A0075DFF9 /* VKPlayer.m */; };
+		8806E1EE1D6DCD6A0075DFF9 /* VKPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8806E1DE1D6DCD6A0075DFF9 /* VKPlayerController.m */; };
+		8806E1EF1D6DCD6A0075DFF9 /* VKPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8806E1DF1D6DCD6A0075DFF9 /* VKPlayerController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8806E1A61D6DCD620075DFF9 /* asdhashjdjhk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asdhashjdjhk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8806E1AA1D6DCD620075DFF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8806E1AC1D6DCD620075DFF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8806E1AD1D6DCD620075DFF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8806E1AF1D6DCD620075DFF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8806E1B01D6DCD620075DFF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8806E1B31D6DCD630075DFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8806E1B51D6DCD630075DFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8806E1B81D6DCD630075DFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8806E1BA1D6DCD630075DFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8806E1C31D6DCD6A0075DFF9 /* VKAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAVPlayer.h; sourceTree = "<group>"; };
+		8806E1C41D6DCD6A0075DFF9 /* VKAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAVPlayer.m; sourceTree = "<group>"; };
+		8806E1C61D6DCD6A0075DFF9 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		8806E1C71D6DCD6A0075DFF9 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		8806E1C81D6DCD6A0075DFF9 /* VKGLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKGLMatrix.h; sourceTree = "<group>"; };
+		8806E1C91D6DCD6A0075DFF9 /* VKGLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKGLMatrix.m; sourceTree = "<group>"; };
+		8806E1CA1D6DCD6A0075DFF9 /* VKGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKGLProgram.h; sourceTree = "<group>"; };
+		8806E1CB1D6DCD6A0075DFF9 /* VKGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKGLProgram.m; sourceTree = "<group>"; };
+		8806E1CC1D6DCD6A0075DFF9 /* VKGLSensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKGLSensors.h; sourceTree = "<group>"; };
+		8806E1CD1D6DCD6A0075DFF9 /* VKGLSensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKGLSensors.m; sourceTree = "<group>"; };
+		8806E1CE1D6DCD6A0075DFF9 /* VKGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKGLTexture.h; sourceTree = "<group>"; };
+		8806E1CF1D6DCD6A0075DFF9 /* VKGLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKGLTexture.m; sourceTree = "<group>"; };
+		8806E1D01D6DCD6A0075DFF9 /* VKGLVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKGLVariable.h; sourceTree = "<group>"; };
+		8806E1D11D6DCD6A0075DFF9 /* VKGLVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKGLVariable.m; sourceTree = "<group>"; };
+		8806E1D21D6DCD6A0075DFF9 /* VKGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKGLView.h; sourceTree = "<group>"; };
+		8806E1D31D6DCD6A0075DFF9 /* VKGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKGLView.m; sourceTree = "<group>"; };
+		8806E1D41D6DCD6A0075DFF9 /* VKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKView.h; sourceTree = "<group>"; };
+		8806E1D51D6DCD6A0075DFF9 /* VKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKView.m; sourceTree = "<group>"; };
+		8806E1D61D6DCD6A0075DFF9 /* VKNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKNotification.h; sourceTree = "<group>"; };
+		8806E1D71D6DCD6A0075DFF9 /* VKNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKNotification.m; sourceTree = "<group>"; };
+		8806E1D81D6DCD6A0075DFF9 /* VKPlayerMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPlayerMacro.h; sourceTree = "<group>"; };
+		8806E1D91D6DCD6A0075DFF9 /* VKPlayer+Extsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VKPlayer+Extsion.h"; sourceTree = "<group>"; };
+		8806E1DA1D6DCD6A0075DFF9 /* VKPlayer+Extsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VKPlayer+Extsion.m"; sourceTree = "<group>"; };
+		8806E1DB1D6DCD6A0075DFF9 /* VKPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPlayer.h; sourceTree = "<group>"; };
+		8806E1DC1D6DCD6A0075DFF9 /* VKPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPlayer.m; sourceTree = "<group>"; };
+		8806E1DD1D6DCD6A0075DFF9 /* VKPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPlayerController.h; sourceTree = "<group>"; };
+		8806E1DE1D6DCD6A0075DFF9 /* VKPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPlayerController.m; sourceTree = "<group>"; };
+		8806E1DF1D6DCD6A0075DFF9 /* VKPlayerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VKPlayerController.xib; sourceTree = "<group>"; };
+		8806E1E01D6DCD6A0075DFF9 /* VKPlayerDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPlayerDefine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8806E1A31D6DCD620075DFF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8806E19D1D6DCD620075DFF9 = {
+			isa = PBXGroup;
+			children = (
+				8806E1A81D6DCD620075DFF9 /* asdhashjdjhk */,
+				8806E1A71D6DCD620075DFF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8806E1A71D6DCD620075DFF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8806E1A61D6DCD620075DFF9 /* asdhashjdjhk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8806E1A81D6DCD620075DFF9 /* asdhashjdjhk */ = {
+			isa = PBXGroup;
+			children = (
+				8806E1AC1D6DCD620075DFF9 /* AppDelegate.h */,
+				8806E1C01D6DCD6A0075DFF9 /* VideoKit */,
+				8806E1AD1D6DCD620075DFF9 /* AppDelegate.m */,
+				8806E1AF1D6DCD620075DFF9 /* ViewController.h */,
+				8806E1B01D6DCD620075DFF9 /* ViewController.m */,
+				8806E1B21D6DCD630075DFF9 /* Main.storyboard */,
+				8806E1B51D6DCD630075DFF9 /* Assets.xcassets */,
+				8806E1B71D6DCD630075DFF9 /* LaunchScreen.storyboard */,
+				8806E1BA1D6DCD630075DFF9 /* Info.plist */,
+				8806E1A91D6DCD620075DFF9 /* Supporting Files */,
+			);
+			path = asdhashjdjhk;
+			sourceTree = "<group>";
+		};
+		8806E1A91D6DCD620075DFF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8806E1AA1D6DCD620075DFF9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8806E1C01D6DCD6A0075DFF9 /* VideoKit */ = {
+			isa = PBXGroup;
+			children = (
+				8806E1C11D6DCD6A0075DFF9 /* Core */,
+				8806E1D91D6DCD6A0075DFF9 /* VKPlayer+Extsion.h */,
+				8806E1DA1D6DCD6A0075DFF9 /* VKPlayer+Extsion.m */,
+				8806E1DB1D6DCD6A0075DFF9 /* VKPlayer.h */,
+				8806E1DC1D6DCD6A0075DFF9 /* VKPlayer.m */,
+				8806E1DD1D6DCD6A0075DFF9 /* VKPlayerController.h */,
+				8806E1DE1D6DCD6A0075DFF9 /* VKPlayerController.m */,
+				8806E1DF1D6DCD6A0075DFF9 /* VKPlayerController.xib */,
+				8806E1E01D6DCD6A0075DFF9 /* VKPlayerDefine.h */,
+			);
+			name = VideoKit;
+			path = ../../../Downloads/VideoKit;
+			sourceTree = "<group>";
+		};
+		8806E1C11D6DCD6A0075DFF9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8806E1C21D6DCD6A0075DFF9 /* VKAVPlayer */,
+				8806E1D61D6DCD6A0075DFF9 /* VKNotification.h */,
+				8806E1D71D6DCD6A0075DFF9 /* VKNotification.m */,
+				8806E1D81D6DCD6A0075DFF9 /* VKPlayerMacro.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8806E1C21D6DCD6A0075DFF9 /* VKAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8806E1C31D6DCD6A0075DFF9 /* VKAVPlayer.h */,
+				8806E1C41D6DCD6A0075DFF9 /* VKAVPlayer.m */,
+				8806E1C51D6DCD6A0075DFF9 /* VKGLView */,
+				8806E1D41D6DCD6A0075DFF9 /* VKView.h */,
+				8806E1D51D6DCD6A0075DFF9 /* VKView.m */,
+			);
+			path = VKAVPlayer;
+			sourceTree = "<group>";
+		};
+		8806E1C51D6DCD6A0075DFF9 /* VKGLView */ = {
+			isa = PBXGroup;
+			children = (
+				8806E1C61D6DCD6A0075DFF9 /* Shader.fsh */,
+				8806E1C71D6DCD6A0075DFF9 /* Shader.vsh */,
+				8806E1C81D6DCD6A0075DFF9 /* VKGLMatrix.h */,
+				8806E1C91D6DCD6A0075DFF9 /* VKGLMatrix.m */,
+				8806E1CA1D6DCD6A0075DFF9 /* VKGLProgram.h */,
+				8806E1CB1D6DCD6A0075DFF9 /* VKGLProgram.m */,
+				8806E1CC1D6DCD6A0075DFF9 /* VKGLSensors.h */,
+				8806E1CD1D6DCD6A0075DFF9 /* VKGLSensors.m */,
+				8806E1CE1D6DCD6A0075DFF9 /* VKGLTexture.h */,
+				8806E1CF1D6DCD6A0075DFF9 /* VKGLTexture.m */,
+				8806E1D01D6DCD6A0075DFF9 /* VKGLVariable.h */,
+				8806E1D11D6DCD6A0075DFF9 /* VKGLVariable.m */,
+				8806E1D21D6DCD6A0075DFF9 /* VKGLView.h */,
+				8806E1D31D6DCD6A0075DFF9 /* VKGLView.m */,
+			);
+			path = VKGLView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8806E1A51D6DCD620075DFF9 /* asdhashjdjhk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8806E1BD1D6DCD630075DFF9 /* Build configuration list for PBXNativeTarget "asdhashjdjhk" */;
+			buildPhases = (
+				8806E1A21D6DCD620075DFF9 /* Sources */,
+				8806E1A31D6DCD620075DFF9 /* Frameworks */,
+				8806E1A41D6DCD620075DFF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = asdhashjdjhk;
+			productName = asdhashjdjhk;
+			productReference = 8806E1A61D6DCD620075DFF9 /* asdhashjdjhk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8806E19E1D6DCD620075DFF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mhz;
+				TargetAttributes = {
+					8806E1A51D6DCD620075DFF9 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 8806E1A11D6DCD620075DFF9 /* Build configuration list for PBXProject "asdhashjdjhk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8806E19D1D6DCD620075DFF9;
+			productRefGroup = 8806E1A71D6DCD620075DFF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8806E1A51D6DCD620075DFF9 /* asdhashjdjhk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8806E1A41D6DCD620075DFF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8806E1E21D6DCD6A0075DFF9 /* Shader.fsh in Resources */,
+				8806E1B91D6DCD630075DFF9 /* LaunchScreen.storyboard in Resources */,
+				8806E1B61D6DCD630075DFF9 /* Assets.xcassets in Resources */,
+				8806E1EF1D6DCD6A0075DFF9 /* VKPlayerController.xib in Resources */,
+				8806E1B41D6DCD630075DFF9 /* Main.storyboard in Resources */,
+				8806E1E31D6DCD6A0075DFF9 /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8806E1A21D6DCD620075DFF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8806E1E81D6DCD6A0075DFF9 /* VKGLVariable.m in Sources */,
+				8806E1E11D6DCD6A0075DFF9 /* VKAVPlayer.m in Sources */,
+				8806E1E41D6DCD6A0075DFF9 /* VKGLMatrix.m in Sources */,
+				8806E1EC1D6DCD6A0075DFF9 /* VKPlayer+Extsion.m in Sources */,
+				8806E1EB1D6DCD6A0075DFF9 /* VKNotification.m in Sources */,
+				8806E1E51D6DCD6A0075DFF9 /* VKGLProgram.m in Sources */,
+				8806E1E91D6DCD6A0075DFF9 /* VKGLView.m in Sources */,
+				8806E1B11D6DCD620075DFF9 /* ViewController.m in Sources */,
+				8806E1AE1D6DCD620075DFF9 /* AppDelegate.m in Sources */,
+				8806E1ED1D6DCD6A0075DFF9 /* VKPlayer.m in Sources */,
+				8806E1E71D6DCD6A0075DFF9 /* VKGLTexture.m in Sources */,
+				8806E1AB1D6DCD620075DFF9 /* main.m in Sources */,
+				8806E1EA1D6DCD6A0075DFF9 /* VKView.m in Sources */,
+				8806E1E61D6DCD6A0075DFF9 /* VKGLSensors.m in Sources */,
+				8806E1EE1D6DCD6A0075DFF9 /* VKPlayerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8806E1B21D6DCD630075DFF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8806E1B31D6DCD630075DFF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8806E1B71D6DCD630075DFF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8806E1B81D6DCD630075DFF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8806E1BB1D6DCD630075DFF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8806E1BC1D6DCD630075DFF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8806E1BE1D6DCD630075DFF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = asdhashjdjhk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhz.asdhashjdjhk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8806E1BF1D6DCD630075DFF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = asdhashjdjhk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhz.asdhashjdjhk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8806E1A11D6DCD620075DFF9 /* Build configuration list for PBXProject "asdhashjdjhk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8806E1BB1D6DCD630075DFF9 /* Debug */,
+				8806E1BC1D6DCD630075DFF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8806E1BD1D6DCD630075DFF9 /* Build configuration list for PBXNativeTarget "asdhashjdjhk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8806E1BE1D6DCD630075DFF9 /* Debug */,
+				8806E1BF1D6DCD630075DFF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8806E19E1D6DCD620075DFF9 /* Project object */;
+}

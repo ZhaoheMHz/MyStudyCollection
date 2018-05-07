@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<response>
+    <result>0</result>
+    <cuttotal>31</cuttotal>
+    <total>301</total>
+    <shareprefix>app.manzuo.com</shareprefix>
+    <buyprefix>app.manzuo.com</buyprefix>
+    <promotion>...</promotion>
+    <list>
+        <promotion>
+            <id>393172</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=393172&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/phs/39/393172.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/39/393172/27676127_w_more.jpg]]></wsdimg>
+            <name><![CDATA[亚太安康慈铭体检一卡通中青年套餐]]></name>
+            <multipagetitle><![CDATA[【北京通用】慈铭体检专业体检机构一卡通中青年套餐！另有更多套餐可选！]]></multipagetitle>
+            <price>799.0</price>
+            <priceoff>368.0</priceoff>
+            <currentdealcount>245</currentdealcount>
+            <starttime>2014-06-28 00:00:00</starttime>
+            <endtime>2015-09-28 23:59:59</endtime>
+            <sevenrefundallowed>1</sevenrefundallowed>
+            <expirerefundallowed>1</expirerefundallowed>
+            <district>北京</district>
+            <type2>4</type2>
+            <hassub>0</hassub>
+            <flag>0</flag>
+        </promotion>
+        <promotion>
+            <id>478046</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=478046&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/phs/47/478046.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/47/478046/83931857_w_more.jpg]]></wsdimg>
+            <name><![CDATA[同欣农家院二日游玩C套餐]]></name>
+            <multipagetitle><![CDATA[【十渡镇】同欣农家院二日游玩C套餐！郊游放松的好去处，尽享清凉夏日！]]></multipagetitle>
+            <price>385.0</price>
+            <priceoff>219.0</priceoff>
+            <currentdealcount>241</currentdealcount>
+            <starttime>2015-04-21 00:00:00</starttime>
+            <endtime>2015-11-28 23:59:59</endtime>
+            <sevenrefundallowed>0</sevenrefundallowed>
+            <expirerefundallowed>0</expirerefundallowed>
+            <district>全国</district>
+            <type2>6</type2>
+            <hassub>0</hassub>
+            <flag>0</flag> 
+        </promotion> 
+    </list> 
+</response>

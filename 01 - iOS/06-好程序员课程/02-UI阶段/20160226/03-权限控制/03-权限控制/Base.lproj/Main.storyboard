@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eek-9B-PcO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wJd-HU-yyq">
+            <objects>
+                <tabBarController id="eek-9B-PcO" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="a72-kx-3Du">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bBQ-rQ-orS" kind="relationship" relationship="viewControllers" id="0tV-Mw-J1X"/>
+                        <segue destination="E3A-Jz-b1t" kind="relationship" relationship="viewControllers" id="xMy-Hj-PCz"/>
+                        <segue destination="wlD-HB-FOR" kind="relationship" relationship="viewControllers" id="3Do-op-s5e"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cv4-zy-YlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855" y="-332"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="ctJ-Xa-Zex">
+            <objects>
+                <navigationController id="bBQ-rQ-orS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" id="2dQ-xt-XG6"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tbY-r4-hHK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oON-i7-BcQ" kind="relationship" relationship="rootViewController" id="GTx-AA-lV3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XD1-PZ-W0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157" y="-996"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="wjq-GP-X2s">
+            <objects>
+                <viewController id="oON-i7-BcQ" customClass="GPHomeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jjR-zT-IDO"/>
+                        <viewControllerLayoutGuide type="bottom" id="kHR-wD-ZIV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HDI-gc-FhV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWB-QF-oOA">
+                                <rect key="frame" x="93" y="101" width="135" height="30"/>
+                                <state key="normal" title="跳转到首页详情页面">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTouch:" destination="oON-i7-BcQ" eventType="touchUpInside" id="xTp-8t-jHE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4a-js-nDV">
+                                <rect key="frame" x="93" y="139" width="135" height="30"/>
+                                <state key="normal" title="跳转到首页详情页面">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTouch:" destination="oON-i7-BcQ" eventType="touchUpInside" id="byN-tv-XwJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUv-uW-dLI">
+                                <rect key="frame" x="93" y="184" width="135" height="30"/>
+                                <state key="normal" title="跳转到首页详情页面">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTouch:" destination="oON-i7-BcQ" eventType="touchUpInside" id="zXw-ch-CgO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeW-Xg-tg0">
+                                <rect key="frame" x="93" y="231" width="135" height="30"/>
+                                <state key="normal" title="跳转到首页详情页面">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTouch:" destination="oON-i7-BcQ" eventType="touchUpInside" id="sSG-SO-D78"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKQ-1a-Nbw">
+                                <rect key="frame" x="93" y="294" width="135" height="30"/>
+                                <state key="normal" title="跳转到首页详情页面">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTouch:" destination="oON-i7-BcQ" eventType="touchUpInside" id="abN-qm-lqB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YdL-ri-toC"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZf-aV-5v0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="-1014"/>
+        </scene>
+        <!--免费-->
+        <scene sceneID="MTI-NI-YJv">
+            <objects>
+                <navigationController id="E3A-Jz-b1t" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="免费" id="R9c-Fa-1wL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E3d-Cs-Z80">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="51k-A6-izp" kind="relationship" relationship="rootViewController" id="Sib-0S-iIM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewk-Si-1MS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149" y="-340"/>
+        </scene>
+        <!--Free Controller-->
+        <scene sceneID="QvG-VP-TFm">
+            <objects>
+                <viewController id="51k-A6-izp" customClass="GPFreeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yt1-T2-kbi"/>
+                        <viewControllerLayoutGuide type="bottom" id="6zi-5s-Tg8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1zi-FF-wvQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbI-Ze-PGt">
+                                <rect key="frame" x="46" y="193" width="229" height="30"/>
+                                <state key="normal" title="跳转到免费详情页面">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTouch:" destination="51k-A6-izp" eventType="touchUpInside" id="uQj-bt-Oq2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21721331660000001" green="1" blue="0.22989465579999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZS8-dz-X8P"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7V-hm-qyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="-352"/>
+        </scene>
+        <!--设置-->
+        <scene sceneID="OCo-eG-jyR">
+            <objects>
+                <navigationController id="wlD-HB-FOR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="设置" id="J6U-9i-DWI"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UGL-9W-Ag8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="o99-5q-DEw" kind="relationship" relationship="rootViewController" id="9Ef-Ig-rSj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPF-K5-lyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149" y="372"/>
+        </scene>
+        <!--Setting Controller-->
+        <scene sceneID="ez8-XV-Rtb">
+            <objects>
+                <viewController id="o99-5q-DEw" customClass="GPSettingController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="egh-Dm-ao1"/>
+                        <viewControllerLayoutGuide type="bottom" id="6su-mk-ZP4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qug-Mh-fpy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iii-do-1Cz">
+                                <rect key="frame" x="96" y="175" width="157" height="30"/>
+                                <state key="normal" title="跳转到设置详情页面">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTouch:" destination="o99-5q-DEw" eventType="touchUpInside" id="mG4-iD-9tl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bjn-C1-tba"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVw-sP-aYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="372"/>
+        </scene>
+    </scenes>
+</document>

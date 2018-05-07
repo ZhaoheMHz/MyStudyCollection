@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>friends</key>
+		<array>
+			<string>吴彦祖</string>
+			<string>蜘蛛侠</string>
+			<string>哆啦A梦</string>
+			<string>忍者神龟</string>
+			<string>美国队长</string>
+			<string>超人</string>
+			<string>小飞侠</string>
+			<string>王大锤</string>
+			<string>张学友</string>
+			<string>刘德华</string>
+		</array>
+		<key>title</key>
+		<string>我的好友</string>
+	</dict>
+	<dict>
+		<key>friends</key>
+		<array>
+			<string>流川枫</string>
+			<string>樱木花道</string>
+			<string>赤木晴子</string>
+			<string>三井寿</string>
+			<string>水户洋平</string>
+			<string>彩子</string>
+			<string>小宫</string>
+			<string>鸣人</string>
+			<string>小樱</string>
+			<string>光头强</string>
+		</array>
+		<key>title</key>
+		<string>同事</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<response>
+    <result>0</result>
+    <cuttotal>31</cuttotal>
+    <total>301</total>
+    <shareprefix>app.manzuo.com</shareprefix>
+    <buyprefix>app.manzuo.com</buyprefix>
+    <list>
+        <promotion>
+            <id>275886</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=275886&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/prm/27/275886.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/27/275886/21498613_w_more.jpg]]></wsdimg>
+            <name><![CDATA[坪亭铁板烧代金券]]></name>
+            <multipagetitle><![CDATA[【3店通用】坪亭铁板烧代金券1张！无需预约，一张免费配送！]]></multipagetitle>
+            <price>228.0</price>
+            <priceoff>182.0</priceoff>
+            <currentdealcount>777</currentdealcount>
+            <starttime>2014-04-17 00:00:01</starttime>
+            <endtime>2015-08-15 23:59:59</endtime>
+            <sevenrefundallowed>0</sevenrefundallowed>
+            <expirerefundallowed>0</expirerefundallowed>
+            <district>北京</district>
+            <type2>1</type2>
+            <hassub>-1</hassub>
+            <flag>0</flag>
+        </promotion>
+        <promotion>
+            <id>393172</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=393172&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/phs/39/393172.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/39/393172/27676127_w_more.jpg]]></wsdimg>
+            <name><![CDATA[亚太安康慈铭体检一卡通中青年套餐]]></name>
+            <multipagetitle><![CDATA[【北京通用】慈铭体检专业体检机构一卡通中青年套餐！另有更多套餐可选！]]></multipagetitle>
+            <price>799.0</price>
+            <priceoff>368.0</priceoff>
+            <currentdealcount>245</currentdealcount>
+            <starttime>2014-06-28 00:00:00</starttime>
+            <endtime>2015-09-28 23:59:59</endtime>
+            <sevenrefundallowed>1</sevenrefundallowed>
+            <expirerefundallowed>1</expirerefundallowed>
+            <district>北京</district>
+            <type2>4</type2>
+            <hassub>0</hassub>
+            <flag>0</flag>
+        </promotion>
+        <promotion>
+            <id>478046</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=478046&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/phs/47/478046.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/47/478046/83931857_w_more.jpg]]></wsdimg>
+            <name><![CDATA[同欣农家院二日游玩C套餐]]></name>
+            <multipagetitle><![CDATA[【十渡镇】同欣农家院二日游玩C套餐！郊游放松的好去处，尽享清凉夏日！]]></multipagetitle>
+            <price>385.0</price>
+            <priceoff>219.0</priceoff>
+            <currentdealcount>241</currentdealcount>
+            <starttime>2015-04-21 00:00:00</starttime>
+            <endtime>2015-11-28 23:59:59</endtime>
+            <sevenrefundallowed>0</sevenrefundallowed>
+            <expirerefundallowed>0</expirerefundallowed>
+            <district>全国</district>
+            <type2>6</type2>
+            <hassub>0</hassub>
+            <flag>0</flag>
+        </promotion>
+        <promotion>
+            <id>407156</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=407156&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/phs/40/407156.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/40/407156/94026143_w_more.jpg]]></wsdimg>
+            <name><![CDATA[金鼎轩500元储值卡]]></name>
+            <multipagetitle><![CDATA[【北京12店通用】金鼎轩储值卡一张！金鼎轩所有门面（除三元桥店）均可使用！]]></multipagetitle>
+            <price>500.0</price>
+            <priceoff>438.0</priceoff>
+            <currentdealcount>234</currentdealcount>
+            <starttime>2014-08-02 00:00:00</starttime>
+            <endtime>2015-08-15 23:59:59</endtime>
+            <sevenrefundallowed>0</sevenrefundallowed>
+            <expirerefundallowed>0</expirerefundallowed>
+            <district>多商圈</district>
+            <type2>1</type2>
+            <hassub>0</hassub>
+            <flag>0</flag>
+        </promotion>
+        <promotion>
+            <id>442765</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=442765&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/prm/44/442765.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/44/442765/13730162_w_more.jpg]]></wsdimg>
+            <name><![CDATA[糊涂妹3店通用100元代金券]]></name>
+            <multipagetitle><![CDATA[【3店通用】糊涂妹100元代金券！全场通用，可叠加使用！]]></multipagetitle>
+            <price>100.0</price>
+            <priceoff>72.0</priceoff>
+            <currentdealcount>226</currentdealcount>
+            <starttime>2014-12-11 00:00:00</starttime>
+            <endtime>2015-06-08 23:59:59</endtime>
+            <sevenrefundallowed>1</sevenrefundallowed>
+            <expirerefundallowed>1</expirerefundallowed>
+            <district>北京</district>
+            <type2>1</type2>
+            <hassub>-1</hassub>
+            <flag>0</flag>
+        </promotion>
+        <promotion>
+            <id>205667</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=205667&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/prm/20/205667.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/20/205667/56728495_w_more.jpg]]></wsdimg>
+            <name><![CDATA[逸丝风尚美发套系]]></name>
+            <multipagetitle><![CDATA[【2店通用】逸丝风尚美发套系！A/B套系2选1！让美丽从逸丝开始，开启慵懒之美！]]></multipagetitle>
+            <price>1138.0</price>
+            <priceoff>128.0</priceoff>
+            <currentdealcount>160</currentdealcount>
+            <starttime>2014-01-04 00:00:00</starttime>
+            <endtime>2015-08-15 23:59:59</endtime>
+            <sevenrefundallowed>0</sevenrefundallowed>
+            <expirerefundallowed>0</expirerefundallowed>
+            <district>多商圈</district>
+            <type2>4</type2>
+            <hassub>-1</hassub>
+            <flag>0</flag>
+        </promotion>
+        <promotion>
+            <id>456888</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=456888&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/prm/45/456888.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/45/456888/34527146_w_more.jpg]]></wsdimg>
+            <name><![CDATA[宽板凳100元的代金券]]></name>
+            <multipagetitle><![CDATA[【22店通用】宽板凳100元的代金券一张！无需预约，不限时段通用，可累积使用！]]></multipagetitle>
+            <price>100.0</price>
+            <priceoff>88.0</priceoff>
+            <currentdealcount>159</currentdealcount>
+            <starttime>2015-01-30 00:00:00</starttime>
+            <endtime>2016-01-26 23:59:59</endtime>
+            <sevenrefundallowed>1</sevenrefundallowed>
+            <expirerefundallowed>1</expirerefundallowed>
+            <district>北京等</district>
+            <type2>1</type2>
+            <hassub>-1</hassub>
+            <flag>0</flag>
+        </promotion>
+        <promotion>
+            <id>470457</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=470457&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/phs/47/470457.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/47/470457/77609656_w_more.jpg]]></wsdimg>
+            <name><![CDATA[友乐汇KTVA]]></name>
+            <multipagetitle><![CDATA[【东直门】友乐汇KTV A套餐！]]></multipagetitle>
+            <price>202.5</price>
+            <priceoff>29.0</priceoff>
+            <currentdealcount>158</currentdealcount>
+            <starttime>2015-03-28 00:00:00</starttime>
+            <endtime>2015-09-22 23:59:59</endtime>
+            <sevenrefundallowed>1</sevenrefundallowed>
+            <expirerefundallowed>1</expirerefundallowed>
+            <district>东直门</district>
+            <type2>3</type2>
+            <hassub>0</hassub>
+            <flag>0</flag>
+        </promotion>
+        <promotion>
+            <id>482374</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=482374&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/phs/48/482374.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/48/482374/09124772_w_more.jpg]]></wsdimg>
+            <name><![CDATA[川酷麻辣香锅100元的代金券]]></name>
+            <multipagetitle><![CDATA[【京良路】川酷麻辣香锅100元的代金券！全场通用！可叠加使用！提供免费WiFi！]]></multipagetitle>
+            <price>100.0</price>
+            <priceoff>76.0</priceoff>
+            <currentdealcount>149</currentdealcount>
+            <starttime>2015-05-13 00:00:00</starttime>
+            <endtime>2016-04-25 23:59:59</endtime>
+            <sevenrefundallowed>1</sevenrefundallowed>
+            <expirerefundallowed>1</expirerefundallowed>
+            <district>西红门</district>
+            <type2>1</type2>
+            <hassub>0</hassub>
+            <flag>0</flag>
+        </promotion>
+        <promotion>
+            <id>480554</id>
+            <surl><![CDATA[http://mps.manzuo.com/mps/pdstt?id=480554&pg=0&f=cat]]></surl>
+            <durl><![CDATA[http://mp.manzuo.com/china/phs/48/480554.xml]]></durl>
+            <wsdimg><![CDATA[http://p0.manzuo.com/48/480554/60018130_w_more.jpg]]></wsdimg>
+            <name><![CDATA[丘比特DIY烘培屋10英寸蛋糕]]></name>
+            <multipagetitle><![CDATA[【天通苑】丘比特DIY烘培屋10英寸蛋糕8选1！另有其他套餐可选！]]></multipagetitle>
+            <price>198.0</price>
+            <priceoff>88.0</priceoff>
+            <currentdealcount>149</currentdealcount>
+            <starttime>2015-05-05 00:00:00</starttime>
+            <endtime>2016-04-13 23:59:59</endtime>
+            <sevenrefundallowed>1</sevenrefundallowed>
+            <expirerefundallowed>1</expirerefundallowed>
+            <district>天通苑</district>
+            <type2>1</type2>
+            <hassub>0</hassub>
+            <flag>0</flag>
+        </promotion> 
+    </list> 
+</response>

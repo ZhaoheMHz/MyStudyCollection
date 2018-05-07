@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FE6E81F1C7FF2FE00747F1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E81E1C7FF2FE00747F1E /* main.m */; };
+		8FE6E8221C7FF2FE00747F1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E8211C7FF2FE00747F1E /* AppDelegate.m */; };
+		8FE6E8281C7FF2FE00747F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE6E8261C7FF2FE00747F1E /* Main.storyboard */; };
+		8FE6E82A1C7FF2FE00747F1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE6E8291C7FF2FE00747F1E /* Images.xcassets */; };
+		8FE6E82D1C7FF2FE00747F1E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE6E82B1C7FF2FE00747F1E /* LaunchScreen.xib */; };
+		8FE6E8391C7FF2FF00747F1E /* _3_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E8381C7FF2FF00747F1E /* _3_____Tests.m */; };
+		8FE6E84C1C7FF4ED00747F1E /* GPSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E84B1C7FF4ED00747F1E /* GPSettingController.m */; };
+		8FE6E84F1C7FF4F900747F1E /* GPFreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E84E1C7FF4F900747F1E /* GPFreeController.m */; };
+		8FE6E8521C7FF50800747F1E /* GPHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E8511C7FF50800747F1E /* GPHomeController.m */; };
+		8FE6E8551C7FF53100747F1E /* GPSettingDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E8541C7FF53100747F1E /* GPSettingDetailController.m */; };
+		8FE6E8581C7FF54000747F1E /* GPFreeDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E8571C7FF54000747F1E /* GPFreeDetailController.m */; };
+		8FE6E85B1C7FF54E00747F1E /* GPHomeDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E85A1C7FF54E00747F1E /* GPHomeDetailController.m */; };
+		8FE6E85F1C7FF88000747F1E /* GPLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E85D1C7FF88000747F1E /* GPLoginController.m */; };
+		8FE6E8601C7FF88000747F1E /* GPLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE6E85E1C7FF88000747F1E /* GPLoginController.xib */; };
+		8FE6E8641C7FFA9D00747F1E /* UINavigationController+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E8631C7FFA9D00747F1E /* UINavigationController+AOP.m */; };
+		8FE6E8671C7FFACF00747F1E /* NSObject+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6E8661C7FFACF00747F1E /* NSObject+AOP.m */; };
+		8FE6E8691C7FFEE900747F1E /* LoginClassName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FE6E8681C7FFEE900747F1E /* LoginClassName.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FE6E8331C7FF2FF00747F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE6E8111C7FF2FE00747F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FE6E8181C7FF2FE00747F1E;
+			remoteInfo = "03-权限控制";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FE6E8191C7FF2FE00747F1E /* 03-权限控制.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-权限控制.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE6E81D1C7FF2FE00747F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE6E81E1C7FF2FE00747F1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FE6E8201C7FF2FE00747F1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8FE6E8211C7FF2FE00747F1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8FE6E8271C7FF2FE00747F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FE6E8291C7FF2FE00747F1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8FE6E82C1C7FF2FE00747F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8FE6E8321C7FF2FF00747F1E /* 03-权限控制Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-权限控制Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE6E8371C7FF2FF00747F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE6E8381C7FF2FF00747F1E /* _3_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_3_____Tests.m"; sourceTree = "<group>"; };
+		8FE6E84A1C7FF4ED00747F1E /* GPSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSettingController.h; sourceTree = "<group>"; };
+		8FE6E84B1C7FF4ED00747F1E /* GPSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSettingController.m; sourceTree = "<group>"; };
+		8FE6E84D1C7FF4F900747F1E /* GPFreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFreeController.h; sourceTree = "<group>"; };
+		8FE6E84E1C7FF4F900747F1E /* GPFreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFreeController.m; sourceTree = "<group>"; };
+		8FE6E8501C7FF50800747F1E /* GPHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHomeController.h; sourceTree = "<group>"; };
+		8FE6E8511C7FF50800747F1E /* GPHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHomeController.m; sourceTree = "<group>"; };
+		8FE6E8531C7FF53100747F1E /* GPSettingDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSettingDetailController.h; sourceTree = "<group>"; };
+		8FE6E8541C7FF53100747F1E /* GPSettingDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSettingDetailController.m; sourceTree = "<group>"; };
+		8FE6E8561C7FF54000747F1E /* GPFreeDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFreeDetailController.h; sourceTree = "<group>"; };
+		8FE6E8571C7FF54000747F1E /* GPFreeDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFreeDetailController.m; sourceTree = "<group>"; };
+		8FE6E8591C7FF54E00747F1E /* GPHomeDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHomeDetailController.h; sourceTree = "<group>"; };
+		8FE6E85A1C7FF54E00747F1E /* GPHomeDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHomeDetailController.m; sourceTree = "<group>"; };
+		8FE6E85C1C7FF88000747F1E /* GPLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPLoginController.h; sourceTree = "<group>"; };
+		8FE6E85D1C7FF88000747F1E /* GPLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPLoginController.m; sourceTree = "<group>"; };
+		8FE6E85E1C7FF88000747F1E /* GPLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPLoginController.xib; sourceTree = "<group>"; };
+		8FE6E8621C7FFA9D00747F1E /* UINavigationController+AOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+AOP.h"; sourceTree = "<group>"; };
+		8FE6E8631C7FFA9D00747F1E /* UINavigationController+AOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+AOP.m"; sourceTree = "<group>"; };
+		8FE6E8651C7FFACF00747F1E /* NSObject+AOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AOP.h"; sourceTree = "<group>"; };
+		8FE6E8661C7FFACF00747F1E /* NSObject+AOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AOP.m"; sourceTree = "<group>"; };
+		8FE6E8681C7FFEE900747F1E /* LoginClassName.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoginClassName.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FE6E8161C7FF2FE00747F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE6E82F1C7FF2FF00747F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FE6E8101C7FF2FE00747F1E = {
+			isa = PBXGroup;
+			children = (
+				8FE6E81B1C7FF2FE00747F1E /* 03-权限控制 */,
+				8FE6E8351C7FF2FF00747F1E /* 03-权限控制Tests */,
+				8FE6E81A1C7FF2FE00747F1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FE6E81A1C7FF2FE00747F1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E8191C7FF2FE00747F1E /* 03-权限控制.app */,
+				8FE6E8321C7FF2FF00747F1E /* 03-权限控制Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FE6E81B1C7FF2FE00747F1E /* 03-权限控制 */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E8491C7FF36800747F1E /* Applications */,
+				8FE6E8471C7FF35600747F1E /* 设置 */,
+				8FE6E8451C7FF33800747F1E /* 免费 */,
+				8FE6E8431C7FF32300747F1E /* 首页 */,
+				8FE6E81C1C7FF2FE00747F1E /* Supporting Files */,
+			);
+			path = "03-权限控制";
+			sourceTree = "<group>";
+		};
+		8FE6E81C1C7FF2FE00747F1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E81D1C7FF2FE00747F1E /* Info.plist */,
+				8FE6E81E1C7FF2FE00747F1E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FE6E8351C7FF2FF00747F1E /* 03-权限控制Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E8381C7FF2FF00747F1E /* _3_____Tests.m */,
+				8FE6E8361C7FF2FF00747F1E /* Supporting Files */,
+			);
+			path = "03-权限控制Tests";
+			sourceTree = "<group>";
+		};
+		8FE6E8361C7FF2FF00747F1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E8371C7FF2FF00747F1E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FE6E8431C7FF32300747F1E /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E8441C7FF32F00747F1E /* Controllers */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
+		8FE6E8441C7FF32F00747F1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E8501C7FF50800747F1E /* GPHomeController.h */,
+				8FE6E8511C7FF50800747F1E /* GPHomeController.m */,
+				8FE6E8591C7FF54E00747F1E /* GPHomeDetailController.h */,
+				8FE6E85A1C7FF54E00747F1E /* GPHomeDetailController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8FE6E8451C7FF33800747F1E /* 免费 */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E8461C7FF35000747F1E /* Controllers */,
+			);
+			name = "免费";
+			sourceTree = "<group>";
+		};
+		8FE6E8461C7FF35000747F1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E84D1C7FF4F900747F1E /* GPFreeController.h */,
+				8FE6E84E1C7FF4F900747F1E /* GPFreeController.m */,
+				8FE6E8561C7FF54000747F1E /* GPFreeDetailController.h */,
+				8FE6E8571C7FF54000747F1E /* GPFreeDetailController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8FE6E8471C7FF35600747F1E /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E8481C7FF36200747F1E /* Controllers */,
+			);
+			name = "设置";
+			sourceTree = "<group>";
+		};
+		8FE6E8481C7FF36200747F1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E84A1C7FF4ED00747F1E /* GPSettingController.h */,
+				8FE6E84B1C7FF4ED00747F1E /* GPSettingController.m */,
+				8FE6E8531C7FF53100747F1E /* GPSettingDetailController.h */,
+				8FE6E8541C7FF53100747F1E /* GPSettingDetailController.m */,
+				8FE6E85C1C7FF88000747F1E /* GPLoginController.h */,
+				8FE6E85D1C7FF88000747F1E /* GPLoginController.m */,
+				8FE6E85E1C7FF88000747F1E /* GPLoginController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8FE6E8491C7FF36800747F1E /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E8611C7FFA8900747F1E /* Category */,
+				8FE6E8201C7FF2FE00747F1E /* AppDelegate.h */,
+				8FE6E8211C7FF2FE00747F1E /* AppDelegate.m */,
+				8FE6E8261C7FF2FE00747F1E /* Main.storyboard */,
+				8FE6E8291C7FF2FE00747F1E /* Images.xcassets */,
+				8FE6E82B1C7FF2FE00747F1E /* LaunchScreen.xib */,
+			);
+			name = Applications;
+			sourceTree = "<group>";
+		};
+		8FE6E8611C7FFA8900747F1E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8FE6E8651C7FFACF00747F1E /* NSObject+AOP.h */,
+				8FE6E8661C7FFACF00747F1E /* NSObject+AOP.m */,
+				8FE6E8621C7FFA9D00747F1E /* UINavigationController+AOP.h */,
+				8FE6E8631C7FFA9D00747F1E /* UINavigationController+AOP.m */,
+				8FE6E8681C7FFEE900747F1E /* LoginClassName.plist */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FE6E8181C7FF2FE00747F1E /* 03-权限控制 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE6E83C1C7FF2FF00747F1E /* Build configuration list for PBXNativeTarget "03-权限控制" */;
+			buildPhases = (
+				8FE6E8151C7FF2FE00747F1E /* Sources */,
+				8FE6E8161C7FF2FE00747F1E /* Frameworks */,
+				8FE6E8171C7FF2FE00747F1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-权限控制";
+			productName = "03-权限控制";
+			productReference = 8FE6E8191C7FF2FE00747F1E /* 03-权限控制.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FE6E8311C7FF2FF00747F1E /* 03-权限控制Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE6E83F1C7FF2FF00747F1E /* Build configuration list for PBXNativeTarget "03-权限控制Tests" */;
+			buildPhases = (
+				8FE6E82E1C7FF2FF00747F1E /* Sources */,
+				8FE6E82F1C7FF2FF00747F1E /* Frameworks */,
+				8FE6E8301C7FF2FF00747F1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FE6E8341C7FF2FF00747F1E /* PBXTargetDependency */,
+			);
+			name = "03-权限控制Tests";
+			productName = "03-权限控制Tests";
+			productReference = 8FE6E8321C7FF2FF00747F1E /* 03-权限控制Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FE6E8111C7FF2FE00747F1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "百度移动事业部";
+				TargetAttributes = {
+					8FE6E8181C7FF2FE00747F1E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8FE6E8311C7FF2FF00747F1E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 8FE6E8181C7FF2FE00747F1E;
+					};
+				};
+			};
+			buildConfigurationList = 8FE6E8141C7FF2FE00747F1E /* Build configuration list for PBXProject "03-权限控制" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FE6E8101C7FF2FE00747F1E;
+			productRefGroup = 8FE6E81A1C7FF2FE00747F1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FE6E8181C7FF2FE00747F1E /* 03-权限控制 */,
+				8FE6E8311C7FF2FF00747F1E /* 03-权限控制Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FE6E8171C7FF2FE00747F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE6E8281C7FF2FE00747F1E /* Main.storyboard in Resources */,
+				8FE6E82D1C7FF2FE00747F1E /* LaunchScreen.xib in Resources */,
+				8FE6E8601C7FF88000747F1E /* GPLoginController.xib in Resources */,
+				8FE6E8691C7FFEE900747F1E /* LoginClassName.plist in Resources */,
+				8FE6E82A1C7FF2FE00747F1E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE6E8301C7FF2FF00747F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FE6E8151C7FF2FE00747F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE6E8221C7FF2FE00747F1E /* AppDelegate.m in Sources */,
+				8FE6E8671C7FFACF00747F1E /* NSObject+AOP.m in Sources */,
+				8FE6E8581C7FF54000747F1E /* GPFreeDetailController.m in Sources */,
+				8FE6E85B1C7FF54E00747F1E /* GPHomeDetailController.m in Sources */,
+				8FE6E81F1C7FF2FE00747F1E /* main.m in Sources */,
+				8FE6E8521C7FF50800747F1E /* GPHomeController.m in Sources */,
+				8FE6E84F1C7FF4F900747F1E /* GPFreeController.m in Sources */,
+				8FE6E8551C7FF53100747F1E /* GPSettingDetailController.m in Sources */,
+				8FE6E85F1C7FF88000747F1E /* GPLoginController.m in Sources */,
+				8FE6E8641C7FFA9D00747F1E /* UINavigationController+AOP.m in Sources */,
+				8FE6E84C1C7FF4ED00747F1E /* GPSettingController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE6E82E1C7FF2FF00747F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE6E8391C7FF2FF00747F1E /* _3_____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FE6E8341C7FF2FF00747F1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FE6E8181C7FF2FE00747F1E /* 03-权限控制 */;
+			targetProxy = 8FE6E8331C7FF2FF00747F1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FE6E8261C7FF2FE00747F1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FE6E8271C7FF2FE00747F1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FE6E82B1C7FF2FE00747F1E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FE6E82C1C7FF2FE00747F1E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FE6E83A1C7FF2FF00747F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8FE6E83B1C7FF2FF00747F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FE6E83D1C7FF2FF00747F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-权限控制/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8FE6E83E1C7FF2FF00747F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-权限控制/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8FE6E8401C7FF2FF00747F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "03-权限控制Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03-权限控制.app/03-权限控制";
+			};
+			name = Debug;
+		};
+		8FE6E8411C7FF2FF00747F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "03-权限控制Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03-权限控制.app/03-权限控制";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FE6E8141C7FF2FE00747F1E /* Build configuration list for PBXProject "03-权限控制" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE6E83A1C7FF2FF00747F1E /* Debug */,
+				8FE6E83B1C7FF2FF00747F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE6E83C1C7FF2FF00747F1E /* Build configuration list for PBXNativeTarget "03-权限控制" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE6E83D1C7FF2FF00747F1E /* Debug */,
+				8FE6E83E1C7FF2FF00747F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8FE6E83F1C7FF2FF00747F1E /* Build configuration list for PBXNativeTarget "03-权限控制Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE6E8401C7FF2FF00747F1E /* Debug */,
+				8FE6E8411C7FF2FF00747F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FE6E8111C7FF2FE00747F1E /* Project object */;
+}

@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F6F1BD61C51C637003A5F09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F1BD51C51C637003A5F09 /* main.m */; };
+		8F6F1BD91C51C637003A5F09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F1BD81C51C637003A5F09 /* AppDelegate.m */; };
+		8F6F1BE11C51C637003A5F09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F1BE01C51C637003A5F09 /* Images.xcassets */; };
+		8F6F1BE41C51C637003A5F09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F1BE21C51C637003A5F09 /* LaunchScreen.xib */; };
+		8F6F1BF01C51C637003A5F09 /* _2_bookstore___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F1BEF1C51C637003A5F09 /* _2_bookstore___Tests.m */; };
+		8F6F1BFB1C51C657003A5F09 /* GPBookStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F1BFA1C51C657003A5F09 /* GPBookStoreViewController.m */; };
+		8F6F1C021C51CC91003A5F09 /* GPTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F1C011C51CC91003A5F09 /* GPTabView.m */; };
+		8F6F1C051C51D53E003A5F09 /* GPOCListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F1C041C51D53E003A5F09 /* GPOCListView.m */; };
+		8F6F1C081C51D5A5003A5F09 /* GPJavaListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F1C071C51D5A5003A5F09 /* GPJavaListView.m */; };
+		8F6F1C0B1C51D5AF003A5F09 /* GPCListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F1C0A1C51D5AF003A5F09 /* GPCListView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F6F1BEA1C51C637003A5F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F6F1BC81C51C637003A5F09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F6F1BCF1C51C637003A5F09;
+			remoteInfo = "02-bookstore标签栏";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F6F1BD01C51C637003A5F09 /* 02-bookstore标签栏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-bookstore标签栏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6F1BD41C51C637003A5F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F6F1BD51C51C637003A5F09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F6F1BD71C51C637003A5F09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F6F1BD81C51C637003A5F09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F6F1BE01C51C637003A5F09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8F6F1BE31C51C637003A5F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8F6F1BE91C51C637003A5F09 /* 02-bookstore标签栏Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "02-bookstore标签栏Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6F1BEE1C51C637003A5F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F6F1BEF1C51C637003A5F09 /* _2_bookstore___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_2_bookstore___Tests.m"; sourceTree = "<group>"; };
+		8F6F1BF91C51C657003A5F09 /* GPBookStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPBookStoreViewController.h; sourceTree = "<group>"; };
+		8F6F1BFA1C51C657003A5F09 /* GPBookStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPBookStoreViewController.m; sourceTree = "<group>"; };
+		8F6F1C001C51CC91003A5F09 /* GPTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTabView.h; sourceTree = "<group>"; };
+		8F6F1C011C51CC91003A5F09 /* GPTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTabView.m; sourceTree = "<group>"; };
+		8F6F1C031C51D53E003A5F09 /* GPOCListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPOCListView.h; sourceTree = "<group>"; };
+		8F6F1C041C51D53E003A5F09 /* GPOCListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPOCListView.m; sourceTree = "<group>"; };
+		8F6F1C061C51D5A5003A5F09 /* GPJavaListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPJavaListView.h; sourceTree = "<group>"; };
+		8F6F1C071C51D5A5003A5F09 /* GPJavaListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPJavaListView.m; sourceTree = "<group>"; };
+		8F6F1C091C51D5AF003A5F09 /* GPCListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCListView.h; sourceTree = "<group>"; };
+		8F6F1C0A1C51D5AF003A5F09 /* GPCListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCListView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F6F1BCD1C51C637003A5F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F6F1BE61C51C637003A5F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F6F1BC71C51C637003A5F09 = {
+			isa = PBXGroup;
+			children = (
+				8F6F1BD21C51C637003A5F09 /* 02-bookstore标签栏 */,
+				8F6F1BEC1C51C637003A5F09 /* 02-bookstore标签栏Tests */,
+				8F6F1BD11C51C637003A5F09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F6F1BD11C51C637003A5F09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F1BD01C51C637003A5F09 /* 02-bookstore标签栏.app */,
+				8F6F1BE91C51C637003A5F09 /* 02-bookstore标签栏Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F6F1BD21C51C637003A5F09 /* 02-bookstore标签栏 */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F1BFF1C51C6C2003A5F09 /* Application */,
+				8F6F1BFE1C51C6B6003A5F09 /* Controllers */,
+				8F6F1BFD1C51C6B0003A5F09 /* Views */,
+				8F6F1BFC1C51C6AB003A5F09 /* Models */,
+				8F6F1BD31C51C637003A5F09 /* Supporting Files */,
+			);
+			path = "02-bookstore标签栏";
+			sourceTree = "<group>";
+		};
+		8F6F1BD31C51C637003A5F09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F1BD41C51C637003A5F09 /* Info.plist */,
+				8F6F1BD51C51C637003A5F09 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F6F1BEC1C51C637003A5F09 /* 02-bookstore标签栏Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F1BEF1C51C637003A5F09 /* _2_bookstore___Tests.m */,
+				8F6F1BED1C51C637003A5F09 /* Supporting Files */,
+			);
+			path = "02-bookstore标签栏Tests";
+			sourceTree = "<group>";
+		};
+		8F6F1BED1C51C637003A5F09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F1BEE1C51C637003A5F09 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F6F1BFC1C51C6AB003A5F09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8F6F1BFD1C51C6B0003A5F09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F1C001C51CC91003A5F09 /* GPTabView.h */,
+				8F6F1C011C51CC91003A5F09 /* GPTabView.m */,
+				8F6F1C031C51D53E003A5F09 /* GPOCListView.h */,
+				8F6F1C041C51D53E003A5F09 /* GPOCListView.m */,
+				8F6F1C061C51D5A5003A5F09 /* GPJavaListView.h */,
+				8F6F1C071C51D5A5003A5F09 /* GPJavaListView.m */,
+				8F6F1C091C51D5AF003A5F09 /* GPCListView.h */,
+				8F6F1C0A1C51D5AF003A5F09 /* GPCListView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8F6F1BFE1C51C6B6003A5F09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F1BF91C51C657003A5F09 /* GPBookStoreViewController.h */,
+				8F6F1BFA1C51C657003A5F09 /* GPBookStoreViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8F6F1BFF1C51C6C2003A5F09 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F1BD71C51C637003A5F09 /* AppDelegate.h */,
+				8F6F1BD81C51C637003A5F09 /* AppDelegate.m */,
+				8F6F1BE01C51C637003A5F09 /* Images.xcassets */,
+				8F6F1BE21C51C637003A5F09 /* LaunchScreen.xib */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F6F1BCF1C51C637003A5F09 /* 02-bookstore标签栏 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F6F1BF31C51C637003A5F09 /* Build configuration list for PBXNativeTarget "02-bookstore标签栏" */;
+			buildPhases = (
+				8F6F1BCC1C51C637003A5F09 /* Sources */,
+				8F6F1BCD1C51C637003A5F09 /* Frameworks */,
+				8F6F1BCE1C51C637003A5F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02-bookstore标签栏";
+			productName = "02-bookstore标签栏";
+			productReference = 8F6F1BD01C51C637003A5F09 /* 02-bookstore标签栏.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F6F1BE81C51C637003A5F09 /* 02-bookstore标签栏Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F6F1BF61C51C637003A5F09 /* Build configuration list for PBXNativeTarget "02-bookstore标签栏Tests" */;
+			buildPhases = (
+				8F6F1BE51C51C637003A5F09 /* Sources */,
+				8F6F1BE61C51C637003A5F09 /* Frameworks */,
+				8F6F1BE71C51C637003A5F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F6F1BEB1C51C637003A5F09 /* PBXTargetDependency */,
+			);
+			name = "02-bookstore标签栏Tests";
+			productName = "02-bookstore标签栏Tests";
+			productReference = 8F6F1BE91C51C637003A5F09 /* 02-bookstore标签栏Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F6F1BC81C51C637003A5F09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "百度移动事业部";
+				TargetAttributes = {
+					8F6F1BCF1C51C637003A5F09 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8F6F1BE81C51C637003A5F09 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 8F6F1BCF1C51C637003A5F09;
+					};
+				};
+			};
+			buildConfigurationList = 8F6F1BCB1C51C637003A5F09 /* Build configuration list for PBXProject "02-bookstore标签栏" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F6F1BC71C51C637003A5F09;
+			productRefGroup = 8F6F1BD11C51C637003A5F09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F6F1BCF1C51C637003A5F09 /* 02-bookstore标签栏 */,
+				8F6F1BE81C51C637003A5F09 /* 02-bookstore标签栏Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F6F1BCE1C51C637003A5F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6F1BE41C51C637003A5F09 /* LaunchScreen.xib in Resources */,
+				8F6F1BE11C51C637003A5F09 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F6F1BE71C51C637003A5F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F6F1BCC1C51C637003A5F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6F1C0B1C51D5AF003A5F09 /* GPCListView.m in Sources */,
+				8F6F1BFB1C51C657003A5F09 /* GPBookStoreViewController.m in Sources */,
+				8F6F1BD91C51C637003A5F09 /* AppDelegate.m in Sources */,
+				8F6F1C051C51D53E003A5F09 /* GPOCListView.m in Sources */,
+				8F6F1BD61C51C637003A5F09 /* main.m in Sources */,
+				8F6F1C021C51CC91003A5F09 /* GPTabView.m in Sources */,
+				8F6F1C081C51D5A5003A5F09 /* GPJavaListView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F6F1BE51C51C637003A5F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6F1BF01C51C637003A5F09 /* _2_bookstore___Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F6F1BEB1C51C637003A5F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F6F1BCF1C51C637003A5F09 /* 02-bookstore标签栏 */;
+			targetProxy = 8F6F1BEA1C51C637003A5F09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F6F1BE21C51C637003A5F09 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F6F1BE31C51C637003A5F09 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F6F1BF11C51C637003A5F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8F6F1BF21C51C637003A5F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F6F1BF41C51C637003A5F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "02-bookstore标签栏/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F6F1BF51C51C637003A5F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "02-bookstore标签栏/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F6F1BF71C51C637003A5F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "02-bookstore标签栏Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/02-bookstore标签栏.app/02-bookstore标签栏";
+			};
+			name = Debug;
+		};
+		8F6F1BF81C51C637003A5F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "02-bookstore标签栏Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/02-bookstore标签栏.app/02-bookstore标签栏";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F6F1BCB1C51C637003A5F09 /* Build configuration list for PBXProject "02-bookstore标签栏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F6F1BF11C51C637003A5F09 /* Debug */,
+				8F6F1BF21C51C637003A5F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F6F1BF31C51C637003A5F09 /* Build configuration list for PBXNativeTarget "02-bookstore标签栏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F6F1BF41C51C637003A5F09 /* Debug */,
+				8F6F1BF51C51C637003A5F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8F6F1BF61C51C637003A5F09 /* Build configuration list for PBXNativeTarget "02-bookstore标签栏Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F6F1BF71C51C637003A5F09 /* Debug */,
+				8F6F1BF81C51C637003A5F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F6F1BC81C51C637003A5F09 /* Project object */;
+}

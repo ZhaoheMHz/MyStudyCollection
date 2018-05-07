@@ -1,0 +1,153 @@
+一、NSOperation简介
+
+    iOS中有多种多线程实现方式,苹果公司建议我们都使用NSOperation技术
+    1.GCD是纯c的对于面向对象程序员来说非常不友好
+    2.GCD对线程的管理还不是很强大
+
+    NSOperation底层实现就是基于GCD来做的
+
+    dispatch_queue  == NSOperationQueue
+    dispatch_asyn() == NSOperation
+    dispatch_syn()  == NSOperation
+
+
+    iOS并发编程中，把每个并发任务定义为一个Operation，对应的类名是NSOperation。NSOperation是一个抽象类，无法直接使用，它只定义了Operation的一些基本方法。我们需要创建一个继承于它的子类或者使用系统预定义的子类。目前系统预定义了两个子类：NSInvocationOperation和NSBlockOperation。
+
+
+    NSInvocationOperation
+        NSInvoationOperation是一个基于对象和selector的Operation，使用这个你只需要指定对象以及任务的selector，如果必要，你还可以设定传递的对象参数。
+        NSInvocationOperation *invacationOperation = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(doSomethingWithObj:) object:obj];
+
+        同时当这个Operation完成后，你还可以获取Operation中Invation执行后返回的结果对象。
+        id result = [invacationOperation result];
+
+    NSBlockOperation
+        在一个Block中执行一个任务，这时我们就需要用到NSBlockOperation。可以通过blockOperationWithBlock:方法来方便地创建一个NSBlockOperation：
+        NSBlockOperation *blockOperation = [NSBlockOperation blockOperationWithBlock:^{
+        //Do something here.
+        }];
+
+    运行一个Operation
+        调用Operation的start方法就可以直接运行一个Operation。
+        [operation start];
+    取消一个Operation
+        要取消一个Operation，要向Operation对象发送cancel消息：
+        [operation cancel];
+
+
+二、添加NSOperation到NSOperationQueue中
+
+    1.添加一个operation
+
+    [queue addOperation:operation];
+
+    2.添加一组operation
+
+    [queue addOperations:operations waitUntilFinished:NO];
+
+    3.添加一个block形式的operation
+
+    [queue addOperationWithBlock:^() {
+    NSLog(@"执行一个新的操作，线程：%@", [NSThread currentThread]);
+    }];
+
+    NSOperation添加到queue之后,通常短时间内就会得到运行。但是如果存在依赖,或者整个queue被暂停等原因,也可能需要等待。
+    注意：NSOperation添加到queue之后,绝对不要再修改NSOperation对象的状态。因为NSOperation对象可能会在任何时候运行,因此改变NSOperation对象的依赖或数据会产生不利的影响。你只能查看NSOperation对象的状态, 比如是否正在运行、等待运行、已经完成等
+
+三、添加NSOperation的依赖对象
+    1.当某个NSOperation对象依赖于其它NSOperation对象的完成时，就可以通过addDependency方法添加一个或者多个依赖的对象，只有所有依赖的对象都已经完成操作，当前NSOperation对象才会开始执行操作。另外，通过removeDependency方法来删除依赖对象。
+
+    [operation2 addDependency:operation1];
+
+    依赖关系不局限于相同queue中的NSOperation对象,NSOperation对象会管理自己的依赖, 因此完全可以在不同的queue之间的NSOperation对象创建依赖关系
+
+    唯一的限制是不能创建环形依赖，比如A依赖B，B依赖A，这是错误的
+
+    2.依赖关系会影响到NSOperation对象在queue中的执行顺序，看下面的例子：
+    1> 没有设置依赖关系
+
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+
+    NSBlockOperation *operation1 = [NSBlockOperation blockOperationWithBlock:^(){
+    NSLog(@"执行第1次操作，线程：%@", [NSThread currentThread]);
+    }];
+
+    NSBlockOperation *operation2 = [NSBlockOperation blockOperationWithBlock:^(){
+    NSLog(@"执行第2次操作，线程：%@", [NSThread currentThread]);
+    }];
+
+    [queue addOperation:operation1];
+    [queue addOperation:operation2];
+    打印信息：
+
+    2013-02-03 00:21:35.024 thread[5616:3d13] 执行第1次操作，线程：<NSThread: 0x7658570>{name = (null), num = 3}
+    2013-02-03 00:21:35.063 thread[5616:1303] 执行第2次操作，线程：<NSThread: 0x765a2e0>{name = (null), num = 4}
+    可以看出，默认是按照添加顺序执行的，先执行operation1，再执行operation2
+
+    2> 设置了依赖关系
+
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+
+    NSBlockOperation *operation1 = [NSBlockOperation blockOperationWithBlock:^(){
+    NSLog(@"执行第1次操作，线程：%@", [NSThread currentThread]);
+    }];
+
+    NSBlockOperation *operation2 = [NSBlockOperation blockOperationWithBlock:^(){
+    NSLog(@"执行第2次操作，线程：%@", [NSThread currentThread]);
+    }];
+    // operation1依赖于operation2
+    [operation1 addDependency:operation2];
+
+    [queue addOperation:operation1];
+    [queue addOperation:operation2];
+    打印信息：
+
+    2013-02-03 00:24:16.260 thread[5656:1b03] 执行第2次操作，线程：<NSThread: 0x7634490>{name = (null), num = 3}
+    2013-02-03 00:24:16.285 thread[5656:1303] 执行第1次操作，线程：<NSThread: 0x9138b50>{name = (null), num = 4}
+    可以看出，先执行operation2，再执行operation1
+
+四、修改Operations的执行顺序
+
+    对于添加到queue中的operations，它们的执行顺序取决于2点：
+    1.首先看看NSOperation是否已经准备好：是否准备好由对象的依赖关系确定
+    2.然后再根据所有NSOperation的相对优先级来确定。优先级等级则是operation对象本身的一个属性。默认所有operation都拥有“普通”优先级,不过可以通过setQueuePriority:方法来提升或降低operation对象的优先级。优先级只能应用于相同queue中的operations。如果应用有多个operation queue,每个queue的优先级等级是互相独立的。因此不同queue中的低优先级操作仍然可能比高优先级操作更早执行。
+    注意：优先级不能替代依赖关系,优先级只是对已经准备好的 operations确定执行顺序。先满足依赖关系,然后再根据优先级从所有准备好的操作中选择优先级最高的那个执行。
+
+五、设置队列的最大并发操作数量
+    队列的最大并发操作数量，意思是队列中最多同时运行几条线程
+    虽然NSOperationQueue类设计用于并发执行Operations,你也可以强制单个queue一次只能执行一个Operation。setMaxConcurrentOperationCount:方法可以配置queue的最大并发操作数量。设为1就表示queue每次只能执行一个操作。不过operation执行的顺序仍然依赖于其它因素,比如operation是否准备好和operation的优先级等。因此串行化的operation queue并不等同于GCD中的串行dispatch queue
+
+    // 每次只能执行一个操作
+    queue.maxConcurrentOperationCount = 1;
+    // 或者这样写
+    [queue setMaxConcurrentOperationCount:1];
+
+六、取消Operations
+    一旦添加到operation queue,queue就拥有了这个Operation对象并且不能被删除,唯一能做的事情是取消。你可以调用Operation对象的cancel方法取消单个操作,也可以调用operation queue的cancelAllOperations方法取消当前queue中的所有操作。
+
+    // 取消单个操作
+    [operation cancel];
+
+    // 取消queue中所有的操作
+    [queue cancelAllOperations];
+
+七、等待Options完成
+    为了最佳的性能,你应该设计你的应用尽可能地异步操作,让应用在Operation正在执行时可以去处理其它事情。如果需要在当前线程中处理operation完成后的结果,可以使用NSOperation的waitUntilFinished方法阻塞当前线程，等待operation完成。通常我们应该避免编写这样的代码,阻塞当前线程可能是一种简便的解决方案,但是它引入了更多的串行代码,限制了整个应用的并发性,同时也降低了用户体验。绝对不要在应用主线程中等待一个Operation,只能在第二或次要线程中等待。阻塞主线程将导致应用无法响应用户事件,应用也将表现为无响应。
+
+    // 会阻塞当前线程，等到某个operation执行完毕
+    [operation waitUntilFinished];
+
+    除了等待单个Operation完成,你也可以同时等待一个queue中的所有操作,使用NSOperationQueue的waitUntilAllOperationsAreFinished方法。注意：在等待一个 queue时,应用的其它线程仍然可以往queue中添加Operation,因此可能会加长线程的等待时间。
+
+    // 阻塞当前线程，等待queue的所有操作执行完毕
+    [queue waitUntilAllOperationsAreFinished];
+
+    八、暂停和继续queue
+    如果你想临时暂停Operations的执行,可以使用queue的setSuspended:方法暂停queue。不过暂停一个queue不会导致正在执行的operation在任务中途暂停,只是简单地阻止调度新Operation执行。你可以在响应用户请求时,暂停一个queue来暂停等待中的任务。稍后根据用户的请求,可以再次调用setSuspended:方法继续queue中operation的执行
+
+    // 暂停queue
+    [queue setSuspended:YES];
+
+    // 继续queue
+    [queue setSuspended:NO];
+

@@ -1,0 +1,210 @@
+
+网络基础（概念性和逻辑性的东西较多）（****4星）
+
+
+一、URL（难度****4星）
+【概念】NSURL
+    URL：Uniform Resource Locator 统一资源定位符
+    是资源在网路上的地址，位置，每个资源都有一个唯一的URL
+【例子】
+    百度
+    http://www.baidu.com/
+    爱限免
+    http://iappfree.candou.com:8080/free/applications/limited?currency=rmb&page=3
+    比较有代表性
+【URL的组成】
+    1.http://（协议）
+    协议：规定了资源的查找和传输方式，网络连接要遵循这一协议
+    重点，稍后单讲
+    2.iappfree.candou.com
+    域名或者ip，主机的地址
+    :8080，端口（可有可无，由服务器开端给开通，默认值是80）
+    3.free/applications/limited?
+    路径，以？结束
+    资源在主机中的位置
+    4.currency=rmb&page=3
+    参数，一般是服务器提出来的，规定参数字段，服务器必须认得这些参数
+    不能想传啥就传啥
+    字段名 = 参数值&（以&号分隔多个参数）
+
+    快递的例子
+    你要到千锋的例子
+
+二、HTTP（难度*****5星，这是面试重点）
+    错误简历：“熟练掌握HTTP、TCP/UDP、Socket等网络协议”，学完这节课你们来分析出现的问题
+【概念】
+    http：hypertext transfer protocol 超文本传输协议
+    访问远程服务器的最常用协议、特点是简单快捷灵活
+    是基于请求和响应模式，基于TCP连接的 无状态 应用层协议
+
+    抓包看一下效果。。。。
+
+    抓包的基本原理
+    (类似考试传小抄)
+    原来交互的形式:		客户端----->服务器
+    抓包的原理:           客户端----->代理------>服务器
+
+HTTP协议请求：
+    1个完整的由客户端发给服务器的HTTP请求中包含以下内容
+
+    请求行：包含了请求方法、请求资源路径、HTTP协议版本
+    GET /MJServer/resources/images/1.jpg HTTP/1.1
+
+    请求头：包含了对客户端的环境描述、客户端请求的主机地址等信息
+    Host: 192.168.1.105:8080 // 客户端想访问的服务器主机地址
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9) Firefox/30.0
+    // 客户端的类型，客户端的软件环境
+    Accept: text/html, */*// 客户端所能接收的数据类型
+    Accept-Language: zh-cn // 客户端的语言环境
+    Accept-Encoding: gzip // 客户端支持的数据压缩格式
+
+
+    请求体：客户端发给服务器的具体数据，比如文件数据
+
+————————————————————————————
+HTTP协议响应：
+    1个完整的HTTP响应中包含以下内容：
+    状态行：包含了HTTP协议版本、状态码、状态英文名称
+    HTTP/1.1 200 OK
+
+    响应头：包含了对服务器的描述、对返回数据的描述
+    Server: Apache-Coyote/1.1 // 服务器的类型
+    Content-Type: image/jpeg // 返回数据的类型
+    Content-Length: 56811 // 返回数据的长度
+    Date: Mon, 23 Jun 2014 12:54:52 GMT // 响应的时间
+
+    实体内容：服务器返回给客户端的具体数据，比如文件数据
+
+
+【请求（request）】客户端发送给服务器的数据，根据服务器的协议通知给它，让它对数据处理，筛选和分发
+
+    请求行：包含了请求方法、请求路径、HTTP协议的版本
+    请求头：包含了客户端的环境描述、客户端请求的主机地址等信息
+    请求体：客户端发给服务端的具体数据
+
+【响应（respond）】：服务器接收到请求后回馈响应，包括建立稳定的TCP连接，传输数据
+
+    状态行：包含HTTP协议版本、状态码、状态英文描述
+    响应头：包含了对服务器的描述，返回数据的描述
+    实体内容：服务器返给客户端的具体数据
+
+画图、看图
+断点续传需要用到（****）
+
+【其他常见协议】
+    https: (HTTPS协议是由SSL(加密协议)+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。)
+    file：（本地计算机）
+    ftp：（访问共享主机的资源文件）
+
+常见的HTTP状态码和短语
+    200 OK：请求成功，信息包含在返回的响应报文中。
+    301 Moved Permanently：请求的对象已经被永久转移了，新的URL定义在响应报文的Location 首部行中指定。客户机可自动用新的URL获取该对象。
+    400 Bad Repuest：一个通用差错代码，指示该请求不能被服务器所理解。
+    403  禁止访问
+    404 Not Found：被请求的文档不在服务器上。
+    505  网关错误
+    505 HTTP Version Not Supported：服务器不支持请求报文使用的HTTP协议版本。
+    206 RANGE: bytes=2000070-
+    断点续传
+
+三、【TCP/IP】（传输层协议****4星，面试常问）
+    http是怎样连上的，靠的就是TCP
+【概念】
+    Transmission Control Protocol 传输控制协议
+    对应就有UDP  User Data Protocol 用户数据协议
+ 
+    TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接:
+    位码即tcp标志位,有6种标示:
+    SYN(synchronous建立联机)
+    ACK(acknowledgement 确认)
+    PSH(push传送)
+    FIN(finish结束)
+    RST(reset重置)
+    URG(urgent紧急)
+
+    Sequence number(顺序号码) Acknowledge number(确认号码)
+
+【建立连接三次握手】
+    第一次握手：建立连接时，客户端发送syn包(syn=j)到服务器，并进入SYN_SEND状态，等待服务器确认；
+    第二次握手：服务器收到syn包，必须确认客户的SYN（ack=j+1），同时自己也发送一个SYN包（syn=k），即SYN+ACK包，此时服务器进入SYN_RECV状态；
+    第三次握手：客户端收到服务器的SYN＋ACK包，向服务器发送确认包ACK(ack=k+1)，此包发送完毕，客户端和服务器进入ESTABLISHED状态，完成三次握手。
+    完成三次握手，客户端与服务器开始传送数据.
+
+    syn是建立连接的请求，
+    seq是序列号即位码，这是为了连接以后传送数据用的，
+    ack是对收到的数据包的确认，值是等待接收的数据包的序列号。
+    在第一次消息发送中，A随机选取一个序列号作为自己的初始序号发送给B；第二次消息B使用ack对A的数据包进行确认，因为已经收到了序列号为x的数据包，准备接收序列号为x+1的包，所以ack=x+1，同时B告诉A自己的初始序列号，就是seq=y；第三条消息A告诉B收到了B的确认消息并准备建立连接，A自己此条消息的序列号是x+1，所以seq=x+1，而ack=y+1是表示A正准备接收B序列号为y+1的数据包。
+
+
+【断开连接要四次握手】
+
+    由于TCP连接是全双工的，因此每个方向都必须单独进行关闭。这个原则是当一方完成它的数据发送任务后就能发送一个FIN来终止这个方向的连接。收到一个 FIN只意味着这一方向上没有数据流动，一个TCP连接在收到一个FIN后仍能发送数据。首先进行关闭的一方将执行主动关闭，而另一方执行被动关闭。
+     
+    （1）客户端A发送一个FIN，用来关闭客户A到服务器B的数据传送。
+    （2）服务器B收到这个FIN，它发回一个ACK，确认序号为收到的序号加1。和SYN一样，一个FIN将占用一个序号。
+    （3）服务器B关闭与客户端A的连接，发送一个FIN给客户端A。
+    （4）客户端A发回ACK报文确认，并将确认序号设置为收到序号加1。
+
+
+为什么建立连接协议是三次握手，而关闭连接却是四次握手呢？
+ 
+    这是因为服务端的LISTEN状态下的SOCKET当收到SYN报文的建连请求后，它可以把ACK和SYN（ACK起应答作用，而SYN起同步作用）放在一个报文里来发送。但关闭连接时，当收到对方的FIN报文通知时，它仅仅表示对方没有数据发送给你了；但未必你所有的数据都全部发送给对方了，所以你可以未必会马上会关闭SOCKET,也即你可能还需要发送一些数据给对方之后，再发送FIN报文给对方来表示你同意现在可以关闭连接了，所以它这里的ACK报文和FIN报文多数情况下都是分开发送的.
+
+
+【TCP与UDP的区别】
+
+    TCP 1.面向连接（要进行三次通信才能连上）
+    2.占系统资源较多，结构稍复杂
+    3.流模式
+    4.保证数据准确，保证数据顺序，不丢包
+    UDP 1.面向非连接（不需要连接，直接发，ping，QQ即时通讯）
+    2.占系统资源较少，结构简单
+    3.数据报模式
+    4.有可能数据不准、丢包
+
+    补全图片内容
+
+    那么问题来了，以上呢都是遵循的协议，与服务器交互的时候使用的是什么方法呢？
+    快递是选完了，快递公司是给空运还是陆运呢？
+
+四、请求方法【GET/POST】
+
+    http使用的默认是用的是GET
+    (1)GET: 参数是写在URL地址上的,明文传送,安全性低,而且有长度限制(8000个字节左右),浏览器决定了明文URL的长度,所以get请  求的长度也就受限制了
+    (2)POST: 参数一般是以二进制(NSData/NSMutableData)的方式将参数传递给服务器,能够上传很大的数据,那么具体能够上传多大的数据(后台服务器决定),如果在开发中发现上传数据经常失败,就需要确认服务器是否做了上传大小限制
+    建议：
+    (1)GET方式的安全性较POST方式要差些，包含机密信息的话，建议用POST数据提交方式;
+    (2)在做数据查询时，建议用GET方式；而在做数据添加、修改或删除时，建议用POST方式;
+
+【其他常见方法】
+    HEAD、PUT和DELETE等
+    HEAD请求:跟get请求类似，但是会得到报文头的回馈，便于检测数据的传输方式和数据是损坏等信息。
+
+
+五、同步请求
+    //NSString类方法同步请求
+    NSString *result = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:&error];
+    if (error) {
+    NSLog(@"error:%@",error);
+    return;
+    }
+
+    //数据转换
+    //NSString--->NSData
+    NSData *data = [result dataUsingEncoding:NSUTF8StringEncoding];
+
+    //NSData--->NSString
+    NSString *string = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+
+
+    //使用NSData方法同步请求
+    NSData *data = [NSData dataWithContentsOfURL:url];
+
+    self.imageView.image = [UIImage imageWithData:data];
+    //数据转换
+    //NSData---> UIImage
+    UIImage *image=[UIImage imageWithData:data];
+
+    //UIImage---> NSData
+    NSData *dataImage = UIImagePNGRepresentation(image);
+    NSData *dataImage2 = UIImageJPEGRepresentation(image, 0.5);
