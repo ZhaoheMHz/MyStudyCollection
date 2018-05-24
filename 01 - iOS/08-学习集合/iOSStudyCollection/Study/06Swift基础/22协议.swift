@@ -103,14 +103,31 @@ func normal22Func(inPara: SomeClassProtocol & SomeClassProtocol2) {
 
 
 
-// 可选的协议
+/** 可选的协议 */
+// 方案一：通过转化为Objc方法
 @objc protocol ObjecProtocol {
     @objc optional func incrementForCount(count: Int) -> Int
     @objc optional var fixedIncrement: Int { get }
 }
 
 class Normal224: ObjecProtocol {
-    
+}
+
+// 方案二：通过扩展给协议添加默认实现
+protocol Normal2222222Protocol {
+    func requiredFunc()
+    func optionalFunc()
+}
+
+extension Normal2222222Protocol {
+    func optionalFunc() {
+        print("默认实现")
+    }
+}
+// 这样，扩展中的方法就不需要必须实现了
+class Normal2222222ProtocolClass: Normal2222222Protocol {
+    func requiredFunc() {
+    }
 }
 
 

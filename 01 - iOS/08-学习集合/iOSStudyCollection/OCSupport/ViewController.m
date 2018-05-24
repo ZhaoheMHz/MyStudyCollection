@@ -11,6 +11,7 @@
 #import "ZHCaluVC.h"
 #import "ZHLoginViewController.h"
 #import "ZHTableViewRACController.h"
+#import "GCDNSOperationController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -75,6 +76,10 @@
         cell.textLabel.text = @"07 RxSwift";
     }
     
+    else if (indexPath.row == 7) {
+        cell.textLabel.text = @"08 GCD & NSOperation";
+    }
+    
     
     
     
@@ -122,6 +127,11 @@
     
     if (indexPath.row == 6) {
         ZHRxSwiftViewController *vc = [[ZHRxSwiftViewController alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+    
+    if (indexPath.row == 7) {
+        GCDNSOperationController *vc = [[GCDNSOperationController alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
     }
 }

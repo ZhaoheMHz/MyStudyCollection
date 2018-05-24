@@ -22,7 +22,7 @@ class ZHRxSwiftViewController: UIViewController {
             let two = 2
             let three = 3
             
-//            let observable: Observable<Int> = Observable<Int>.just(one).bindto
+//            let observable: Observable<Int> = Observable<Int>.just(one)
 //            observable.subscribe({ (event) in
 //                print(event)
 //            })
