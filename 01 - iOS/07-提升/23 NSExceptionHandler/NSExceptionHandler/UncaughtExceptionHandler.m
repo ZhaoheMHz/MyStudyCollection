@@ -22,7 +22,14 @@ const int32_t UncaughtExceptionMaximum = 10;    // 表示最多只截获10次异
 const NSInteger UncaughtExceptionHandlerSkipAddressCount = 4;
 const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
 
-@implementation UncaughtExceptionHandler
+@interface UncaughtExceptionHandler ()
+
+@property (nonatomic, strong) NSNumber *dimissed;
+
+@end
+
+@implementation UncaughtExceptionHandler {
+}
 
 // 获取调用堆栈
 + (NSArray *)backtrace {
@@ -48,6 +55,8 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
 }
 
 - (void)handleAnException:(NSException *)exception {
+    self.dimissed = @(NO);
+    
     // 做一些崩溃前的处理（比如弹个窗啥的）
     [self validateAndSaveCriticalApplicationDataWithException:exception];
     
@@ -56,7 +65,7 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
     CFRunLoopRef runLoop = CFRunLoopGetCurrent();
     CFArrayRef allModes = CFRunLoopCopyAllModes(runLoop);
 
-    while (!self.dismissed) {
+    while (![self.dimissed integerValue]) {
         for (NSString *mode in (__bridge NSArray *)allModes) {
             // 为阻止线程退出，使用 CFRunLoopRunInMode(model, 0.001, false)等待系统消息，false表示RunLoop没有超时时间
             CFRunLoopRunInMode((CFStringRef)mode,0.001, false);
@@ -91,20 +100,31 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
 - (void)validateAndSaveCriticalApplicationDataWithException:(NSException *)exception {
     /******************************** 展示崩溃信息 ********************************/
     NSLog(@"崩溃了");
-    NSString *message = [NSString stringWithFormat:NSLocalizedString(@"请在发布该闪退Tower的时候附上当前页面截图\n\n"@"异常原因如下:\n%@\n%@",nil),[exception reason],[[exception userInfo] objectForKey:UncaughtExceptionHandlerAddressesKey]];
-    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"闪退了"  message:message preferredStyle:UIAlertControllerStyleAlert];
     
+    // 将Eexception的name、reason、userInfo(堆栈信息)展示出来
+    NSString *message = [NSString stringWithFormat:NSLocalizedString(@"请截图发送给开发者，谢谢配合\n异常原因如下:\n%@\n%@\n%@",nil), [exception name], [exception reason],[[exception userInfo] objectForKey:UncaughtExceptionHandlerAddressesKey]];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"闪退了"  message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    // 缩小message字体，保证展示尽可能多的崩溃信息
+    NSMutableAttributedString *alertControllerMessageStr = [[NSMutableAttributedString alloc] initWithString:message attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:5]}];
+    if ([alert valueForKey:@"attributedMessage"]) {
+        [alert setValue:alertControllerMessageStr forKey:@"attributedMessage"];
+    }
+
     __weak typeof(self) _ws = self;
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        _ws.dismissed = YES;
+//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"退出App" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            _ws.dimissed = @(YES);
+//        });
+//    }];
+//    [alert addAction:cancelAction];
+    UIAlertAction *continueAction = [UIAlertAction actionWithTitle:@"继续运行" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     }];
-    
-    [alert addAction:cancelAction];
-    
+    [alert addAction:continueAction];
+
     UIViewController * rootViewController = [[[UIApplication sharedApplication] keyWindow] rootViewController];
-    [rootViewController presentViewController:alert animated:YES completion:^{
-        
-    }];
+    [rootViewController presentViewController:alert animated:NO completion:nil];
 }
 
 @end
@@ -129,11 +149,10 @@ void HandleException(NSException *exception) {
     // 渠道回溯的堆栈
     NSArray *callStack = [UncaughtExceptionHandler backtrace];
     NSMutableDictionary *userInfo =[NSMutableDictionary dictionaryWithDictionary:[exception userInfo]];
-    
-    // 把堆栈信息存入字典中
+    // 将堆栈信息保存到userInfo中
     [userInfo setObject:callStack forKey:UncaughtExceptionHandlerAddressesKey];
     
-    // 让我们的UncaughtExceptionHandler去处理这个异常
+    // 封装一个新的NSException，让我们的UncaughtExceptionHandler去处理
     [[[UncaughtExceptionHandler alloc] init]performSelectorOnMainThread:@selector(handleAnException:) withObject:
      [NSException exceptionWithName:[exception name] reason:[exception reason] userInfo:userInfo] waitUntilDone:YES];
 }
@@ -151,10 +170,10 @@ void SignalHandler(int signal) {
     
     // 获取堆栈信息数组
     NSArray *callStack = [UncaughtExceptionHandler backtrace];
-    // 写入地址
+    // 将堆栈信息保存到userInfo中
     [userInfo setObject:callStack forKey:UncaughtExceptionHandlerAddressesKey];
     
-    // 让UncaughtExceptionHandler去处理异常
+    // 封装一个新的NSException，让我们的UncaughtExceptionHandler去处理
     [[[UncaughtExceptionHandler alloc] init]performSelectorOnMainThread:@selector(handleAnException:)withObject:[NSException exceptionWithName:UncaughtExceptionHandlerSignalExceptionName reason:[NSString stringWithFormat:NSLocalizedString(@"Signal %d was raised.",nil),signal]userInfo:
                                                                                                                [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:signal]forKey:UncaughtExceptionHandlerSignalKey]]waitUntilDone:YES];
 }

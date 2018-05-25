@@ -10,8 +10,6 @@
 
 @interface UncaughtExceptionHandler : NSObject
 
-@property (nonatomic, assign) BOOL dismissed;
-
 @end
 
 
