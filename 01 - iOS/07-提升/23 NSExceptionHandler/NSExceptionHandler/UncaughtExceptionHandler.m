@@ -62,6 +62,8 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
     
     
     
+    
+    // Runloop会在这里一直运行，当dimissed设置YES后，下面的代码才会运行（但dimissed修改为YES这一操作并没有生效！）
     CFRunLoopRef runLoop = CFRunLoopGetCurrent();
     CFArrayRef allModes = CFRunLoopCopyAllModes(runLoop);
 
@@ -74,7 +76,7 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
     
     
     
-
+    // 当dimissed设置为YES，上面的Runloop才会停止，代码走到这里（但dimissed的修改并没有生效？？？为什么呢）
     CFRelease(allModes);
     NSSetUncaughtExceptionHandler(NULL);
     signal(SIGABRT,SIG_DFL);
@@ -102,17 +104,16 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
     NSLog(@"崩溃了");
     
     // 将Eexception的name、reason、userInfo(堆栈信息)展示出来
-    NSString *message = [NSString stringWithFormat:NSLocalizedString(@"请截图发送给开发者，谢谢配合\n异常原因如下:\n%@\n%@\n%@",nil), [exception name], [exception reason],[[exception userInfo] objectForKey:UncaughtExceptionHandlerAddressesKey]];
+    NSString *message = [NSString stringWithFormat:NSLocalizedString(@"请截图发送给开发者，谢谢配合\n异常原因如下:\n%@\n%@",nil), [exception reason],[[exception userInfo] objectForKey:UncaughtExceptionHandlerAddressesKey]];
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"闪退了"  message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"闪退了"  message:nil preferredStyle:UIAlertControllerStyleAlert];
     
     // 缩小message字体，保证展示尽可能多的崩溃信息
-    NSMutableAttributedString *alertControllerMessageStr = [[NSMutableAttributedString alloc] initWithString:message attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:5]}];
-    if ([alert valueForKey:@"attributedMessage"]) {
-        [alert setValue:alertControllerMessageStr forKey:@"attributedMessage"];
-    }
+    NSMutableAttributedString *alertControllerMessageStr = [[NSMutableAttributedString alloc] initWithString:message attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:10]}];
+    [alert setValue:alertControllerMessageStr forKey:@"attributedMessage"];
 
     __weak typeof(self) _ws = self;
+    /******************************** 注意，dimissed用于标志App是否让崩溃闪退，但实际上当设置为YES后并没有生效，所以这里注释掉了 ********************************/
 //    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"退出App" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
 //        dispatch_async(dispatch_get_main_queue(), ^{
 //            _ws.dimissed = @(YES);
