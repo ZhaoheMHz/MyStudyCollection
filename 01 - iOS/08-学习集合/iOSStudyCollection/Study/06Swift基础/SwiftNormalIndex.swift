@@ -123,7 +123,12 @@ class SwiftNormalIndexClass: UIViewController {
         
         
         /** 23泛型 */
-        let 泛型 = Normal23()
-        self.present(泛型, animated: true, completion: nil)
+//        let 泛型 = Normal23()
+//        self.present(泛型, animated: true, completion: nil)
+        
+        
+        /** 零散技巧 */
+        let 零散技巧 = Normal24()
+        self.present(零散技巧, animated: true, completion: nil)
     }
 }

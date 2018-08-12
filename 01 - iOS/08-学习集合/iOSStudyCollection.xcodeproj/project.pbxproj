@@ -19,6 +19,7 @@
 		867B18A3204D18D600D9DDAC /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 867B189A204D18D600D9DDAC /* SecondViewController.xib */; };
 		867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B189B204D18D600D9DDAC /* SecondViewController.m */; };
 		867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A8204D226E00D9DDAC /* ZHCaluVC.m */; };
+		867D4E7B210EDE4800EC801A /* 零散技巧.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867D4E7A210EDE4800EC801A /* 零散技巧.swift */; };
 		868972D020B574C0007F9774 /* YYViewHierarchy3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 868972CE20B574BF007F9774 /* YYViewHierarchy3D.m */; };
 		86A70DC22090504900FC6267 /* 04集合类型.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DC12090504900FC6267 /* 04集合类型.swift */; };
 		86A70DC42090822B00FC6267 /* 05控制流.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DC32090822B00FC6267 /* 05控制流.swift */; };
@@ -84,6 +85,7 @@
 		867B189B204D18D600D9DDAC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		867B18A7204D226E00D9DDAC /* ZHCaluVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCaluVC.h; sourceTree = "<group>"; };
 		867B18A8204D226E00D9DDAC /* ZHCaluVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCaluVC.m; sourceTree = "<group>"; };
+		867D4E7A210EDE4800EC801A /* 零散技巧.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "零散技巧.swift"; sourceTree = "<group>"; };
 		868972CE20B574BF007F9774 /* YYViewHierarchy3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYViewHierarchy3D.m; sourceTree = "<group>"; };
 		868972CF20B574C0007F9774 /* YYViewHierarchy3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYViewHierarchy3D.h; sourceTree = "<group>"; };
 		86A70DC12090504900FC6267 /* 04集合类型.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "04集合类型.swift"; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				86A70E2E20A023B600FC6267 /* 21扩展.swift */,
 				86A70E3020A02CBA00FC6267 /* 22协议.swift */,
 				86A70E3320A03BD700FC6267 /* 23泛型.swift */,
+				867D4E7A210EDE4800EC801A /* 零散技巧.swift */,
 			);
 			path = "06Swift基础";
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				86A70DC620917A1F00FC6267 /* 06函数.swift in Sources */,
 				86A70E23209C50E700FC6267 /* 15析构过程.swift in Sources */,
 				86A70E1D209B1B9A00FC6267 /* 12下标.swift in Sources */,
+				867D4E7B210EDE4800EC801A /* 零散技巧.swift in Sources */,
 				86A70E25209C58E700FC6267 /* 16自动引用计数.swift in Sources */,
 				86A70E27209C68FD00FC6267 /* 17可选链.swift in Sources */,
 				86EF46F320577B6D00382251 /* NSObject+Calculate.m in Sources */,
