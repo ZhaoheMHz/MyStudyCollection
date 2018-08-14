@@ -80,6 +80,10 @@
         cell.textLabel.text = @"08 GCD & NSOperation";
     }
     
+    else if (indexPath.row == 8) {
+        cell.textLabel.text = @"09 算法";
+    }
+    
     
     
     
@@ -132,6 +136,11 @@
     
     if (indexPath.row == 7) {
         GCDNSOperationController *vc = [[GCDNSOperationController alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+    
+    if (indexPath.row == 8) {
+        ZHAlgorithmViewController *vc = [[ZHAlgorithmViewController alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
     }
 }

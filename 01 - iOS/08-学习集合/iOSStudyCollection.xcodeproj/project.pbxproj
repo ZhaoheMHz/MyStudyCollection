@@ -10,6 +10,9 @@
 		4DDF0B65DAF95846241EF0E9 /* Pods_iOSStudyCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1B06C0D4D68935F79B404B /* Pods_iOSStudyCollection.framework */; };
 		864EDF8E20AD775500C7209C /* GCDNSOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864EDF8D20AD775500C7209C /* GCDNSOperationController.m */; };
 		864EDF9120AD8EA300C7209C /* ZHSemaphoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 864EDF9020AD8EA300C7209C /* ZHSemaphoreTool.m */; };
+		8672F43B212288FA001401B3 /* ZHAlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672F43A212288FA001401B3 /* ZHAlgorithmViewController.swift */; };
+		8672F43D21228935001401B3 /* 链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672F43C21228935001401B3 /* 链表.swift */; };
+		8672F43F21228B4E001401B3 /* 二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672F43E21228B4E001401B3 /* 二叉树.swift */; };
 		867B1862204D186D00D9DDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867B1860204D186D00D9DDAC /* Main.storyboard */; };
 		867B1864204D186D00D9DDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867B1863204D186D00D9DDAC /* Assets.xcassets */; };
 		867B1867204D186D00D9DDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867B1865204D186D00D9DDAC /* LaunchScreen.storyboard */; };
@@ -71,6 +74,9 @@
 		864EDF8D20AD775500C7209C /* GCDNSOperationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDNSOperationController.m; sourceTree = "<group>"; };
 		864EDF8F20AD8EA300C7209C /* ZHSemaphoreTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSemaphoreTool.h; sourceTree = "<group>"; };
 		864EDF9020AD8EA300C7209C /* ZHSemaphoreTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHSemaphoreTool.m; sourceTree = "<group>"; };
+		8672F43A212288FA001401B3 /* ZHAlgorithmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHAlgorithmViewController.swift; sourceTree = "<group>"; };
+		8672F43C21228935001401B3 /* 链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "链表.swift"; sourceTree = "<group>"; };
+		8672F43E21228B4E001401B3 /* 二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "二叉树.swift"; sourceTree = "<group>"; };
 		867B1857204D186D00D9DDAC /* iOSStudyCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStudyCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		867B1861204D186D00D9DDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		867B1863204D186D00D9DDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +176,16 @@
 			path = "08GCD&NSOperation";
 			sourceTree = "<group>";
 		};
+		8672F43921228860001401B3 /* 09算法 */ = {
+			isa = PBXGroup;
+			children = (
+				8672F43A212288FA001401B3 /* ZHAlgorithmViewController.swift */,
+				8672F43C21228935001401B3 /* 链表.swift */,
+				8672F43E21228B4E001401B3 /* 二叉树.swift */,
+			);
+			path = "09算法";
+			sourceTree = "<group>";
+		};
 		867B184E204D186D00D9DDAC = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +225,7 @@
 				86EF472C20591E0600382251 /* 06Swift基础 */,
 				86A70DD42092C9F000FC6267 /* 07RxSwift */,
 				864EDF8B20AD773D00C7209C /* 08GCD&NSOperation */,
+				8672F43921228860001401B3 /* 09算法 */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -550,6 +567,7 @@
 				86EF46FF2058DD4300382251 /* SwiftPch.swift in Sources */,
 				86EF46E020562D1E00382251 /* ZHLoginViewModel.m in Sources */,
 				86A70DC42090822B00FC6267 /* 05控制流.swift in Sources */,
+				8672F43D21228935001401B3 /* 链表.swift in Sources */,
 				86C93468208EE7C400A0954F /* SwiftNormalIndex.swift in Sources */,
 				86A70E2D20A00EC400FC6267 /* 20嵌套类型.swift in Sources */,
 				86A70E1F209B1F1100FC6267 /* 13继承.swift in Sources */,
@@ -558,7 +576,9 @@
 				86EF46F420577B6D00382251 /* CalculateManager.m in Sources */,
 				86A70E17209AE8F700FC6267 /* 09类和结构体.swift in Sources */,
 				86EF46FC2058CFA100382251 /* ZHReactiveSwiftDemoController.swift in Sources */,
+				8672F43B212288FA001401B3 /* ZHAlgorithmViewController.swift in Sources */,
 				86EF46D52052858B00382251 /* ViewController.m in Sources */,
+				8672F43F21228B4E001401B3 /* 二叉树.swift in Sources */,
 				86A70E3420A03BD700FC6267 /* 23泛型.swift in Sources */,
 				86A70DC22090504900FC6267 /* 04集合类型.swift in Sources */,
 				86C93470208EF91200A0954F /* 03字符串和字符.swift in Sources */,

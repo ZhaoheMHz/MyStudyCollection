@@ -132,10 +132,5 @@ class Normal24: UIViewController {
         print(description[AnyHashable(42)]!)        // an Int
         print(description[AnyHashable(34)])         // nil
         print(description[AnyHashable(Set(["a", "b"]))]!)   // a set of strings
-        
-        
-        
-        
     }
-    
 }

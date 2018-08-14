@@ -1,0 +1,6 @@
+framework module ZHCocoaPodsTest {
+  umbrella header "ZHCocoaPodsTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
