@@ -481,30 +481,45 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
         return nil;
     }
 
+    /**************** 创建SessionConfiguration ****************/
     if (!configuration) {
         configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     }
 
     self.sessionConfiguration = configuration;
 
+    
+    /**************** 创建一个队列 ****************/
     self.operationQueue = [[NSOperationQueue alloc] init];
+    // 并发数为1
     self.operationQueue.maxConcurrentOperationCount = 1;
 
+    // 创建session，这里的的代理，如果子类实现了代理方法，会自动过去NSURLSession
     self.session = [NSURLSession sessionWithConfiguration:self.sessionConfiguration delegate:self delegateQueue:self.operationQueue];
 
+    // 各种响应转码
     self.responseSerializer = [AFJSONResponseSerializer serializer];
 
+    // 设置默认的安全策略
     self.securityPolicy = [AFSecurityPolicy defaultPolicy];
 
 #if !TARGET_OS_WATCH
     self.reachabilityManager = [AFNetworkReachabilityManager sharedManager];
 #endif
 
+    // 初始化一个存储task和delegate的字段
     self.mutableTaskDelegatesKeyedByTaskIdentifier = [[NSMutableDictionary alloc] init];
 
+    // 设置上面这个字典的锁，确保多线程访问时的线程安全
     self.lock = [[NSLock alloc] init];
     self.lock.name = AFURLSessionManagerLockName;
 
+    
+    
+    // 重置task关联的代理
+    // 这里实际上在初始化session的时候，task都不存在
+    // 但af作者写这个，说是为了避免从后台回来，session会重新初始化，会遗留一些之前的task，所以要重置，以免崩溃
+    // 但真的有必要做这个操作吗？
     [self.session getTasksWithCompletionHandler:^(NSArray *dataTasks, NSArray *uploadTasks, NSArray *downloadTasks) {
         for (NSURLSessionDataTask *task in dataTasks) {
             [self addDelegateForDataTask:task uploadProgress:nil downloadProgress:nil completionHandler:nil];

@@ -134,7 +134,7 @@
                       success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
                       failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure
 {
-
+    // 生成一个task
     NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"GET"
                                                         URLString:URLString
                                                        parameters:parameters
@@ -143,6 +143,7 @@
                                                           success:success
                                                           failure:failure];
 
+    // 开始网络请求
     [dataTask resume];
 
     return dataTask;
@@ -275,8 +276,11 @@
                                          failure:(void (^)(NSURLSessionDataTask *, NSError *))failure
 {
     NSError *serializationError = nil;
+    
+    // 转化url、参数为request
     NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters error:&serializationError];
     if (serializationError) {
+        // 解析错误，直接返回
         if (failure) {
             dispatch_async(self.completionQueue ?: dispatch_get_main_queue(), ^{
                 failure(nil, serializationError);
@@ -286,6 +290,7 @@
         return nil;
     }
 
+    // 创建一个DataTask，并传入成功、失败回调
     __block NSURLSessionDataTask *dataTask = nil;
     dataTask = [self dataTaskWithRequest:request
                           uploadProgress:uploadProgress
@@ -302,6 +307,7 @@
         }
     }];
 
+    // 返回DataTask
     return dataTask;
 }
 
