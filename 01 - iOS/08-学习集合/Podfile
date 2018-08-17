@@ -7,12 +7,11 @@ target 'iOSStudyCollection' do
 
     #OC
     pod 'ReactiveObjC'
-    pod 'AFNetworking', '~> 3.2.0'
     pod 'Masonry', '~> 1.1.0'
-
+    pod 'AFNetworking', '3.2.1'
  
     #Swift
     pod 'ReactiveCocoa', '~> 7.1.0'
-    pod 'RxSwift'
-    pod 'RxCocoa'
+    pod 'RxSwift', '4.1.2'
+    pod 'RxCocoa', '4.1.2'
 end

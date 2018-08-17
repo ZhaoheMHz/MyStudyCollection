@@ -63,9 +63,11 @@
     return [self initWithBaseURL:nil sessionConfiguration:configuration];
 }
 
+// 上面的初始化走的都是这个初始化方法
 - (instancetype)initWithBaseURL:(NSURL *)url
            sessionConfiguration:(NSURLSessionConfiguration *)configuration
 {
+    // 调用了父类的初始化方法，何不点进去看看？
     self = [super initWithSessionConfiguration:configuration];
     if (!self) {
         return nil;
