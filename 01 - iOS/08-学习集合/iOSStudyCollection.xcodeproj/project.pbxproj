@@ -24,6 +24,8 @@
 		867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A8204D226E00D9DDAC /* ZHCaluVC.m */; };
 		867D4E7B210EDE4800EC801A /* 零散技巧.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867D4E7A210EDE4800EC801A /* 零散技巧.swift */; };
 		868972D020B574C0007F9774 /* YYViewHierarchy3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 868972CE20B574BF007F9774 /* YYViewHierarchy3D.m */; };
+		869AD9D321258711004D48CD /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 869AD9D121258711004D48CD /* CommonViewController.m */; };
+		869AD9D421258711004D48CD /* CommonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 869AD9D221258711004D48CD /* CommonViewController.xib */; };
 		86A70DC22090504900FC6267 /* 04集合类型.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DC12090504900FC6267 /* 04集合类型.swift */; };
 		86A70DC42090822B00FC6267 /* 05控制流.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DC32090822B00FC6267 /* 05控制流.swift */; };
 		86A70DC620917A1F00FC6267 /* 06函数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DC520917A1F00FC6267 /* 06函数.swift */; };
@@ -94,6 +96,9 @@
 		867D4E7A210EDE4800EC801A /* 零散技巧.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "零散技巧.swift"; sourceTree = "<group>"; };
 		868972CE20B574BF007F9774 /* YYViewHierarchy3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYViewHierarchy3D.m; sourceTree = "<group>"; };
 		868972CF20B574C0007F9774 /* YYViewHierarchy3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYViewHierarchy3D.h; sourceTree = "<group>"; };
+		869AD9D021258711004D48CD /* CommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
+		869AD9D121258711004D48CD /* CommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
+		869AD9D221258711004D48CD /* CommonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonViewController.xib; sourceTree = "<group>"; };
 		86A70DC12090504900FC6267 /* 04集合类型.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "04集合类型.swift"; sourceTree = "<group>"; };
 		86A70DC32090822B00FC6267 /* 05控制流.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "05控制流.swift"; sourceTree = "<group>"; };
 		86A70DC520917A1F00FC6267 /* 06函数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "06函数.swift"; sourceTree = "<group>"; };
@@ -281,6 +286,9 @@
 				86EF46D22052858A00382251 /* ViewController.m */,
 				867B1860204D186D00D9DDAC /* Main.storyboard */,
 				867B1865204D186D00D9DDAC /* LaunchScreen.storyboard */,
+				869AD9D021258711004D48CD /* CommonViewController.h */,
+				869AD9D121258711004D48CD /* CommonViewController.m */,
+				869AD9D221258711004D48CD /* CommonViewController.xib */,
 				86EF46D7205285D800382251 /* PrefixHeader.pch */,
 				867B1863204D186D00D9DDAC /* Assets.xcassets */,
 				867B1868204D186D00D9DDAC /* Info.plist */,
@@ -458,6 +466,7 @@
 			files = (
 				86EF46DD20562A3800382251 /* ZHLoginViewController.xib in Resources */,
 				867B1867204D186D00D9DDAC /* LaunchScreen.storyboard in Resources */,
+				869AD9D421258711004D48CD /* CommonViewController.xib in Resources */,
 				867B18A3204D18D600D9DDAC /* SecondViewController.xib in Resources */,
 				867B18A1204D18D600D9DDAC /* ZHRacNormalController.xib in Resources */,
 				86A70DD82092CA8B00FC6267 /* ZHRxSwiftViewController.xib in Resources */,
@@ -555,6 +564,7 @@
 				86EF46D62052858B00382251 /* AppDelegate.m in Sources */,
 				867B18A4204D18D600D9DDAC /* SecondViewController.m in Sources */,
 				864EDF8E20AD775500C7209C /* GCDNSOperationController.m in Sources */,
+				869AD9D321258711004D48CD /* CommonViewController.m in Sources */,
 				864EDF9120AD8EA300C7209C /* ZHSemaphoreTool.m in Sources */,
 				86A70E2B20A0005E00FC6267 /* 19类型转换.swift in Sources */,
 				86C9346E208EEAE100A0954F /* 02基本运算符.swift in Sources */,

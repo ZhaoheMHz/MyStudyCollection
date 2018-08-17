@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonViewController.h"
 
-@interface ZHCaluVC : UIViewController
+@interface ZHCaluVC : CommonViewController
 
 @end
+
