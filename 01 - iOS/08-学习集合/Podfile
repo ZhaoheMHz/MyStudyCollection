@@ -9,6 +9,8 @@ target 'iOSStudyCollection' do
     pod 'ReactiveObjC'
     pod 'Masonry', '~> 1.1.0'
     pod 'AFNetworking', '3.2.1'
+    
+    pod 'Aspects', '~> 1.4.1' #黑魔法库
  
     #Swift
     pod 'ReactiveCocoa', '~> 7.1.0'

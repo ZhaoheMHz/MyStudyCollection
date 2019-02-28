@@ -18,7 +18,6 @@ class NormalClass: UIViewController {
         let a = 1, b = "c", c = 10
         
         
-        
         /** 类型标注 */
         var str: String
         str = "zhaohe"

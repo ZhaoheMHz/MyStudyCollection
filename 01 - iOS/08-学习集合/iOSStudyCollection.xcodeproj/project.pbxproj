@@ -52,6 +52,7 @@
 		86C9346C208EE85700A0954F /* 01基础部分.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9346B208EE85700A0954F /* 01基础部分.swift */; };
 		86C9346E208EEAE100A0954F /* 02基本运算符.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9346D208EEAE100A0954F /* 02基本运算符.swift */; };
 		86C93470208EF91200A0954F /* 03字符串和字符.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9346F208EF91200A0954F /* 03字符串和字符.swift */; };
+		86D5BF7B22267758008D8332 /* ZHAspectsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D5BF7A22267758008D8332 /* ZHAspectsController.m */; };
 		86EF46D52052858B00382251 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46D22052858A00382251 /* ViewController.m */; };
 		86EF46D62052858B00382251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46D32052858A00382251 /* AppDelegate.m */; };
 		86EF46DC20562A3800382251 /* ZHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46DA20562A3800382251 /* ZHLoginViewController.m */; };
@@ -125,6 +126,8 @@
 		86C9346B208EE85700A0954F /* 01基础部分.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01基础部分.swift"; sourceTree = "<group>"; };
 		86C9346D208EEAE100A0954F /* 02基本运算符.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "02基本运算符.swift"; sourceTree = "<group>"; };
 		86C9346F208EF91200A0954F /* 03字符串和字符.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "03字符串和字符.swift"; sourceTree = "<group>"; };
+		86D5BF7922267758008D8332 /* ZHAspectsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHAspectsController.h; sourceTree = "<group>"; };
+		86D5BF7A22267758008D8332 /* ZHAspectsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAspectsController.m; sourceTree = "<group>"; };
 		86EF46CC205278C300382251 /* iOSStudyCollection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSStudyCollection-Bridging-Header.h"; sourceTree = "<group>"; };
 		86EF46D12052858A00382251 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86EF46D22052858A00382251 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -232,6 +235,7 @@
 				86A70DD42092C9F000FC6267 /* 07RxSwift */,
 				864EDF8B20AD773D00C7209C /* 08GCD&NSOperation */,
 				8672F43921228860001401B3 /* 09算法 */,
+				86D5BF7822267742008D8332 /* 10Aspects */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -274,6 +278,15 @@
 				86A70DD62092CA8B00FC6267 /* ZHRxSwiftViewController.xib */,
 			);
 			path = 07RxSwift;
+			sourceTree = "<group>";
+		};
+		86D5BF7822267742008D8332 /* 10Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				86D5BF7922267758008D8332 /* ZHAspectsController.h */,
+				86D5BF7A22267758008D8332 /* ZHAspectsController.m */,
+			);
+			path = 10Aspects;
 			sourceTree = "<group>";
 		};
 		86EF46CB20523F6800382251 /* SwiftSupport */ = {
@@ -422,7 +435,6 @@
 				867B1854204D186D00D9DDAC /* Frameworks */,
 				867B1855204D186D00D9DDAC /* Resources */,
 				0364BC212F6C9EBFBFD79AF0 /* [CP] Embed Pods Frameworks */,
-				B492A6A80142C27567BEBAAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -495,6 +507,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
@@ -506,6 +519,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
@@ -517,21 +531,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B492A6A80142C27567BEBAAA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C0AB4DEA8BD478A969372C7D /* [CP] Check Pods Manifest.lock */ = {
@@ -594,6 +593,7 @@
 				86EF46F420577B6D00382251 /* CalculateManager.m in Sources */,
 				86A70E17209AE8F700FC6267 /* 09类和结构体.swift in Sources */,
 				86EF46FC2058CFA100382251 /* ZHReactiveSwiftDemoController.swift in Sources */,
+				86D5BF7B22267758008D8332 /* ZHAspectsController.m in Sources */,
 				8672F43B212288FA001401B3 /* ZHAlgorithmViewController.swift in Sources */,
 				86EF46D52052858B00382251 /* ViewController.m in Sources */,
 				8672F43F21228B4E001401B3 /* 二叉树.swift in Sources */,
@@ -751,7 +751,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = A9ZY4654BA;
+				DEVELOPMENT_TEAM = YZXELZ8DDL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iOSStudyCollection/OCSupport/PrefixHeader.pch;
 				INFOPLIST_FILE = iOSStudyCollection/OCSupport/Info.plist;
@@ -775,7 +775,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = A9ZY4654BA;
+				DEVELOPMENT_TEAM = YZXELZ8DDL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iOSStudyCollection/OCSupport/PrefixHeader.pch;
 				INFOPLIST_FILE = iOSStudyCollection/OCSupport/Info.plist;

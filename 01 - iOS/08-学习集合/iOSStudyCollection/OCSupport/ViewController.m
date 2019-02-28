@@ -12,6 +12,7 @@
 #import "ZHLoginViewController.h"
 #import "ZHTableViewRACController.h"
 #import "GCDNSOperationController.h"
+#import "ZHAspectsController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -84,6 +85,10 @@
         cell.textLabel.text = @"09 算法";
     }
     
+    else if (indexPath.row == 9) {
+        cell.textLabel.text = @"10 Aspects";
+    }
+    
     
     
     
@@ -141,6 +146,11 @@
     
     if (indexPath.row == 8) {
         ZHAlgorithmViewController *vc = [[ZHAlgorithmViewController alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+    
+    if (indexPath.row == 9) {
+        ZHAspectsController *vc = [[ZHAspectsController alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
     }
 }

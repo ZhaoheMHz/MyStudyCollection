@@ -13,8 +13,8 @@ class SwiftNormalIndexClass: UIViewController {
         super.viewDidLoad();
         
         /** 01基础部分 */
-//        let 基础部分 = NormalClass()
-//        self.present(基础部分, animated: true, completion: nil)
+        let 基础部分 = NormalClass()
+        self.present(基础部分, animated: true, completion: nil)
         
         
         /** 02基本运算符 */
@@ -128,7 +128,7 @@ class SwiftNormalIndexClass: UIViewController {
         
         
         /** 零散技巧 */
-        let 零散技巧 = Normal24()
-        self.present(零散技巧, animated: true, completion: nil)
+//        let 零散技巧 = Normal24()
+//        self.present(零散技巧, animated: true, completion: nil)
     }
 }
