@@ -115,7 +115,7 @@ class Normal24: UIViewController {
         let chris = Person(firstName: "Chris")
         
         // #keyPath能保证keyPath的正确性
-        chris.value(forKeyPath: #keyPath(Person.firstName))
+//        chris.value(forKeyPath: \Person.firstName)
         
         
         

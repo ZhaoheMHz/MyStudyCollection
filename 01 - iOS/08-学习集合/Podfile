@@ -13,7 +13,7 @@ target 'iOSStudyCollection' do
     pod 'Aspects', '~> 1.4.1' #黑魔法库
  
     #Swift
-    pod 'ReactiveCocoa', '~> 7.1.0'
-    pod 'RxSwift', '4.1.2'
-    pod 'RxCocoa', '4.1.2'
+    pod 'ReactiveCocoa'
+    pod 'RxSwift'
+    pod 'RxCocoa'
 end

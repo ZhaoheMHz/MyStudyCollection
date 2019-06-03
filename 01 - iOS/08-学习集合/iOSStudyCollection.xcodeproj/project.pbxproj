@@ -24,6 +24,7 @@
 		867B18A9204D226E00D9DDAC /* ZHCaluVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B18A8204D226E00D9DDAC /* ZHCaluVC.m */; };
 		867D4E7B210EDE4800EC801A /* 零散技巧.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867D4E7A210EDE4800EC801A /* 零散技巧.swift */; };
 		868972D020B574C0007F9774 /* YYViewHierarchy3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 868972CE20B574BF007F9774 /* YYViewHierarchy3D.m */; };
+		869070A422A1036C00834943 /* ZHRxSwiftTextViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869070A322A1036C00834943 /* ZHRxSwiftTextViewDemoVC.swift */; };
 		869AD9D321258711004D48CD /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 869AD9D121258711004D48CD /* CommonViewController.m */; };
 		869AD9D421258711004D48CD /* CommonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 869AD9D221258711004D48CD /* CommonViewController.xib */; };
 		86A70DC22090504900FC6267 /* 04集合类型.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A70DC12090504900FC6267 /* 04集合类型.swift */; };
@@ -65,8 +66,6 @@
 		86EF46F320577B6D00382251 /* NSObject+Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46F120577B6D00382251 /* NSObject+Calculate.m */; };
 		86EF46F420577B6D00382251 /* CalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46F220577B6D00382251 /* CalculateManager.m */; };
 		86EF46F82057877500382251 /* ZHSQLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46F72057877500382251 /* ZHSQLTool.m */; };
-		86EF46FC2058CFA100382251 /* ZHReactiveSwiftDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46FA2058CFA100382251 /* ZHReactiveSwiftDemoController.swift */; };
-		86EF46FD2058CFA100382251 /* ZHReactiveSwiftDemoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86EF46FB2058CFA100382251 /* ZHReactiveSwiftDemoController.xib */; };
 		86EF46FF2058DD4300382251 /* SwiftPch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF46FE2058DD4300382251 /* SwiftPch.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +96,7 @@
 		867D4E7A210EDE4800EC801A /* 零散技巧.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "零散技巧.swift"; sourceTree = "<group>"; };
 		868972CE20B574BF007F9774 /* YYViewHierarchy3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYViewHierarchy3D.m; sourceTree = "<group>"; };
 		868972CF20B574C0007F9774 /* YYViewHierarchy3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYViewHierarchy3D.h; sourceTree = "<group>"; };
+		869070A322A1036C00834943 /* ZHRxSwiftTextViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHRxSwiftTextViewDemoVC.swift; sourceTree = "<group>"; };
 		869AD9D021258711004D48CD /* CommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
 		869AD9D121258711004D48CD /* CommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
 		869AD9D221258711004D48CD /* CommonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonViewController.xib; sourceTree = "<group>"; };
@@ -153,8 +153,6 @@
 		86EF46F220577B6D00382251 /* CalculateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateManager.m; sourceTree = "<group>"; };
 		86EF46F62057877500382251 /* ZHSQLTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSQLTool.h; sourceTree = "<group>"; };
 		86EF46F72057877500382251 /* ZHSQLTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHSQLTool.m; sourceTree = "<group>"; };
-		86EF46FA2058CFA100382251 /* ZHReactiveSwiftDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHReactiveSwiftDemoController.swift; sourceTree = "<group>"; };
-		86EF46FB2058CFA100382251 /* ZHReactiveSwiftDemoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHReactiveSwiftDemoController.xib; sourceTree = "<group>"; };
 		86EF46FE2058DD4300382251 /* SwiftPch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPch.swift; sourceTree = "<group>"; };
 		E439CE1E7DAB8D25A8BEB3F3 /* Pods-iOSStudyCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudyCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,7 +228,6 @@
 				867B1895204D18D600D9DDAC /* 02RAC通常用法 */,
 				86EF46D820562A0500382251 /* 03RAC登录Demo */,
 				86EF46E42056555500382251 /* 04TableView+网络请求（RAC+MVVM） */,
-				86EF46F92058CF7E00382251 /* 05ReactiveSwift */,
 				86EF472C20591E0600382251 /* 06Swift基础 */,
 				86A70DD42092C9F000FC6267 /* 07RxSwift */,
 				864EDF8B20AD773D00C7209C /* 08GCD&NSOperation */,
@@ -275,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				86A70DD52092CA8B00FC6267 /* ZHRxSwiftViewController.swift */,
+				869070A322A1036C00834943 /* ZHRxSwiftTextViewDemoVC.swift */,
 				86A70DD62092CA8B00FC6267 /* ZHRxSwiftViewController.xib */,
 			);
 			path = 07RxSwift;
@@ -363,15 +361,6 @@
 				86EF46F72057877500382251 /* ZHSQLTool.m */,
 			);
 			path = "sql语句(链式函数协议)";
-			sourceTree = "<group>";
-		};
-		86EF46F92058CF7E00382251 /* 05ReactiveSwift */ = {
-			isa = PBXGroup;
-			children = (
-				86EF46FA2058CFA100382251 /* ZHReactiveSwiftDemoController.swift */,
-				86EF46FB2058CFA100382251 /* ZHReactiveSwiftDemoController.xib */,
-			);
-			path = 05ReactiveSwift;
 			sourceTree = "<group>";
 		};
 		86EF472C20591E0600382251 /* 06Swift基础 */ = {
@@ -491,7 +480,6 @@
 				867B18A1204D18D600D9DDAC /* ZHRacNormalController.xib in Resources */,
 				86A70DD82092CA8B00FC6267 /* ZHRxSwiftViewController.xib in Resources */,
 				867B1864204D186D00D9DDAC /* Assets.xcassets in Resources */,
-				86EF46FD2058CFA100382251 /* ZHReactiveSwiftDemoController.xib in Resources */,
 				867B1862204D186D00D9DDAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,15 +493,15 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -524,13 +512,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSStudyCollection/Pods-iOSStudyCollection-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C0AB4DEA8BD478A969372C7D /* [CP] Check Pods Manifest.lock */ = {
@@ -585,6 +573,7 @@
 				86EF46E020562D1E00382251 /* ZHLoginViewModel.m in Sources */,
 				86A70DC42090822B00FC6267 /* 05控制流.swift in Sources */,
 				8672F43D21228935001401B3 /* 链表.swift in Sources */,
+				869070A422A1036C00834943 /* ZHRxSwiftTextViewDemoVC.swift in Sources */,
 				86C93468208EE7C400A0954F /* SwiftNormalIndex.swift in Sources */,
 				86A70E2D20A00EC400FC6267 /* 20嵌套类型.swift in Sources */,
 				86A70E1F209B1F1100FC6267 /* 13继承.swift in Sources */,
@@ -592,7 +581,6 @@
 				86EF46F82057877500382251 /* ZHSQLTool.m in Sources */,
 				86EF46F420577B6D00382251 /* CalculateManager.m in Sources */,
 				86A70E17209AE8F700FC6267 /* 09类和结构体.swift in Sources */,
-				86EF46FC2058CFA100382251 /* ZHReactiveSwiftDemoController.swift in Sources */,
 				86D5BF7B22267758008D8332 /* ZHAspectsController.m in Sources */,
 				8672F43B212288FA001401B3 /* ZHAlgorithmViewController.swift in Sources */,
 				86EF46D52052858B00382251 /* ViewController.m in Sources */,
@@ -760,7 +748,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSStudyCollection/SwiftSupport/iOSStudyCollection-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -783,7 +771,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohe.iOSStudyCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSStudyCollection/SwiftSupport/iOSStudyCollection-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 			};

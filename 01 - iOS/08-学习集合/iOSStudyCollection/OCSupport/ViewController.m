@@ -124,11 +124,6 @@
         [self presentViewController:vc animated:YES completion:nil];
     }
     
-    if (indexPath.row == 4) {
-        ZHReactiveSwiftDemoController *vc = [[ZHReactiveSwiftDemoController alloc] init];
-        [self presentViewController:vc animated:YES completion:nil];
-    }
-    
     if (indexPath.row == 5) {
         SwiftNormalIndexClass *vc = [[SwiftNormalIndexClass alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
@@ -136,7 +131,7 @@
     
     if (indexPath.row == 6) {
         ZHRxSwiftViewController *vc = [[ZHRxSwiftViewController alloc] init];
-        [self presentViewController:vc animated:YES completion:nil];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
     if (indexPath.row == 7) {

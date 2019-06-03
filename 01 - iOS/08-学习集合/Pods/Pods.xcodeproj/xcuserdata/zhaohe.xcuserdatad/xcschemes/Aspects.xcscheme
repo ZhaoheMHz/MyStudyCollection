@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "716408499739CADCB26AC3D443E5BD95"
+               BlueprintIdentifier = "BF602B515A16EEB344F7061F1D7D1EC4"
+               BuildableName = "Aspects.framework"
                BlueprintName = "Aspects"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Aspects.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
